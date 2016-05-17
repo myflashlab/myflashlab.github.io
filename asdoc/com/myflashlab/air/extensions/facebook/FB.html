@@ -1,0 +1,245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="FB,com.myflashlab.air.extensions.facebook.FB,ANDROID,EVENT_NAME_ACHIEVED_LEVEL,EVENT_NAME_ACTIVATED_APP,EVENT_NAME_ADDED_PAYMENT_INFO,EVENT_NAME_ADDED_TO_CART,EVENT_NAME_ADDED_TO_WISHLIST,EVENT_NAME_COMPLETED_REGISTRATION,EVENT_NAME_COMPLETED_TUTORIAL,EVENT_NAME_INITIATED_CHECKOUT,EVENT_NAME_RATED,EVENT_NAME_SEARCHED,EVENT_NAME_SPENT_CREDITS,EVENT_NAME_UNLOCKED_ACHIEVEMENT,EVENT_NAME_VIEWED_CONTENT,EVENT_PARAM_CONTENT_ID,EVENT_PARAM_CONTENT_TYPE,EVENT_PARAM_CURRENCY,EVENT_PARAM_DESCRIPTION,EVENT_PARAM_LEVEL,EVENT_PARAM_MAX_RATING_VALUE,EVENT_PARAM_NUM_ITEMS,EVENT_PARAM_PAYMENT_INFO_AVAILABLE,EVENT_PARAM_REGISTRATION_METHOD,EVENT_PARAM_SEARCH_STRING,EVENT_PARAM_SOURCE_APPLICATION,EVENT_PARAM_SUCCESS,EXTENSION_ID,GRAPH_RESPONSE,GRAPH_RESPONSE_ERROR,INVITE_CANCELED,INVITE_DONE,INVITE_ERROR,IOS,LIKE_BTN_CREATED,LIKE_BTN_ERROR,LIKE_BTN_UPDATED,LINK_TYPE_OPEN_GRAPH,LINK_TYPE_PAGE,LINK_TYPE_UNKNOWN,LOGIN_CANCELED,LOGIN_DONE,LOGIN_ERROR,SHARING_CANCELED,SHARING_DONE,SHARING_ERROR,STYLE_BOX_COUNT,STYLE_STANDARD,VERSION,auth,graph,graphRequest,hashKey,height,isVisible,logManager,name,os,style,type,url,width,x,y,appInvite,createLikeBtn,dispose,dispose,getInstance,logEvent,removeLikeBtns,setVisibility,share,update"><title>com.myflashlab.air.extensions.facebook.FB</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'FB - MyFlashLabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/facebook/FB.html&amp;com/myflashlab/air/extensions/facebook/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">FB</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("FB"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.facebook</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  FB</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">FB  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
+	 FB is the base class you will need, to work with this extension. to get started, you need to initialize the extension once in your app by
+	 calling <code>FB.getInstance("0000000");</code> where you pass in your Facebook app you have already created in your facebook developer panel.
+	 
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#auth" class="signatureLink">auth</a> : <a href="../../../../../com/myflashlab/air/extensions/facebook/access/Auth.html">Auth</a><div class="summaryTableDescription">[static] 
+		 
+		 gives you access to login/logout options and also you can get your current active token and all the information
+		 you may need about permissions that your users may have or may have not accepted while using your app.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#graph" class="signatureLink">graph</a> : <a href="../../../../../com/myflashlab/air/extensions/facebook/access/Graph.html">Graph</a><div class="summaryTableDescription">[static] 
+		 
+		 gives you access to the facebook official OpenGraph API.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#hashKey" class="signatureLink">hashKey</a> : String<div class="summaryTableDescription">[static] [read-only] 
+		 (Android only) When developing your application, your facebook developer consoles will ask you to enter your app hash key so your app will safely be
+		 connected to your facebook app.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#logManager" class="signatureLink">logManager</a> : <a href="../../../../../com/myflashlab/air/extensions/facebook/access/Auth.html">Auth</a><div class="summaryTableDescription">[static] 
+		 depricated, please use FB.auth instead.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#os" class="signatureLink">os</a> : String<div class="summaryTableDescription">[read-only] 
+		 indicates the current OS which the app is running in.</div></td><td class="summaryTableOwnerCol">FB</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#FB()" class="signatureLink">FB</a>($appId:String)</div><div class="summaryTableDescription">
+		 do NOT initialize with the constructor.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#appInvite()" class="signatureLink">appInvite</a>($linkUrl:String, $imgUrl:String, $callback:Function):Boolean</div><div class="summaryTableDescription">[static] 
+		 
+		 Use this method to let your users invite their friends to engage with your app.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createLikeBtn()" class="signatureLink">createLikeBtn</a>($url:String, $style:int, $type:int, $stage:Stage = null):<a href="../../../../../com/myflashlab/air/extensions/facebook/LikeBtn.html">LikeBtn</a></div><div class="summaryTableDescription">[static] 
+		 
+		 Use this method to create a new instance of facebook Like button.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">[static] 
+		 Call this method to dispose the extension.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInstance()" class="signatureLink">getInstance</a>($appId:String):<a href="../../../../../com/myflashlab/air/extensions/facebook/FB.html">FB</a></div><div class="summaryTableDescription">[static] 
+		 This is the main method to be called with this extension.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#logEvent()" class="signatureLink">logEvent</a>($eventName:String, $valueToSum:Number = -1, $parameters:Object = null):void</div><div class="summaryTableDescription">[static] 
+		 
+		 Log an app event with the specified name, supplied value, and set of parameters.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeLikeBtns()" class="signatureLink">removeLikeBtns</a>():void</div><div class="summaryTableDescription">[static] 
+		 although you can dispose and remove like buttons individually, this method will help you remove them all at once.</div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#share()" class="signatureLink">share</a>($model:<a href="../../../../../com/myflashlab/air/extensions/facebook/sharing/SharinModel.html">SharinModel</a>, $callback:Function):Boolean</div><div class="summaryTableDescription">[static] 
+		 
+		 Create a model of what content you want to share and then pass the model to this method to take care of the rest.</div></td><td class="summaryTableOwnerCol">FB</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ANDROID" class="signatureLink">ANDROID</a> : String = android<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.facebook<div class="summaryTableDescription">[static] 
+		 Extension ID for this extension
+		 </div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#IOS" class="signatureLink">IOS</a> : String = ios<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">FB</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 4.11.0<div class="summaryTableDescription">[static] 
+		 current version number of this extension
+		 </div></td><td class="summaryTableOwnerCol">FB</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="auth"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">auth</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public static var auth:<a href="../../../../../com/myflashlab/air/extensions/facebook/access/Auth.html">Auth</a></code><p></p><p></p><p>
+		 <p>
+		 gives you access to login/logout options and also you can get your current active token and all the information
+		 you may need about permissions that your users may have or may have not accepted while using your app.
+		 </p>
+		 <p>
+		 do not try to initialize this class explicitly you must access <code>auth</code> only by calling through <code>FB.auth</code>
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="graph"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">graph</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var graph:<a href="../../../../../com/myflashlab/air/extensions/facebook/access/Graph.html">Graph</a></code><p></p><p></p><p>
+		 <p>
+		 gives you access to the facebook official OpenGraph API. you can request information from the graph using the <code>request</code>
+		 method in this class. 
+		 </p>
+		 <p>
+		 <b>IMPORTANT:</b> based on your permissions uppon logging in, you may do many different things using the graph. 
+		 Things like sharing posts or find out about your user interests, their friends and many more. if you want to use the graph like a pro,
+		 you really need to read the facebook docs here: <a href="#/developers.facebook.com/docs/graph-api/reference" target="">https://developers.facebook.com/docs/graph-api/reference</a>
+		 </p>
+		 <p>
+		 do not try to initialize this class explicitly you must access the graph only by calling through <code>FB.graph</code>
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="hashKey"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">hashKey</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>hashKey:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 (Android only) When developing your application, your facebook developer consoles will ask you to enter your app hash key so your app will safely be
+		 connected to your facebook app. to do so, all you have to do is to first initialize the extension by calling <code>getInstance("000000");</code>
+		 and then call this property and the hash key will be generated and returned to you. use this hash code in your facebook console and of course 
+		 you won't be needing to call this prop ever again.
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get hashKey():String</code><br/><br/><span class="label"> Throws </span><br/><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; error before calling any of the static methods of this calss, you need to have called <code>getInstance("000000");</code> in your project.
+		 </td></tr></table></div><a name="propertyDetail"></a><a name="logManager"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logManager</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var logManager:<a href="../../../../../com/myflashlab/air/extensions/facebook/access/Auth.html">Auth</a></code><p></p><p></p><p>
+		 depricated, please use <code>FB.auth</code> instead.
+		 </p></div><a name="propertyDetail"></a><a name="os"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">os</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>os:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the current OS which the app is running in. it's either FB.ANDROID or FB.IOS
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get os():String</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="FB()"></a><a name="FB(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">FB</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function FB($appId:String)</code><p></p><p>
+		 do NOT initialize with the constructor. 
+		 instead use <code>getInstance("000000");</code> and pass in your facebook application ID.
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$appId</span>:String</code></td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="FB.html#getInstance()" target="">getInstance()</a></div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="appInvite()"></a><a name="appInvite(String,String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">appInvite</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function appInvite($linkUrl:String, $imgUrl:String, $callback:Function):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Use this method to let your users invite their friends to engage with your app. if they have your app already installed, they will see a "play" button
+		 and if they don't have it installed, they will see an "install" button which will open Google Store or app store depending on their mobile device.
+		 </p>
+		 
+		 <p>
+		 for more information about app invitations, read here: <a href="#/developers.facebook.com/docs/app-invites/overview" target="">https://developers.facebook.com/docs/app-invites/overview</a>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$linkUrl</span>:String</code> &mdash; your app's unique app link. you can generate it here <a href="#/developers.facebook.com/docs/applinks" target="">https://developers.facebook.com/docs/applinks</a> - <a href="#/developers.facebook.com/quickstarts/?platform=app-links-host" target="">
+		 https://developers.facebook.com/quickstarts/?platform=app-links-host</a>
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$imgUrl</span>:String</code> &mdash; 	any image URL which you like your users see when they are inviting their friends.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; a function which will be called to report your invitation state.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><a name="createLikeBtn()"></a><a name="createLikeBtn(String,int,int,flash.display.Stage)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">createLikeBtn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function createLikeBtn($url:String, $style:int, $type:int, $stage:Stage = null):<a href="../../../../../com/myflashlab/air/extensions/facebook/LikeBtn.html">LikeBtn</a></code><p></p><p></p><p>
+		 <p>
+		 Use this method to create a new instance of facebook Like button. you will not be able to change the design of this button of course. it's
+		 hardcoded inside the SDK. what you can do is to tell the button what to URL to like!
+		 </p>
+		 <p>
+		 it's important to mention that creating a new like button is not very CPU friendly and may freez your UI for a few milli seconds. as a workaround,
+		 try updating your buttons instead of recreating them. link and style of like buttons can be updated at runtime with no problem.
+		 </p>
+		 <p>
+		 When you create a new like button, you can register a listener to know when it is added to the stage and then you can know the real width/height
+		 of the button which will help you put it inside your app design. to move the button around, you can easily use the x,y properties.
+		 </p>
+		 <p>
+		 <b>NOTICE:</b> like button will work even if your users are not logged in to your app.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$url</span>:String</code> &mdash; the url you wish to be liked
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$style</span>:int</code> &mdash; the style of how the like button would look
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$type</span>:int</code> &mdash; the url type. it can be a facebook page, or a normal web page link.
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$stage</span>:Stage</code> (default = <code>null</code>)<code></code> &mdash; your flash stage. This is required to correct dimentions of the like button in iOS
+		 
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/facebook/LikeBtn.html">LikeBtn</a></code> &mdash; 
+		 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; error before calling any of the static methods of this calss, you need to have called <code>getInstance("000000");</code> in your project.
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="LikeBtn.html" target="">LikeBtn</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">This is a simple example of how you create a new Like button
+		 <div class="listing" version="3.0"><pre>
+         var like:LikeBtn = FB.createLikeBtn("https://www.facebook.com/myflashlab", LikeBtn.STYLE_STANDARD, LikeBtn.LINK_TYPE_PAGE);
+         like.name = "myBtnName"; // you may need this name later to address to your button.
+         
+         // add listeners to your button to know about its state
+         like.addEventListener(FBEvent.LIKE_BTN_CREATED, onBtnCreated);
+         like.addEventListener(FBEvent.LIKE_BTN_ERROR, onBtnError);
+         like.addEventListener(FBEvent.LIKE_BTN_UPDATED, onBtnUpdated);
+         
+         function onBtnCreated(e:FBEvent):void
+         {
+             var btn:LikeBtn = e.target as LikeBtn;
+             
+             // get the real dimension of this button
+             trace("width = " + btn.width);
+             trace("height = " + btn.height);
+             
+             // feel free to update your link whenever you wish. it is much faster than creating a new button.
+             btn.update("http://www.myappsnippet.com/", LikeBtn.STYLE_BOX_COUNT, LikeBtn.LINK_TYPE_OPEN_GRAPH);
+             
+             // change the position of your button anytime you wish at runtime
+             btn.x = Math.random() 600;
+             btn.y = Math.random() 600;
+         }
+         
+         function onBtnError(e:FBEvent):void
+         {
+             var btn:LikeBtn = e.target as LikeBtn;
+             trace("e.param = " + e.param);
+         }
+         
+         function onBtnUpdated(e:FBEvent):void
+         {
+             var btn:LikeBtn = e.target as LikeBtn;
+             
+             // maybe you like to remove your button? do it like below
+             // btn.removeEventListener(FBEvent.LIKE_BTN_CREATED, onBtnCreated);
+             // btn.removeEventListener(FBEvent.LIKE_BTN_ERROR, onBtnError);
+             // btn.removeEventListener(FBEvent.LIKE_BTN_UPDATED, onBtnUpdated);
+             // btn.dispose();
+             // btn = null;
+         }
+         </pre></div>
+		 
+		 </div></div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function dispose():void</code><p></p><p></p><p>
+		 Call this method to dispose the extension. you will need to initialize it fresh like <code>FB.getInstance("000000");</code> if you want to use it again.
+		 
+		 </p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; error before calling any of the static methods of this calss, you need to have called <code>getInstance("000000");</code> in your project.
+		 </td></tr></table></div><a name="getInstance()"></a><a name="getInstance(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getInstance</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getInstance($appId:String):<a href="../../../../../com/myflashlab/air/extensions/facebook/FB.html">FB</a></code><p></p><p></p><p>
+		 This is the main method to be called with this extension. you need to create a new facebook app in your facebook developer account first
+		 and then enter your app ID here. when you do this, the doors will open for you to enjoy facebook SDK integrated in your project! :)
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$appId</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/facebook/FB.html">FB</a></code> &mdash; returns an instance of the Facebook extension. you really won't be needing it. I just put it for your convenient.
+		 </td></tr></table></div><a name="logEvent()"></a><a name="logEvent(String,Number,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function logEvent($eventName:String, $valueToSum:Number = -1, $parameters:Object = null):void</code><p></p><p></p><p>
+		 <p>
+		 Log an app event with the specified name, supplied value, and set of parameters. <code>$valueToSum</code>
+		 and <code>$parameters</code> are optional.
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$eventName</span>:String</code> &mdash; 	$eventName used to denote the event. Choose amongst the EVENT_NAME_
+		                   		constants in <code>AppEventsConstants</code> when possible.  Or create your own
+		                   		if none of the EVENT_NAME_constants are applicable. Event names should be
+		                   		40 characters or less, alphanumeric, and can include spaces, underscores or
+		                   		hyphens, but must not have a space or hyphen as the first character.  Any
+		                   		given app should have no more than 1000 distinct event names.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$valueToSum</span>:Number</code> (default = <code>-1</code>)<code></code> &mdash; 	a value to associate with the event which will be summed up in Insights for
+		                   		across all instances of the event, so that average values can be
+		                  		determined, etc.
+		 
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$parameters</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; 	A Bundle of parameters to log with the event.  Insights will allow looking
+		                   		at the logs of these events via different parameter values.  You can log on
+		                   		the order of 25 parameters with each distinct eventName.  It's advisable to
+		                   		limit the number of unique values provided for each parameter in the
+		                   		thousands.  As an example, don't attempt to provide a unique
+		                   		parameter value for each unique user in your app.  You won't get meaningful
+		                   		aggregate reporting on so many parameter values.  The values in the bundles
+		                   		should be Strings.
+		 </td></tr></table></p></div><a name="removeLikeBtns()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeLikeBtns</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function removeLikeBtns():void</code><p></p><p></p><p>
+		 although you can dispose and remove like buttons individually, this method will help you remove them all at once.
+		 
+		 </p><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; error before calling any of the static methods of this calss, you need to have called <code>getInstance("000000");</code> in your project.
+		 </td></tr></table></div><a name="share()"></a><a name="share(com.myflashlab.air.extensions.facebook.sharing.SharinModel,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">share</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function share($model:<a href="../../../../../com/myflashlab/air/extensions/facebook/sharing/SharinModel.html">SharinModel</a>, $callback:Function):Boolean</code><p></p><p></p><p>
+		 <p>
+		 Create a model of what content you want to share and then pass the model to this method to take care of the rest.
+		 </p>
+		 <p>
+		 <b>NOTICE:</b> Sharing works no matter if your user has already loggedin to your app or not. but you must know that if your user is not loggedin,
+		 you will not be able to know if the user has successfully shared your content or they have dissmissed the sharing dialog! I know, this really sucks
+		 but that's how Facebook SDK works!
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$model</span>:<a href="../../../../../com/myflashlab/air/extensions/facebook/sharing/SharinModel.html">SharinModel</a></code> &mdash; 	The model of sharing. it can be a link, a photo or a video (V1.0 supports link sharing only)
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; The sharing result will be dispatched through this callback.
+		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; returns <code>true</code> if the method has been called successfully. this does NOT mean that the sharing has been completed. to know if the
+		 sharing has been completed, you must use register a callback function.
+		 </td></tr></table><br/><span class="label">Throws</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Error </code> &mdash; error before calling any of the static methods of this calss, you need to have called <code>getInstance("000000");</code> in your project.
+		 
+		 </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">This example will show you how to create a sharing model and then actually sharing it.
+		 <div class="listing" version="3.0"><pre>
+         var shareModel:ShareLink = new ShareLink();
+         shareModel.contentTitle = "title!";
+         shareModel.contentURL = "http://myappsnippet.com";
+         shareModel.imageURL = "http://myappsnippet.com/wp-content/uploads/2015/07/bundle-Jul-2015-adobe-air-extension_preview.jpg";
+         shareModel.contentDescription = "description!";
+         FB.share(shareModel, onSharingResult);
+         
+         function onSharingResult($status:String, $msg:String):void
+         {
+             // $status will be one of the following:
+             // FBEvent.SHARING_DONE
+             // FBEvent.SHARING_CANCELED
+             // FBEvent.SHARING_ERROR
+             
+             // if it is "FBEvent.SHARING_ERROR", then $msg will explain the error reason
+             
+             trace($status);
+         }
+         </pre></div>
+		 
+		 </div></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ANDROID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ANDROID</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ANDROID:String = android</code><p></p></div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.facebook</code><p></p><p></p><p>
+		 Extension ID for this extension
+		 </p></div><a name="constantDetail"></a><a name="IOS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">IOS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const IOS:String = ios</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 4.11.0</code><p></p><p></p><p>
+		 current version number of this extension
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->

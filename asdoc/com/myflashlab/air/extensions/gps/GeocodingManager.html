@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="GeocodingManager,com.myflashlab.air.extensions.gps.GeocodingManager,direct,dispose,getCurrentLocation,getLastLocation,init,reverse,start,stop"><title>com.myflashlab.air.extensions.gps.GeocodingManager</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'GeocodingManager - MyFlashLabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/gps/GeocodingManager.html&amp;com/myflashlab/air/extensions/gps/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">GeocodingManager</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("GeocodingManager"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.gps</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  GeocodingManager</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">GeocodingManager  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	 This class is responsible for getting geocoding. find sample usage codes in Gps class.
+	 
+	 <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#GeocodingManager()" class="signatureLink">GeocodingManager</a>($os:String, $context:ExtensionContext)</div><div class="summaryTableDescription">
+		 do not try to initialize this class manually.</div></td><td class="summaryTableOwnerCol">GeocodingManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#direct()" class="signatureLink">direct</a>($address:String, $onResult:Function):void</div><div class="summaryTableDescription">
+		 Geocoding direct means converting an address into Gps latitude/longitude
+		 
+		 </div></td><td class="summaryTableOwnerCol">GeocodingManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#reverse()" class="signatureLink">reverse</a>($latitude:Number, $longtitude:Number, $onResult:Function):void</div><div class="summaryTableDescription">
+		 Geocoding reverse means converting Gps cordinates into human readable address
+		 
+		 </div></td><td class="summaryTableOwnerCol">GeocodingManager</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="GeocodingManager()"></a><a name="GeocodingManager(String,flash.external.ExtensionContext)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">GeocodingManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function GeocodingManager($os:String, $context:ExtensionContext)</code><p></p><p>
+		 do not try to initialize this class manually. instead, init the main Gps class and access this class using <code>Gps.geocoding</code>
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$os</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$context</span>:ExtensionContext</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="direct()"></a><a name="direct(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">direct</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function direct($address:String, $onResult:Function):void</code><p></p><p></p><p>
+		 Geocoding direct means converting an address into Gps latitude/longitude
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$address</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="GeocodingManager.html#reverse()" target="">reverse()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>Gps.geocoding.direct</code>
+		 <div class="listing" version="3.0"><pre>
+         Gps.geocoding.direct("Sydney", onResultGeocodingDirect);
+         
+         function onResultGeocodingDirect($location:Array):void
+         {
+             // there might be more than one location found for this address
+             trace("$location.length = " + $location.length);
+             trace("$location = " + JSON.stringify($location));
+             trace("-----------------------------");
+         }
+         </pre></div>
+		 
+		 </div></div><a name="reverse()"></a><a name="reverse(Number,Number,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">reverse</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function reverse($latitude:Number, $longtitude:Number, $onResult:Function):void</code><p></p><p></p><p>
+		 Geocoding reverse means converting Gps cordinates into human readable address
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$latitude</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$longtitude</span>:Number</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="GeocodingManager.html#direct()" target="">direct()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>Gps.geocoding.reverse</code>
+		 <div class="listing" version="3.0"><pre>
+         Gps.geocoding.reverse(-33.7969235, 150.9224326, onResultGeocodingReverse);
+         
+         function onResultGeocodingReverse($address:Array):void
+         {
+             // there might be more than one address found for this location
+             trace("$address.length = " + $address.length);
+             trace("$address = " + JSON.stringify($address));
+             trace("-----------------------------");
+         }
+         </pre></div>
+		 
+		 </div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->

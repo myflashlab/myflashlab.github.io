@@ -1,0 +1,409 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="Permissions,com.myflashlab.air.extensions.facebook.access.Permissions,WITH_PUBLISH_PERMISSIONS,WITH_PUBLISH_PERMISSIONS,WITH_READ_PERMISSIONS,WITH_READ_PERMISSIONS,declinedPermissions,email,isLogin,manage_pages,permissions,public_profile,publish_actions,publish_pages,read_custom_friendlists,read_insights,read_mailbox,read_page_mailboxes,token,user_about_me,user_actions_books,user_actions_fitness,user_actions_music,user_actions_news,user_actions_video,user_birthday,user_education_history,user_events,user_friends,user_games_activity,user_groups,user_hometown,user_likes,user_location,user_managed_groups,user_photos,user_posts,user_relationship_details,user_relationships,user_religion_politics,user_status,user_tagged_places,user_videos,user_website,user_work_history,version"><title>com.myflashlab.air.extensions.facebook.access.Permissions</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Permissions - MyFlashLabs';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../../index.html?com/myflashlab/air/extensions/facebook/access/Permissions.html&amp;com/myflashlab/air/extensions/facebook/access/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Permissions</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Permissions"); titleBar_setSubNav(true,false,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.facebook.access</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Permissions</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Permissions  <img src="../../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 Here you will find all the facebook permissions you may ask your app users. please note that some of these
+	 permissions are providing your app with personal information from your users and Facebook may require you data usage
+	 if you are using them. so, please make sure you are asking for real permissions that you will actually need them for your
+	 app logic.
+	 </p>
+	              <p>
+	 Common permissions are <code>Permissions.public_profile</code>, 
+	 <code>Permissions.user_friends</code> and <code>Permissions.email</code>
+	              </p>
+	 
+	              <p>
+	 to learn more about permissions, check https://developers.facebook.com/docs/facebook-login/permissions/v2.4#reference
+	 </p>
+	           <p></p><br/><hr></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#email" class="signatureLink">email</a> : String = email<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the person's primary email address via the email property on the user object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#manage_pages" class="signatureLink">manage_pages</a> : String = manage_pages<div class="summaryTableDescription">[static] 
+		 
+		 Enables your app to retrieve Page Access Tokens for the Pages and Apps that the person administrates.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#public_profile" class="signatureLink">public_profile</a> : String = public_profile<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a subset of items that are part of a person's public profile.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#publish_actions" class="signatureLink">publish_actions</a> : String = publish_actions<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to publish Posts, Open Graph actions, achievements, scores and other activity on behalf of a person using your app.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#publish_pages" class="signatureLink">publish_pages</a> : String = publish_pages<div class="summaryTableDescription">[static] 
+		 
+		 When you also have the manage_pages permission, gives your app the ability to post, comment and like as any of the Pages managed by a person using your app.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#read_custom_friendlists" class="signatureLink">read_custom_friendlists</a> : String = read_custom_friendlists<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the names of custom lists a person has created to organize their friends.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#read_insights" class="signatureLink">read_insights</a> : String = read_insights<div class="summaryTableDescription">[static] 
+		 
+		 Provides read-only access to the Insights data for Pages, Apps and web domains the person owns.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#read_mailbox" class="signatureLink">read_mailbox</a> : String = read_mailbox<div class="summaryTableDescription">[static] 
+		 
+		 Provides the ability to read the messages in a person's Facebook Inbox through the inbox edge and the thread node.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#read_page_mailboxes" class="signatureLink">read_page_mailboxes</a> : String = read_page_mailboxes<div class="summaryTableDescription">[static] 
+		 
+		 Provides the ability to read from the Page Inboxes of the Pages managed by a person.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_about_me" class="signatureLink">user_about_me</a> : String = user_about_me<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's personal description (the 'About Me' section on their Profile) through the bio property on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_actions_books" class="signatureLink">user_actions_books</a> : String = user_actions.books<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to all common books actions published by any app the person has used.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_actions_fitness" class="signatureLink">user_actions_fitness</a> : String = user_actions.fitness<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to all common Open Graph fitness actions published by any app the person has used.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_actions_music" class="signatureLink">user_actions_music</a> : String = user_actions.music<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to all common Open Graph music actions published by any app the person has used.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_actions_news" class="signatureLink">user_actions_news</a> : String = user_actions.news<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to all common Open Graph news actions published by any app the person has used which publishes these actions.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_actions_video" class="signatureLink">user_actions_video</a> : String = user_actions.video<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to all common Open Graph video actions published by any app the person has used which publishes these actions.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_birthday" class="signatureLink">user_birthday</a> : String = user_birthday<div class="summaryTableDescription">[static] 
+		 
+		 Access the date and month of a person's birthday.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_education_history" class="signatureLink">user_education_history</a> : String = user_education_history<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's education history through the education field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_events" class="signatureLink">user_events</a> : String = user_events<div class="summaryTableDescription">[static] 
+		 
+		 Provides read-only access to the Events a person is hosting or has RSVP'd to.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_friends" class="signatureLink">user_friends</a> : String = user_friends<div class="summaryTableDescription">[static] 
+		 
+		 Provides access the list of friends that also use your app.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_games_activity" class="signatureLink">user_games_activity</a> : String = user_games_activity<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to read a person's game activity (scores, achievements) in any game the person has played.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_groups" class="signatureLink">user_groups</a> : String = user_groups<div class="summaryTableDescription">[static] 
+		 
+		 Enables your app to read the Groups a person is a member of through the groups edge on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_hometown" class="signatureLink">user_hometown</a> : String = user_hometown<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's hometown location through the hometown field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_likes" class="signatureLink">user_likes</a> : String = user_likes<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the list of all Facebook Pages and Open Graph objects that a person has liked.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_location" class="signatureLink">user_location</a> : String = user_location<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's current city through the location field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_managed_groups" class="signatureLink">user_managed_groups</a> : String = user_managed_groups<div class="summaryTableDescription">[static] 
+		 
+		 Enables your app to read the Groups a person is an admin of through the groups edge on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_photos" class="signatureLink">user_photos</a> : String = user_photos<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the photos a person has uploaded or been tagged in.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_posts" class="signatureLink">user_posts</a> : String = user_posts<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the posts on a person's Timeline.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_relationship_details" class="signatureLink">user_relationship_details</a> : String = user_relationship_details<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's relationship interests as the interested_in field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_relationships" class="signatureLink">user_relationships</a> : String = user_relationships<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's relationship status, significant other and family members as fields on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_religion_politics" class="signatureLink">user_religion_politics</a> : String = user_religion_politics<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's religious and political affiliations.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_status" class="signatureLink">user_status</a> : String = user_status<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's statuses.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_tagged_places" class="signatureLink">user_tagged_places</a> : String = user_tagged_places<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the Places a person has been tagged at in photos, videos, statuses and links.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_videos" class="signatureLink">user_videos</a> : String = user_videos<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the videos a person has uploaded or been tagged in.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_website" class="signatureLink">user_website</a> : String = user_website<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to the person's personal website URL via the website field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#user_work_history" class="signatureLink">user_work_history</a> : String = user_work_history<div class="summaryTableDescription">[static] 
+		 
+		 Provides access to a person's work history and list of employers via the work field on the User object.</div></td><td class="summaryTableOwnerCol">Permissions</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="email"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">email</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const email:String = email</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the person's primary email address via the email property on the user object.
+		 Do not spam users. Your use of email must comply with both Facebook policies and with the CAN-SPAM Act.
+		 </p>
+		 <p>
+		 Note, even if you request the email permission it is not guaranteed you will get an email address. 
+		 For example, if someone signed up for Facebook with a phone number instead of an email address, the email field may be empty
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="manage_pages"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">manage_pages</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const manage_pages:String = manage_pages</code><p></p><p></p><p>
+		 <p>
+		 Enables your app to retrieve Page Access Tokens for the Pages and Apps that the person administrates. Apps need both manage_pages and publish_pages to be able to publish as a Page.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it. You can grant this permission on behalf of people listed within the Roles section of your App's Dashboard without review by Facebook.
+		 </p>
+		 <p>
+		 If you want to use the Facebook Plugin for Wordpress (or a similar tool) to publish blog posts to your Facebook page, you do not need to submit for review as long as all those for whom you want to publish are listed in the Roles section of your App's Dashboard.
+		 </p>
+		 <p>
+		 When submitting for review, please make sure your instructions are easily reproducible by our team. For example, if your Page Management Tool has its own authentication system, please ensure you provide a working login (such as a username/password) to allow our review team to use your tool and test this functionality.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="public_profile"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">public_profile</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const public_profile:String = public_profile</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a subset of items that are part of a person's public profile. A person's public profile refers 
+		 to the following properties on the user object by default:
+		 </p>
+		 
+		 <p>
+		 id,
+		 name,
+		 first_name,
+		 last_name,
+		 link,
+		 gender,
+		 locale,
+		 timezone,
+		 updated_time,
+		 verified
+		 </p>
+		 <p>
+		 Your app may use this permission without review from Facebook.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="publish_actions"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">publish_actions</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const publish_actions:String = publish_actions</code><p></p><p></p><p>
+		 <p>
+		 Provides access to publish Posts, Open Graph actions, achievements, scores and other activity on behalf of a person using your app.
+		 </p>
+		 <p>
+		 Because this permission lets you publish on behalf of a user please read the Platform Policies to ensure you understand how to properly use this permission.
+		 </p>
+		 <p>
+		 Your app does not need to request the publish_actions permission in order to use the Feed Dialog, the Requests Dialog or the Send Dialog
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="publish_pages"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">publish_pages</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const publish_pages:String = publish_pages</code><p></p><p></p><p>
+		 <p>
+		 When you also have the manage_pages permission, gives your app the ability to post, comment and like as any of the Pages managed by a person using your app.
+		 </p>
+		 <p>
+		 Apps need both manage_pages and publish_pages to be able to publish as a Page.
+		 </p>
+		 <p>
+		 Publishing as an individual personal account is not possible with this permission. To post as an individual, please see the publish_actions permission
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="read_custom_friendlists"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">read_custom_friendlists</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const read_custom_friendlists:String = read_custom_friendlists</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the names of custom lists a person has created to organize their friends. This is useful for rendering an audience selector when someone is publishing stories to Facebook from your app.
+		 </p>
+		 <p>
+		 This permission does not give access to a list of person's friends. If you want to access a person's friends who also use your app, you should use the user_friends permission.
+		 </p>
+		 <p>
+		 This permission also does not give the list of friends who are part of a friendlist. It only gives access to the names of the lists.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="read_insights"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">read_insights</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const read_insights:String = read_insights</code><p></p><p></p><p>
+		 <p>
+		 Provides read-only access to the Insights data for Pages, Apps and web domains the person owns.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="read_mailbox"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">read_mailbox</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const read_mailbox:String = read_mailbox</code><p></p><p></p><p>
+		 <p>
+		 Provides the ability to read the messages in a person's Facebook Inbox through the inbox edge and the thread node.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="read_page_mailboxes"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">read_page_mailboxes</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const read_page_mailboxes:String = read_page_mailboxes</code><p></p><p></p><p>
+		 <p>
+		 Provides the ability to read from the Page Inboxes of the Pages managed by a person. This permission is often used alongside the manage_pages permission.
+		 </p>
+		 <p>
+		 This permission does not let your app read the page owner's mailbox. It only applies to the page's mailbox.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_about_me"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_about_me</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_about_me:String = user_about_me</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's personal description (the 'About Me' section on their Profile) through the bio property on the User object.
+		 This permission does not give access to a person's public profile data. A person's name, profile picture, locale, age range and gender are 
+		 included by default with the public_profile permission.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_actions_books"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_actions_books</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_actions_books:String = user_actions.books</code><p></p><p></p><p>
+		 <p>
+		 Provides access to all common books actions published by any app the person has used. This includes books they've read, want to read, rated or quoted.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_actions_fitness"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_actions_fitness</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_actions_fitness:String = user_actions.fitness</code><p></p><p></p><p>
+		 <p>
+		 Provides access to all common Open Graph fitness actions published by any app the person has used. This includes runs, walks and bikes actions.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_actions_music"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_actions_music</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_actions_music:String = user_actions.music</code><p></p><p></p><p>
+		 <p>
+		 Provides access to all common Open Graph music actions published by any app the person has used. This includes songs they've listened to, 
+		 and playlists they've created.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_actions_news"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_actions_news</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_actions_news:String = user_actions.news</code><p></p><p></p><p>
+		 <p>
+		 Provides access to all common Open Graph news actions published by any app the person has used which publishes these actions. 
+		 This includes news articles they've read or news articles they've published.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_actions_video"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_actions_video</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_actions_video:String = user_actions.video</code><p></p><p></p><p>
+		 <p>
+		 Provides access to all common Open Graph video actions published by any app the person has used which publishes these actions. 
+		 This includes videos they've watched, videos they've rated and videos they want to watch.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_birthday"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_birthday</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_birthday:String = user_birthday</code><p></p><p></p><p>
+		 <p>
+		 Access the date and month of a person's birthday. This may or may not include the person's year of birth, dependent upon their privacy settings 
+		 and the access token being used to query this field.
+		 </p>
+		 <p>
+		 Please note most integrations will only need age_range which comes as part of the public_profile permission.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 <p>
+		 When submitting for review, please be clear as to why age_range is not sufficient for your use case
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_education_history"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_education_history</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_education_history:String = user_education_history</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's education history through the education field on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_events"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_events</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_events:String = user_events</code><p></p><p></p><p>
+		 <p>
+		 Provides read-only access to the Events a person is hosting or has RSVP'd to.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_friends"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_friends</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_friends:String = user_friends</code><p></p><p></p><p>
+		 <p>
+		 Provides access the list of friends that also use your app. These friends can be found on the friends edge on the user object.
+		 </p>
+		 <p>
+		 In order for a person to show up in one person's friend list, both people must have decided to share their list of friends with 
+		 your app and not disabled that permission during login. Also both friends must have been asked for user_friends during the login process.
+		 </p>
+		 <p>
+		 Your app may use this permission without review from Facebook.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_games_activity"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_games_activity</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_games_activity:String = user_games_activity</code><p></p><p></p><p>
+		 <p>
+		 Provides access to read a person's game activity (scores, achievements) in any game the person has played.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_groups"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_groups</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_groups:String = user_groups</code><p></p><p></p><p>
+		 <p>
+		 Enables your app to read the Groups a person is a member of through the groups edge on the User object.
+		 This permission does not allow you to create groups on behalf of a person. It is not possible to create groups via the Graph API.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_hometown"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_hometown</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_hometown:String = user_hometown</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's hometown location through the hometown field on the User object. This is set by the user on the Profile.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_likes"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_likes</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_likes:String = user_likes</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the list of all Facebook Pages and Open Graph objects that a person has liked. This list is available through the 
+		 likes edge on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_location"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_location</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_location:String = user_location</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's current city through the location field on the User object. The current city is set by a person on their Profile.
+		 The current city is not necessarily the same as a person's hometown.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_managed_groups"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_managed_groups</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_managed_groups:String = user_managed_groups</code><p></p><p></p><p>
+		 <p>
+		 Enables your app to read the Groups a person is an admin of through the groups edge on the User object.
+		 This permission does not allow you to create groups on behalf of a person. It is not possible to create groups via the Graph API. 
+		 This does not let you read the groups a user is just a member of.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_photos"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_photos</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_photos:String = user_photos</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the photos a person has uploaded or been tagged in. This is available through the photos edge on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_posts"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_posts</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_posts:String = user_posts</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the posts on a person's Timeline. Includes their own posts, posts they are tagged in, and posts other people make on their Timeline.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_relationship_details"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_relationship_details</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_relationship_details:String = user_relationship_details</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's relationship interests as the interested_in field on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_relationships"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_relationships</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_relationships:String = user_relationships</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's relationship status, significant other and family members as fields on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_religion_politics"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_religion_politics</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_religion_politics:String = user_religion_politics</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's religious and political affiliations.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_status"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_status</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_status:String = user_status</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's statuses. These are posts on Facebook which don't include links, videos or photos.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_tagged_places"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_tagged_places</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_tagged_places:String = user_tagged_places</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the Places a person has been tagged at in photos, videos, statuses and links.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_videos"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_videos</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_videos:String = user_videos</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the videos a person has uploaded or been tagged in.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_website"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_website</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_website:String = user_website</code><p></p><p></p><p>
+		 <p>
+		 Provides access to the person's personal website URL via the website field on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it.
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="user_work_history"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">user_work_history</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const user_work_history:String = user_work_history</code><p></p><p></p><p>
+		 <p>
+		 Provides access to a person's work history and list of employers via the work field on the User object.
+		 </p>
+		 <p>
+		 If your app requests this permission Facebook will have to review how your app uses it
+		 </p>
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->

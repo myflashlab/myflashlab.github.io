@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="PackageManager,com.myflashlab.air.extensions.packagemanager.PackageManager,ERROR_APP_ICON,ERROR_APP_INFO,ERROR_APP_INSTALLING,ERROR_APP_RUN,ERROR_APP_UNINSTALLING,EXTENSION_ID,STATUS,SUCCESS_APP_RUN,VERSION,dispose,getAppIcon,getAppName,getAppPermissions,getSystemApps,getUserApps,installApp,installAppLocal,runApp,uninstallApp"><title>com.myflashlab.air.extensions.packagemanager.PackageManager</title><script src="../../../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'PackageManager - MyFlashLabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/packagemanager/PackageManager.html&amp;com/myflashlab/air/extensions/packagemanager/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">PackageManager</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("PackageManager"); titleBar_setSubNav(true,false,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.packagemanager</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  PackageManager</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">PackageManager  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
+	 PackageManager Extension makes dreams come true for Adobe AIR app developers, lets you have access to all of the installed apps on device, get their Package name, icon, etc...
+	 With some simple methods you are able to uninstall any app, run any of them right from your AIR project and also call to install apps on your device.
+	 
+	 <b>Copyright 2015, myflashlab. All rights reserved.</b>
+	 More Extensions on <a href="http://myflashlabs.com/" target="">http://www.myflashlabs.com/</a>
+	 
+	              <p>
+	                 <b>
+	 Download .ane from: <a href="http://www.myflashlabs.com/product/packagemanager-ane-adobe-air-native-extension/" target="external">http://www.myflashlabs.com/product/packagemanager-ane-adobe-air-native-extension/</a>
+	                 </b>
+	              </p>
+	 
+	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="PackageManagerEvent.html" target="">com.myflashlab.air.extensions.packagemanager.PackageManagerEvent</a></div><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#PackageManager()" class="signatureLink">PackageManager</a>()</div><div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">
+		 when you're done with this extension, call this method to free up the memory
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAppIcon()" class="signatureLink">getAppIcon</a>($packageName:String):BitmapData</div><div class="summaryTableDescription">
+		 get a specific installed app icon
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAppName()" class="signatureLink">getAppName</a>($packageName:String):String</div><div class="summaryTableDescription">
+		 get a specific installed app package name
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getAppPermissions()" class="signatureLink">getAppPermissions</a>($packageName:String):Array</div><div class="summaryTableDescription">
+		 Call this method to get the permissions for any specified package name app installed on your device.</div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getSystemApps()" class="signatureLink">getSystemApps</a>():Array</div><div class="summaryTableDescription">
+		 get an Array which contains all of the installed system apps package names on your device
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getUserApps()" class="signatureLink">getUserApps</a>():Array</div><div class="summaryTableDescription">
+		 get an Array which contains all of the installed user apps package names on your device
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#installApp()" class="signatureLink">installApp</a>($packageName:String):void</div><div class="summaryTableDescription">
+		 install an app
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#installAppLocal()" class="signatureLink">installAppLocal</a>($file:File):void</div><div class="summaryTableDescription">
+		 call this method and pass in the file object pointed to the apk file you are trying to install.</div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#runApp()" class="signatureLink">runApp</a>($packageName:String, $msg:String):void</div><div class="summaryTableDescription">
+		 run an app and optionally send a string message to it.</div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#uninstallApp()" class="signatureLink">uninstallApp</a>($packageName:String):void</div><div class="summaryTableDescription">
+		 uninstall an app
+		 
+		 </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.packageManager<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 1.9<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">PackageManager</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="PackageManager()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PackageManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function PackageManager()</code><p></p><br/><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function dispose():void</code><p></p><p></p><p>
+		 when you're done with this extension, call this method to free up the memory
+		 </p></div><a name="getAppIcon()"></a><a name="getAppIcon(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAppIcon</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getAppIcon($packageName:String):BitmapData</code><p></p><p></p><p>
+		 get a specific installed app icon
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>BitmapData</code> &mdash; BitmapData
+		 </td></tr></table></div><a name="getAppName()"></a><a name="getAppName(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAppName</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getAppName($packageName:String):String</code><p></p><p></p><p>
+		 get a specific installed app package name
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>String</code> &mdash; String
+		 </td></tr></table></div><a name="getAppPermissions()"></a><a name="getAppPermissions(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getAppPermissions</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getAppPermissions($packageName:String):Array</code><p></p><p></p><p>
+		 Call this method to get the permissions for any specified package name app installed on your device.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; an array of strings containing the list of permissions for the specified app.
+		 </td></tr></table></div><a name="getSystemApps()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getSystemApps</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getSystemApps():Array</code><p></p><p></p><p>
+		 get an Array which contains all of the installed system apps package names on your device
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; Array
+		 </td></tr></table></div><a name="getUserApps()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getUserApps</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getUserApps():Array</code><p></p><p></p><p>
+		 get an Array which contains all of the installed user apps package names on your device
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Array</code> &mdash; Array
+		 </td></tr></table></div><a name="installApp()"></a><a name="installApp(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">installApp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function installApp($packageName:String):void</code><p></p><p></p><p>
+		 install an app
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr></table></p></div><a name="installAppLocal()"></a><a name="installAppLocal(flash.filesystem.File)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">installAppLocal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function installAppLocal($file:File):void</code><p></p><p></p><p>
+		 call this method and pass in the file object pointed to the apk file you are trying to install.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$file</span>:File</code></td></tr></table></p></div><a name="runApp()"></a><a name="runApp(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">runApp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function runApp($packageName:String, $msg:String):void</code><p></p><p></p><p>
+		 run an app and optionally send a string message to it.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$msg</span>:String</code></td></tr></table></p></div><a name="uninstallApp()"></a><a name="uninstallApp(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">uninstallApp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function uninstallApp($packageName:String):void</code><p></p><p></p><p>
+		 uninstall an app
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$packageName</span>:String</code></td></tr></table></p></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.packageManager</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 1.9</code><p></p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">The following example shows you how to initialize the Extension in your project and how to use it.
+	 
+	 <div class="listing" version="3.0"><pre>
+     import com.myflashlab.air.extensions.packagemanager.PackageManager;
+     import com.myflashlab.air.extensions.packagemanager.PackageManagerEvent;
+     
+     import flash.display.Bitmap;
+     import flash.display.BitmapData;
+     
+     
+     var _ex:PackageManager; // set Extension var
+     
+     _ex = new PackageManager();
+     _ex.addEventListener(PackageManagerEvent.ERROR_APP_ICON, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.ERROR_APP_INFO, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.ERROR_APP_INSTALLING, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.ERROR_APP_RUN, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.ERROR_APP_UNINSTALLING, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.STATUS, onExTrigger);
+     _ex.addEventListener(PackageManagerEvent.SUCCESS_APP_RUN, onExTrigger);
+     
+     
+     //var systemAppsArr:Array = _ex.getSystemApps(); // returns an Array which contains all of the installed system apps package names on your device
+     //var userAppsArr:Array = _ex.getUserApps(); // returns an Array which contains all of the installed user apps package names on your device
+     
+     //var icBmd:BitmapData = _ex.getAppIcon("air.air.com.doitflash.exPackageManager"); // put a specific installed app package name into the function to get its icon BitmapData
+     //var ic:Bitmap = new Bitmap(icBmd);
+     //this.addChild(ic);
+     
+     //var appName:String = _ex.getAppName("air.air.com.doitflash.exPackageManager")); // put a specific installed app package name into the function to get its name
+     
+     //_ex.installApp("air.com.ilikedroid.tunneler"); // call to install a specific app
+     //_ex.uninstallApp("air.air.com.doitflash.exPackageManager"); // call to uninstall a specific app
+     //_ex.runApp("air.air.com.doitflash.exPackageManager", "optional string to pass to the target app"); // call to run a specific app
+     //_ex.installAppLocal(File.documentsDirectory.resolvePath("test.apk"); // install an apk from your sdcard
+     //var permissions:Array = _ex.getAppPermissions("air.air.com.doitflash.exPackageManager"); // get permissions of an array
+     
+     private function onExTrigger(e:PackageManagerEvent):void
+     {
+             trace("Extension triggers the following &gt;&gt; ", e.param);
+             trace("Event type &gt;&gt; ", e.type);
+     }
+     
+     </pre></div>
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->

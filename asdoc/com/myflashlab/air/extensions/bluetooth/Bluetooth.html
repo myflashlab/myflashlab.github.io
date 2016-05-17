@@ -1,0 +1,271 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Bluetooth,com.myflashlab.air.extensions.bluetooth.Bluetooth,ANDROID,BLUETOOTH_OFF,BLUETOOTH_ON,BLUETOOTH_STATE,BLUETOOTH_TURNING_OFF,BLUETOOTH_TURNING_ON,COMMUNICATION_STATUS,CONNECTABLE,CONNECTABLE_DISCOVERABLE,CONNECTED,CONNECTING,CONNECTION,CONNECTION_LOST,DIALOG_STATUS,DISCOVERING_FINISHED,DISCOVERING_STARTED,DISCOVERING_STATUS,ENABLE_TOUCH_YES,EXTENSION_ID,IOS,LISTEN,NEW_DISCOVERD,NONE,READ_MESSAGE,SCAN_MODE,SCAN_NONE,SEND_MESSAGE,UNABLE_TO_CONNECT,UNABLE_TO_SEND,VERSION,VISIBILITY_TOUCH_YES,connectionStatus,isDiscovery,isEnable,isSupport,isVisible,os,pairedList,randomUUID,connectTo,disable,disconnect,dispose,enable,forceEnable,inVisible,initCommunicationService,pairWith,sendMessage,startDiscovery,stopDiscovery,unPairWith,visible"><title>com.myflashlab.air.extensions.bluetooth.Bluetooth</title><script src="../../../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Bluetooth - MyFlashLabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/bluetooth/Bluetooth.html&amp;com/myflashlab/air/extensions/bluetooth/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Bluetooth</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Bluetooth"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.bluetooth</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Bluetooth</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Bluetooth  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
+	 Bluetooth Extension makes dreams come true for Adobe AIR app developers to transfer data between devices, it lets you connect 
+	 to other devices through bluetooth and send or receive informations.
+	 With some simple methods you are able to turn on bluetooth, make bluetooth device visible, send / receive Strings.
+	 
+	 <b>Copyright 2015, MyFlashLab. All rights reserved.</b>
+	 More Extensions on <a href="http://MyFlashLabs.com/" target="">http://www.MyFlashLabs.com/</a>
+	 
+	              <p>
+	                 <b>
+	 Download .ane from: <a href="http://www.myflashlabs.com/product/bluetooth-ane-adobe-air-native-extension/" target="external">http://www.myflashlabs.com/product/bluetooth-ane-adobe-air-native-extension/</a>
+	                 </b>
+	              </p>
+	 
+	              <p>
+	                 <b>NOTICE:</b> Always make sure to call the <code>dispose</code> method when you are finished with bluetooth.
+	 </p>
+	 
+	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="BluetoothEvent.html" target="">com.myflashlab.air.extensions.bluetooth.BluetoothEvent</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#connectionStatus" class="signatureLink">connectionStatus</a> : String<div class="summaryTableDescription">[read-only] 
+		 besides the event listeners, you may use this property to know about the connection status of the devices
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isDiscovery" class="signatureLink">isDiscovery</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 check if the device is in discovery process or not
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isEnable" class="signatureLink">isEnable</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 check if bluetooth is enabled already or not
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isSupport" class="signatureLink">isSupport</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 check if bluetooth extension is supported or not
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isVisible" class="signatureLink">isVisible</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 check if bluetooth is visible to other devices or not
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#os" class="signatureLink">os</a> : String<div class="summaryTableDescription">[read-only] </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#pairedList" class="signatureLink">pairedList</a> : Array<div class="summaryTableDescription">[read-only] 
+		 use this property to get an array list of objects from already paired devices
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#randomUUID" class="signatureLink">randomUUID</a> : String<div class="summaryTableDescription">[read-only] 
+		 every bluetooth connection needs a kind of channel to be able to transfer data back and forth.</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#Bluetooth()" class="signatureLink">Bluetooth</a>()</div><div class="summaryTableDescription">
+		 initialize the Bluetooth class 
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#connectTo()" class="signatureLink">connectTo</a>($macAddress:String):void</div><div class="summaryTableDescription">
+		 After initializing the communication between two devices, use this method to connect to the 
+		 target device via its mac address
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disable()" class="signatureLink">disable</a>():void</div><div class="summaryTableDescription">
+		 use this method to disable the bluetooth
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#disconnect()" class="signatureLink">disconnect</a>():void</div><div class="summaryTableDescription">
+		 call this method to disconnect two devices from each other
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">
+		when you're done with this extension, call this method to free up the memory
+		</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#enable()" class="signatureLink">enable</a>():void</div><div class="summaryTableDescription">
+		 use this method to enable bluetooth hardware by asking permissions from user.</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#forceEnable()" class="signatureLink">forceEnable</a>():void</div><div class="summaryTableDescription">
+		 use this method to force enable the Bluetooth without notifying the user.</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initCommunicationService()" class="signatureLink">initCommunicationService</a>($uuId:String = 7cb84021-b76f-4094-bfd9-ecedf994b8db):void</div><div class="summaryTableDescription">
+		 use this method to initialize a communication between the two devices.</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#inVisible()" class="signatureLink">inVisible</a>():void</div><div class="summaryTableDescription">
+		 use this method to make the device invisible
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pairWith()" class="signatureLink">pairWith</a>($macAddress:String):void</div><div class="summaryTableDescription">
+		 use this method to pair the device with another one by passing the other device's mac address
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sendMessage()" class="signatureLink">sendMessage</a>($message:String):void</div><div class="summaryTableDescription">
+		 After the devices are connected, you may use this method to send a string message out to the other device
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#startDiscovery()" class="signatureLink">startDiscovery</a>():void</div><div class="summaryTableDescription">
+		 use this method to start discovering for other bluetoothes
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopDiscovery()" class="signatureLink">stopDiscovery</a>():void</div><div class="summaryTableDescription">
+		 use this method to stop the discovery process
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#unPairWith()" class="signatureLink">unPairWith</a>($macAddress:String):void</div><div class="summaryTableDescription">
+		 use this method to unpair the device from another one by specifying the other device's mac address
+		 </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#visible()" class="signatureLink">visible</a>($duration:int):void</div><div class="summaryTableDescription">
+		 use this method to make the device visible to other devices.</div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ANDROID" class="signatureLink">ANDROID</a> : String = android<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.bluetooth<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#IOS" class="signatureLink">IOS</a> : String = ios<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 2.0<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Bluetooth</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="connectionStatus"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">connectionStatus</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>connectionStatus:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 besides the event listeners, you may use this property to know about the connection status of the devices
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get connectionStatus():String</code><br/></div><a name="propertyDetail"></a><a name="isDiscovery"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isDiscovery</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isDiscovery:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 check if the device is in discovery process or not
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isDiscovery():Boolean</code><br/></div><a name="propertyDetail"></a><a name="isEnable"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isEnable</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isEnable:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 check if bluetooth is enabled already or not
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isEnable():Boolean</code><br/></div><a name="propertyDetail"></a><a name="isSupport"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isSupport</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isSupport:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 check if bluetooth extension is supported or not
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isSupport():Boolean</code><br/></div><a name="propertyDetail"></a><a name="isVisible"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isVisible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isVisible:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 check if bluetooth is visible to other devices or not
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isVisible():Boolean</code><br/></div><a name="propertyDetail"></a><a name="os"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">os</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>os:String</code>&nbsp;&nbsp;[read-only] <p></p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get os():String</code><br/></div><a name="propertyDetail"></a><a name="pairedList"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pairedList</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>pairedList:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 use this property to get an array list of objects from already paired devices
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get pairedList():Array</code><br/></div><a name="propertyDetail"></a><a name="randomUUID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">randomUUID</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>randomUUID:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 every bluetooth connection needs a kind of channel to be able to transfer data back and forth. 
+		 this channel is called UUID. you may use this property to generate a random UUID and use the 
+		 generated UUID String in your entire app.
+		 
+		 <p>
+		 NOTE: do NOT generate a UUID each time your app runs! just do it once and then use the hard-coded 
+		 string through the whole app. if the UUID of two apps do not match, they will never 
+		 be able transfer data between themselves.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get randomUUID():String</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="Bluetooth()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">Bluetooth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function Bluetooth()</code><p></p><p>
+		 initialize the <code>Bluetooth</code> class 
+		 </p></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="connectTo()"></a><a name="connectTo(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">connectTo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function connectTo($macAddress:String):void</code><p></p><p></p><p>
+		 After initializing the communication between two devices, use this method to connect to the 
+		 target device via its mac address
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$macAddress</span>:String</code></td></tr></table></p></div><a name="disable()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function disable():void</code><p></p><p></p><p>
+		 use this method to disable the bluetooth
+		 </p></div><a name="disconnect()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">disconnect</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function disconnect():void</code><p></p><p></p><p>
+		 call this method to disconnect two devices from each other
+		 </p></div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dispose():void</code><p></p><p></p><p>
+		when you're done with this extension, call this method to free up the memory
+		</p></div><a name="enable()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">enable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function enable():void</code><p></p><p></p><p>
+		 use this method to enable bluetooth hardware by asking permissions from user.
+		 </p></div><a name="forceEnable()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">forceEnable</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function forceEnable():void</code><p></p><p></p><p>
+		 use this method to force enable the Bluetooth without notifying the user.
+		 </p></div><a name="initCommunicationService()"></a><a name="initCommunicationService(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initCommunicationService</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function initCommunicationService($uuId:String = 7cb84021-b76f-4094-bfd9-ecedf994b8db):void</code><p></p><p></p><p>
+		 use this method to initialize a communication between the two devices.
+		 <p>
+		 NOTE: it's totally find if you forget about generating a UUID!
+		 </p>
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$uuId</span>:String</code> (default = <code>7cb84021-b76f-4094-bfd9-ecedf994b8db</code>)<code></code></td></tr></table></p></div><a name="inVisible()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">inVisible</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function inVisible():void</code><p></p><p></p><p>
+		 use this method to make the device invisible
+		 </p></div><a name="pairWith()"></a><a name="pairWith(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pairWith</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pairWith($macAddress:String):void</code><p></p><p></p><p>
+		 use this method to pair the device with another one by passing the other device's mac address
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$macAddress</span>:String</code></td></tr></table></p></div><a name="sendMessage()"></a><a name="sendMessage(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sendMessage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function sendMessage($message:String):void</code><p></p><p></p><p>
+		 After the devices are connected, you may use this method to send a string message out to the other device
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$message</span>:String</code></td></tr></table></p></div><a name="startDiscovery()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">startDiscovery</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function startDiscovery():void</code><p></p><p></p><p>
+		 use this method to start discovering for other bluetoothes
+		 </p></div><a name="stopDiscovery()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopDiscovery</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopDiscovery():void</code><p></p><p></p><p>
+		 use this method to stop the discovery process
+		 </p></div><a name="unPairWith()"></a><a name="unPairWith(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">unPairWith</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function unPairWith($macAddress:String):void</code><p></p><p></p><p>
+		 use this method to unpair the device from another one by specifying the other device's mac address
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$macAddress</span>:String</code></td></tr></table></p></div><a name="visible()"></a><a name="visible(int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">visible</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function visible($duration:int):void</code><p></p><p></p><p>
+		 use this method to make the device visible to other devices.
+		 NOTE: $duration must be between 0 and 3600 and if this param is set to zero it's always be visible
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$duration</span>:int</code></td></tr></table></p></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ANDROID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ANDROID</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ANDROID:String = android</code><p></p></div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.bluetooth</code><p></p></div><a name="constantDetail"></a><a name="IOS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">IOS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const IOS:String = ios</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 2.0</code><p></p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">The following example shows you how to initialize the Extension in your project and how to use it.
+	 
+	 <div class="listing" version="3.0"><pre>
+     import com.myflashlab.air.extensions.bluetooth.Bluetooth;
+     import com.myflashlab.air.extensions.bluetooth.BluetoothEvent;
+     
+     // initialize the extension
+     var _ex:Bluetooth = new Bluetooth();
+     
+     // add the required listeners
+     _ex.addEventListener(BluetoothEvent.BLUETOOTH_STATE , onBluetoothState); // dispatches the state of bluetooth whenever it changes
+     _ex.addEventListener(BluetoothEvent.COMMUNICATION_STATUS , onCommunicationState); // dispatches the communication state of two devices
+     _ex.addEventListener(BluetoothEvent.CONNECTION , onConnectionState); // dispatches the connection state of two devices
+     _ex.addEventListener(BluetoothEvent.DIALOG_STATUS , onDialogState); // dispatches the 'enable' and 'visibility' dialog states
+     _ex.addEventListener(BluetoothEvent.DISCOVERING_STATUS , onDiscoveringState); // dispatches the device discovering state
+     _ex.addEventListener(BluetoothEvent.NEW_DISCOVERD , onNewDiscoverd); // dispatches when new devices are discovered
+     _ex.addEventListener(BluetoothEvent.READ_MESSAGE , onMessageReceived); // dispatches whenever a new String message is received from the second device
+     _ex.addEventListener(BluetoothEvent.SCAN_MODE , onScanMode); // dispatches to notify you about the scan mode of the device
+     _ex.addEventListener(BluetoothEvent.SEND_MESSAGE , onSendMessage); // dispatches when a String message is sent to the second device
+     
+     // check if bluetooth extension is supported or not
+     trace("isSupport: " + _ex.isSupport);
+     
+     // check if bluetooth is enabled already or not
+     trace("isEnable: " + _ex.isEnable);
+     
+     // use this method to enable bluetooth hardware by asking permissions from user.
+     _ex.enable();
+     
+     // use this method to force enable the Bluetooth without notifying the user.
+     _ex.forceEnable();
+     
+     // use this method to disable the bluetooth
+     _ex.disable();
+     
+     // check if bluetooth is visible to other devices or not
+     trace("isVisible: " + _ex.isVisible);
+     
+     // use this method to make the device visible to other devices. input between 0 and 3600
+     // if set to 0 it means that it will remain visible all the time
+     _ex.visible(160);
+     
+     // use this method to make the device invisible
+     _ex.inVisisble();
+     
+     // use this property to get an array list of objects from already paired devices
+     var arr:Array = _ex.pairedList;
+     var obj:Object;
+     var i:int;
+     for (i = 0; i &lt; arr.length; i++) 
+     {
+         obj = arr[i];
+         trace("paired &gt;&gt;" + obj.device + " : " + obj.mac);
+     }
+     
+     // use this method to start discovering for other bluetoothes
+     _ex.startDiscovery();
+     
+     // use this method to stop the discovery process
+     _ex.stopDiscovery();
+     
+     // check if the device is in discovery process or not
+     trace("isDiscovering:" + _ex.isDiscovery);
+     
+     // use this method to pair the device with another one by passing the other device's mac address
+     _ex.pairWith("C4:88:E5:5B:AC:6D");
+     
+     // use this method to unpair the device from another one by specifying the other device's mac address
+     _ex.unPairWith("C4:88:E5:5B:AC:6D");
+     
+     // every bluetooth connection needs a kind of channel to be able to transfer data back and forth. this channel is called UUID
+     // you may use this property to generate a random UUID and use the generated UUID String in your entire app.
+     // NOTE: do NOT generate a UUID each time your app runs! just do it once and then use the hard-coded string through the whole app
+     // if the UUID of two apps do not match, they will never be able transfer data between themselves.
+     trace("getRandomUUID &gt;&gt;" +  _ex.randomUUID);
+     
+     // use this method to initialize a communication between the two devices.
+     // NOTE: it's totally find if you forget about generating a UUID!
+     _ex.initCommunicationService();
+     
+     // After initializing the communication between two devices, use this method to connect to the target device via its mac address
+     _ex.connectTo("C4:88:E5:5B:AC:6D");
+     
+     // besides the event listeners, you may use this property to know about the connection status of the devices
+     trace("connectionStatus :" + _ex.connectionStatus);
+     
+     // After the devices are connected, you may use this method to send a string message out to the other device
+     _ex.sendMessage("Hello second device!");
+     
+     // call this method to disconnect two devices from each other
+     _ex.disconnect();
+     
+     function onBluetoothState(e:BluetoothEvent):void
+     {
+         trace("state &gt;&gt; " + e.param);
+     }
+     
+     function onCommunicationState(e:BluetoothEvent):void
+     {
+         trace("communication &gt;&gt; " + e.param);
+     }
+     
+     function onConnectionState(e:BluetoothEvent):void
+     {
+         trace("connection &gt;&gt; " + e.param);
+     }
+     
+     function onDialogState(e:BluetoothEvent):void
+     {
+         trace("dialogStatus &gt;&gt; " + e.param);
+     }
+     
+     function onDiscoveringState(e:BluetoothEvent):void
+     {
+         trace("discovering &gt;&gt; " + e.param);
+     }
+     
+     function onNewDiscoverd(e:BluetoothEvent):void
+     {
+         var obj:Object = e.param;
+         trace("newDiscoverd &gt;&gt; " + "device = " + obj.device + " mac :" + obj.mac);
+     }
+     
+     function onMessageReceived(e:BluetoothEvent):void
+     {
+         trace("readMessage &gt;&gt; " + e.param);
+     }
+     
+     function onScanMode(e:BluetoothEvent):void
+     {
+         trace("scanMode &gt;&gt; " + e.param);
+     }
+     
+     function onSendMessage(e:BluetoothEvent):void
+     {
+         // when sending a message out to the other device, this listener will be called and on its param will return the same string message you had sent
+         // but if for any reason, the message is not sent, the param will be "unableToSend"! this way, you will know if the message was not sent successfully
+         trace("sendMessage &gt;&gt; " + e.param);
+     }
+     
+     </pre></div>
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->

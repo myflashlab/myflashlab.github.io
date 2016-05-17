@@ -1,0 +1,330 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="RichWebView,com.myflashlab.air.extensions.webView.RichWebView,ANDROID,BACK_CLICKED,BG_COLOR_HEX,ENABLE_BITMAP_CAPTURE,ENABLE_COOKIES,ENABLE_GPS,ENABLE_SCROLL_BOUNCE,ENABLE_ZOOM,EXTENSION_ID,IOS,PAGE_FINISHED,PAGE_PROGRESS,PAGE_STARTED,RECEIVED_MESSAGE_FROM_JS,RECEIVED_SSL_ERROR,SCREENSHOT,TOUCH,USER_AGENT,VERSION,canGoBack,canGoForward,contentHeight,height,maximumZoomScale,minimumZoomScale,os,scrollX,scrollY,sdkVersion,visible,width,x,y,zoomScale,addEventListener,callJS,clearCache,clearHistory,closeWebView,dispose,filingScroll,goBack,goForward,hide,isSupported,moveAndroidTaskToBack,openWebViewLocal,openWebViewURL,pageDown,pageUp,pauseTimers,reload,removeEventListener,requestBitmap,resumeTimers,scrollBy,scrollTo,setPosition,setViewPort,stopLoad,zoomIn,zoomOut"><title>com.myflashlab.air.extensions.webView.RichWebView</title><script src="../../../../../AC_OETags.js" type="text/javascript"></script></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'RichWebView - MyFlashLabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/webView/RichWebView.html&amp;com/myflashlab/air/extensions/webView/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">RichWebView</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a>&nbsp;| <a href="#includeExamplesSummary">Examples</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("RichWebView"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,true,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.webView</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  RichWebView</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">RichWebView  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p>
+	 This extension is a perfect replacement to the classic StageWebView and it allows you to easily call Javascript functions
+	 from Air and send String messages from JS to Air. it also gives you many new features that the classic StageWebView couldn't provide.
+	 Features like File pick or GPS access.
+	 
+	 <b>Copyright 2016, myflashlab. All rights reserved.</b>
+	 More Extensions on <a href="http://myflashlabs.com/" target="">http://www.myflashlabs.com/</a>
+	 
+	              <p>
+	                 <b>
+	 Download .ane from: <a href="http://www.myflashlabs.com/product/rich-webview-ane-adobe-air-native-extension/" target="external">http://www.myflashlabs.com/product/rich-webview-ane-adobe-air-native-extension/</a>
+	                 </b>
+	              </p>
+	 
+	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="RichWebViewEvent.html" target="">com.myflashlab.air.extensions.webView.RichWebViewEvent</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#canGoBack" class="signatureLink">canGoBack</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 returns true if webView can go back in history
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#canGoForward" class="signatureLink">canGoForward</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 returns true if webView can go forward in history
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#contentHeight" class="signatureLink">contentHeight</a> : int<div class="summaryTableDescription">[read-only] 
+		 indicates the content height of your HTML content
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#height" class="signatureLink">height</a> : int<div class="summaryTableDescription">
+		 Indicates the height of the rich webview relative to the main stage
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#maximumZoomScale" class="signatureLink">maximumZoomScale</a> : Number<div class="summaryTableDescription">
+		 iOS Only - indicates the maximumZoomScale
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#minimumZoomScale" class="signatureLink">minimumZoomScale</a> : Number<div class="summaryTableDescription">
+		 iOS Only - indicates the minimumZoomScale
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#os" class="signatureLink">os</a> : String<div class="summaryTableDescription">[read-only] 
+		 indicates the current OS which the app is running in.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#scrollX" class="signatureLink">scrollX</a> : int<div class="summaryTableDescription">[read-only] 
+		 indicates the x position for the scroller
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#scrollY" class="signatureLink">scrollY</a> : int<div class="summaryTableDescription">[read-only] 
+		 indicates the y position for the scroller
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#sdkVersion" class="signatureLink">sdkVersion</a> : int<div class="summaryTableDescription">[read-only] 
+		 indicates the Android SDK version.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#visible" class="signatureLink">visible</a> : Boolean<div class="summaryTableDescription">[write-only] 
+		 change the visibility of the webview.
+		 
+		 On Android, when the webview is present, it will hijack the device's back button.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#width" class="signatureLink">width</a> : int<div class="summaryTableDescription">
+		 Indicates the width of the rich webview relative to the main stage
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#x" class="signatureLink">x</a> : int<div class="summaryTableDescription">
+		 Indicates the x position of the rich webview relative to the main stage
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#y" class="signatureLink">y</a> : int<div class="summaryTableDescription">
+		 Indicates the y position of the rich webview relative to the main stage
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#zoomScale" class="signatureLink">zoomScale</a> : Number<div class="summaryTableDescription">
+		 iOS Only - indicates the zoomScale for the wevView
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#RichWebView()" class="signatureLink">RichWebView</a>($stage:Stage = null, $enableBitmapCapture:Boolean = true, $enableCookies:Boolean = true, $enableGps:Boolean = true, $enableZoom:Boolean = true)</div><div class="summaryTableDescription">
+		 Initialize the extension and pass in the flash stage to it so it can calculate the correct dimensions for the webView rectangle.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addEventListener()" class="signatureLink">addEventListener</a>($type:String, $listener:Function, $useCapture:Boolean = false, $priority:int = 0, $useWeakReference:Boolean = false):void</div><div class="summaryTableDescription">[override] 
+		 
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#callJS()" class="signatureLink">callJS</a>($msg:String):void</div><div class="summaryTableDescription">
+		 use this method to call Javascript functions.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearCache()" class="signatureLink">clearCache</a>($bool:Boolean):void</div><div class="summaryTableDescription">
+		 Android only - clears browsing cache.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearHistory()" class="signatureLink">clearHistory</a>():void</div><div class="summaryTableDescription">
+		 Android only - clears history
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#closeWebView()" class="signatureLink">closeWebView</a>():void</div><div class="summaryTableDescription">
+		 Use this method to close the webView window.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">
+		 to dispose the extension
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#filingScroll()" class="signatureLink">filingScroll</a>($x:int, $y:int):void</div><div class="summaryTableDescription">
+		 Animate the scroller to the specified x,y location.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#goBack()" class="signatureLink">goBack</a>():void</div><div class="summaryTableDescription">
+		 if _ex.canGoBack is true, it will take the webview one page back
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#goForward()" class="signatureLink">goForward</a>():void</div><div class="summaryTableDescription">
+		 if _ex.canGoForward is true, it will take the webview one page forward
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#hide()" class="signatureLink">hide</a>($value:Boolean):void</div><div class="summaryTableDescription">
+		 Hide the webview instance so it's not visible anymore.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isSupported()" class="signatureLink">isSupported</a>():Boolean</div><div class="summaryTableDescription">
+		 indicates if the extension is supported on the running device or not.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#moveAndroidTaskToBack()" class="signatureLink">moveAndroidTaskToBack</a>():Boolean</div><div class="summaryTableDescription">
+		 Move the Air application to the back of the activity stack which will result in showing the Android's home menu.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#openWebViewLocal()" class="signatureLink">openWebViewLocal</a>($x:int, $y:int, $width:int, $height:int, $file:File):void</div><div class="summaryTableDescription">
+		 Use this method to open local html files on sdcard.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#openWebViewURL()" class="signatureLink">openWebViewURL</a>($x:int, $y:int, $width:int, $height:int, $url:String):void</div><div class="summaryTableDescription">
+		 Use this method for loading online URLs
+		 
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pageDown()" class="signatureLink">pageDown</a>($bool:Boolean):Boolean</div><div class="summaryTableDescription">
+		 Call this method to move the scrollbar down.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pageUp()" class="signatureLink">pageUp</a>($bool:Boolean):Boolean</div><div class="summaryTableDescription">
+		 Call this method to move the scrollbar up.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#pauseTimers()" class="signatureLink">pauseTimers</a>():void</div><div class="summaryTableDescription">
+		 Android only - when going to background, call this method to save resources on your device.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#reload()" class="signatureLink">reload</a>():void</div><div class="summaryTableDescription">
+		 reloads the page.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#removeEventListener()" class="signatureLink">removeEventListener</a>($type:String, $listener:Function, $useCapture:Boolean = false):void</div><div class="summaryTableDescription">[override] 
+		 
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#requestBitmap()" class="signatureLink">requestBitmap</a>():void</div><div class="summaryTableDescription">
+		 Call this method to request the extension for a screenshot of the whole webview.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#resumeTimers()" class="signatureLink">resumeTimers</a>():void</div><div class="summaryTableDescription">
+		 Android only - if you had called pauseTimers() before going to background, you should call this method to reactivate your HTML content.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#scrollBy()" class="signatureLink">scrollBy</a>($x:int, $y:int):void</div><div class="summaryTableDescription">
+		 move the scroller by the x,y amount
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#scrollTo()" class="signatureLink">scrollTo</a>($x:int, $y:int):void</div><div class="summaryTableDescription">
+		 move the scroller to the specified x,y location
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setPosition()" class="signatureLink">setPosition</a>($x:int, $y:int, $width:int, $height:int):void</div><div class="summaryTableDescription">
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setViewPort()" class="signatureLink">setViewPort</a>($rect:Rectangle):void</div><div class="summaryTableDescription">
+		 Use this method to resize and reposition the webView viewport at runtime.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stopLoad()" class="signatureLink">stopLoad</a>():void</div><div class="summaryTableDescription">
+		 Call this method to stop loading the current page
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#zoomIn()" class="signatureLink">zoomIn</a>():Boolean</div><div class="summaryTableDescription">
+		 Use this method to zoom in to your HTML page.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#zoomOut()" class="signatureLink">zoomOut</a>():Boolean</div><div class="summaryTableDescription">
+		 Use this method to zoom out from your HTML page.</div></td><td class="summaryTableOwnerCol">RichWebView</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ANDROID" class="signatureLink">ANDROID</a> : String = android<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.webView<div class="summaryTableDescription">[static] 
+		 Extension ID for this extension
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#IOS" class="signatureLink">IOS</a> : String = ios<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 6.2.0<div class="summaryTableDescription">[static] 
+		 current version number of this extension
+		 </div></td><td class="summaryTableOwnerCol">RichWebView</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="canGoBack"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">canGoBack</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>canGoBack:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 returns true if webView can go back in history
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get canGoBack():Boolean</code><br/></div><a name="propertyDetail"></a><a name="canGoForward"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">canGoForward</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>canGoForward:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 returns true if webView can go forward in history
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get canGoForward():Boolean</code><br/></div><a name="propertyDetail"></a><a name="contentHeight"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">contentHeight</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>contentHeight:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the content height of your HTML content
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get contentHeight():int</code><br/></div><a name="propertyDetail"></a><a name="height"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">height</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>height:int</code><p></p><p></p><p>
+		 Indicates the height of the rich webview relative to the main stage
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get height():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set height(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="maximumZoomScale"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">maximumZoomScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>maximumZoomScale:Number</code><p></p><p></p><p>
+		 iOS Only - indicates the maximumZoomScale
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maximumZoomScale():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maximumZoomScale(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="minimumZoomScale"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">minimumZoomScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>minimumZoomScale:Number</code><p></p><p></p><p>
+		 iOS Only - indicates the minimumZoomScale
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get minimumZoomScale():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set minimumZoomScale(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="os"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">os</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>os:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the current OS which the app is running in. it's either MyAR.ANDROID or MyAR.IOS
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get os():String</code><br/></div><a name="propertyDetail"></a><a name="scrollX"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">scrollX</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>scrollX:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the x position for the scroller
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scrollX():int</code><br/></div><a name="propertyDetail"></a><a name="scrollY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">scrollY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>scrollY:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the y position for the scroller
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scrollY():int</code><br/></div><a name="propertyDetail"></a><a name="sdkVersion"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">sdkVersion</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>sdkVersion:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 indicates the Android SDK version. you will need this when you are writting your JS logic when dealing with FileSelect input fields.
+		 You should check if current device is running on Lollipop Android or above and make sure your JS matches that. Depending on your tasks,
+		 you may need to write your JS differently, so, make sure to search the web to be able to safely get the desired outcome on all Android versions.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get sdkVersion():int</code><br/></div><a name="propertyDetail"></a><a name="visible"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">visible</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>visible:Boolean</code>&nbsp;&nbsp;[write-only] <p></p><p></p><p>
+		 <p>change the visibility of the webview.</p>
+		 
+		 <p>On Android, when the webview is present, it will hijack the device's back button. and you should listen to the <code>RichWebViewEvent.BACK_CLICKED</code> 
+		 event to know when the device's back button is clicked. The same thing still happens when you're hidding the webview using this property or the 
+		 <code>hide()</code> method.</p>
+		 
+		 <p>In simple words, even if you are hidding the webview, it's still there and it's still hijacking the device's back button.</p>
+		 
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set visible(value:Boolean):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#hide()" target="">hide()</a></div></div><a name="propertyDetail"></a><a name="width"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">width</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>width:int</code><p></p><p></p><p>
+		 Indicates the width of the rich webview relative to the main stage
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get width():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set width(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="x"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">x</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>x:int</code><p></p><p></p><p>
+		 Indicates the x position of the rich webview relative to the main stage
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get x():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set x(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="y"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">y</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>y:int</code><p></p><p></p><p>
+		 Indicates the y position of the rich webview relative to the main stage
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get y():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set y(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="zoomScale"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">zoomScale</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>zoomScale:Number</code><p></p><p></p><p>
+		 iOS Only - indicates the zoomScale for the wevView
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get zoomScale():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set zoomScale(value:Number):void</code><br/></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="RichWebView()"></a><a name="RichWebView(flash.display.Stage,Boolean,Boolean,Boolean,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">RichWebView</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function RichWebView($stage:Stage = null, $enableBitmapCapture:Boolean = true, $enableCookies:Boolean = true, $enableGps:Boolean = true, $enableZoom:Boolean = true)</code><p></p><p>
+		 Initialize the extension and pass in the flash stage to it so it can calculate the correct dimensions for the webView rectangle.
+		 the other settings in the constructor are now deprecated and you should use the <code>RichWebViewSettings</code> class to set the
+		 required settings for your RichWebView instance.
+		 
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$stage</span>:Stage</code> (default = <code>null</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$enableBitmapCapture</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; // use RichWebViewSettings.ENABLE_BITMAP_CAPTURE instead
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$enableCookies</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; 		// use RichWebViewSettings.ENABLE_COOKIES instead
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$enableGps</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; 			// use RichWebViewSettings.ENABLE_GPS instead
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$enableZoom</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; 			// use RichWebViewSettings.ENABLE_ZOOM instead
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebViewSettings.html" target="">RichWebViewSettings</a></div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addEventListener()"></a><a name="addEventListener(String,Function,Boolean,int,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code>override public function addEventListener($type:String, $listener:Function, $useCapture:Boolean = false, $priority:int = 0, $useWeakReference:Boolean = false):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$type</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$listener</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$priority</span>:int</code> (default = <code>0</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$useWeakReference</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr></table></p></div><a name="callJS()"></a><a name="callJS(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">callJS</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function callJS($msg:String):void</code><p></p><p></p><p>
+		 use this method to call Javascript functions. for example if you have a function in your js like this:
+		 <pre>
+		 function diplayAlert(msg)
+		 {
+		 		alert(msg);
+		 }
+		 </pre>
+		 
+		 you can call it this way:
+		 <pre>
+		 _ex.callJS("diplayAlert('a msg from flash!')");
+		 </pre>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$msg</span>:String</code></td></tr></table></p></div><a name="clearCache()"></a><a name="clearCache(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearCache</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clearCache($bool:Boolean):void</code><p></p><p></p><p>
+		 Android only - clears browsing cache.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$bool</span>:Boolean</code></td></tr></table></p></div><a name="clearHistory()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearHistory</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function clearHistory():void</code><p></p><p></p><p>
+		 Android only - clears history
+		 </p></div><a name="closeWebView()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">closeWebView</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function closeWebView():void</code><p></p><p></p><p>
+		 Use this method to close the webView window.
+		 </p></div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function dispose():void</code><p></p><p></p><p>
+		 to dispose the extension
+		 </p></div><a name="filingScroll()"></a><a name="filingScroll(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">filingScroll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function filingScroll($x:int, $y:int):void</code><p></p><p></p><p>
+		 Animate the scroller to the specified x,y location.
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#scrollTo()" target="">scrollTo()</a></div></div><a name="goBack()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">goBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function goBack():void</code><p></p><p></p><p>
+		 if <pre>_ex.canGoBack</pre> is true, it will take the webview one page back
+		 </p></div><a name="goForward()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">goForward</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function goForward():void</code><p></p><p></p><p>
+		 if <pre>_ex.canGoForward</pre> is true, it will take the webview one page forward
+		 </p></div><a name="hide()"></a><a name="hide(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">hide</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function hide($value:Boolean):void</code><p></p><p></p><p>
+		 <p>Hide the webview instance so it's not visible anymore. you can make it visible again by passing <code>false</code> to this method.</p>
+		 
+		 <p>On Android, when the webview is present, it will hijack the device's back button. and you should listen to the <code>RichWebViewEvent.BACK_CLICKED</code> 
+		 event to know when the device's back button is clicked. The same thing still happens when you're hidding the webview using this method or the 
+		 <code>visible</code> setter property.</p>
+		 
+		 <p>In simple words, even if you are hidding the webview, it's still there and it's still hijacking the device's back button.</p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$value</span>:Boolean</code> &mdash; visiblility value of the RichWebView
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#visible" target="">visible</a></div></div><a name="isSupported()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isSupported</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function isSupported():Boolean</code><p></p><p></p><p>
+		 indicates if the extension is supported on the running device or not. in iOS, the min SDK Version is 6.1
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><a name="moveAndroidTaskToBack()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">moveAndroidTaskToBack</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function moveAndroidTaskToBack():Boolean</code><p></p><p></p><p>
+		 Move the Air application to the back of the activity stack which will result in showing the Android's home menu.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; If the task was moved (or it was already at the back) <code>true</code> is returned, else <code>false</code>.
+		 </td></tr></table></div><a name="openWebViewLocal()"></a><a name="openWebViewLocal(int,int,int,int,flash.filesystem.File)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">openWebViewLocal</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function openWebViewLocal($x:int, $y:int, $width:int, $height:int, $file:File):void</code><p></p><p></p><p>
+		 Use this method to open local html files on sdcard.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$width</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$height</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$file</span>:File</code></td></tr></table></p></div><a name="openWebViewURL()"></a><a name="openWebViewURL(int,int,int,int,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">openWebViewURL</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function openWebViewURL($x:int, $y:int, $width:int, $height:int, $url:String):void</code><p></p><p></p><p>
+		 Use this method for loading online URLs
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$width</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$height</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$url</span>:String</code></td></tr></table></p></div><a name="pageDown()"></a><a name="pageDown(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pageDown</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pageDown($bool:Boolean):Boolean</code><p></p><p></p><p>
+		 Call this method to move the scrollbar down. pass <pre>true</pre> and the page will go the whole way down otherwise it will
+		 go down only to the hight of the current view.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$bool</span>:Boolean</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><a name="pageUp()"></a><a name="pageUp(Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pageUp</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pageUp($bool:Boolean):Boolean</code><p></p><p></p><p>
+		 Call this method to move the scrollbar up. pass <pre>true</pre> and the page will go the whole way up otherwise it will
+		 go up only to the hight of the current view.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$bool</span>:Boolean</code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><a name="pauseTimers()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pauseTimers</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function pauseTimers():void</code><p></p><p></p><p>
+		 Android only - when going to background, call this method to save resources on your device. it will pause all html5 processes or animation or timers.
+		 
+		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#resumeTimers()" target="">resumeTimers()</a></div></div><a name="reload()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">reload</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function reload():void</code><p></p><p></p><p>
+		 reloads the page.
+		 </p></div><a name="removeEventListener()"></a><a name="removeEventListener(String,Function,Boolean)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">removeEventListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>override public function removeEventListener($type:String, $listener:Function, $useCapture:Boolean = false):void</code><p></p><p></p><p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$type</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$listener</span>:Function</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$useCapture</span>:Boolean</code> (default = <code>false</code>)<code></code></td></tr></table></p></div><a name="requestBitmap()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">requestBitmap</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function requestBitmap():void</code><p></p><p></p><p>
+		 Call this method to request the extension for a screenshot of the whole webview. when the screenshot is ready,
+		 <code>RichWebViewEvent.SCREENSHOT</code> will be dispatched and you can access the BitmapData object in <code>e.param</code>
+		 </p></div><a name="resumeTimers()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">resumeTimers</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function resumeTimers():void</code><p></p><p></p><p>
+		 Android only - if you had called pauseTimers() before going to background, you should call this method to reactivate your HTML content.
+		 
+		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#pauseTimers()" target="">pauseTimers()</a></div></div><a name="scrollBy()"></a><a name="scrollBy(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">scrollBy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function scrollBy($x:int, $y:int):void</code><p></p><p></p><p>
+		 move the scroller by the x,y amount
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr></table></p></div><a name="scrollTo()"></a><a name="scrollTo(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">scrollTo</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function scrollTo($x:int, $y:int):void</code><p></p><p></p><p>
+		 move the scroller to the specified x,y location
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#filingScroll()" target="">filingScroll()</a></div></div><a name="setPosition()"></a><a name="setPosition(int,int,int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setPosition</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setPosition($x:int, $y:int, $width:int, $height:int):void</code><p></p><p></p><p>
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$x</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$y</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$width</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$height</span>:int</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RichWebView.html#setViewPort()" target="">setViewPort()</a></div></div><a name="setViewPort()"></a><a name="setViewPort(flash.geom.Rectangle)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setViewPort</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setViewPort($rect:Rectangle):void</code><p></p><p></p><p>
+		 Use this method to resize and reposition the webView viewport at runtime. Or you can use the x, y, width and height properties individually.
+		 but using this method to set all the properties in one call will be a bit more CPU friendly.
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$rect</span>:Rectangle</code></td></tr></table></p></div><a name="stopLoad()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stopLoad</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stopLoad():void</code><p></p><p></p><p>
+		 Call this method to stop loading the current page
+		 </p></div><a name="zoomIn()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">zoomIn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function zoomIn():Boolean</code><p></p><p></p><p>
+		 Use this method to zoom in to your HTML page. on iOS, you may need to set <pre>maximumZoomScale</pre> and <pre>minimumZoomScale</pre> before trying
+		 to zoom.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><a name="zoomOut()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">zoomOut</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function zoomOut():Boolean</code><p></p><p></p><p>
+		 Use this method to zoom out from your HTML page. on iOS, you may need to set <pre>maximumZoomScale</pre> and <pre>minimumZoomScale</pre> before trying
+		 to zoom.
+		 
+		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
+		 </td></tr></table></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ANDROID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ANDROID</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ANDROID:String = android</code><p></p></div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.webView</code><p></p><p></p><p>
+		 Extension ID for this extension
+		 </p></div><a name="constantDetail"></a><a name="IOS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">IOS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const IOS:String = ios</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 6.2.0</code><p></p><p></p><p>
+		 current version number of this extension
+		 </p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">Usage as follow
+	 <div class="listing" version="3.0"><pre>
+     import com.myflashlab.air.extensions.webView.RichWebView;
+     import com.myflashlab.air.extensions.webView.RichWebViewEvent;
+     import com.myflashlab.air.extensions.webView.RichWebViewSettings;
+     
+     var _ex:RichWebView = new RichWebView(this.stage);
+     
+     // indicates the Android SDK version. you will need this when you are writting your JS logic when dealing with FileSelect input fields.
+     trace("Android SDK version: ", _ex.sdkVersion);
+     
+     // add listeners
+     _ex.addEventListener(RichWebViewEvent.BACK_CLICKED, onBackClicked);
+     _ex.addEventListener(RichWebViewEvent.PAGE_STARTED, onPageStarted);
+     _ex.addEventListener(RichWebViewEvent.PAGE_PROGRESS, onPageProgress);
+     _ex.addEventListener(RichWebViewEvent.PAGE_FINISHED, onPageFinished);
+     _ex.addEventListener(RichWebViewEvent.RECEIVED_SSL_ERROR, onReceivedError);
+     _ex.addEventListener(RichWebViewEvent.RECEIVED_MESSAGE_FROM_JS, onReceivedMessage);
+     _ex.addEventListener(RichWebViewEvent.SCREENSHOT, onScreenshot);
+     _ex.addEventListener(RichWebViewEvent.TOUCH, onTouch);
+     
+     // set optional RichWebview settings (apply these settings AFTER initializing the ANE and BEFORE opening a webpage)
+     RichWebViewSettings.ENABLE_BITMAP_CAPTURE = true;
+     RichWebViewSettings.ENABLE_COOKIES = true;
+     RichWebViewSettings.ENABLE_GPS = true;
+     RichWebViewSettings.ENABLE_ZOOM = true;
+     RichWebViewSettings.ENABLE_SCROLL_BOUNCE = false;
+     RichWebViewSettings.BG_COLOR_HEX = "#FFFFFFFF"; // AARRGGBB
+     //RichWebViewSettings.USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.36 (KHTML, like Gecko) Chrome/13.0.766.0 Safari/534.36"; // useful when you are trying to load embedded YouTube or Vimeo videos
+     
+     // you may load local html content from File.documentsDirectory or File.applicationStorageDirectory
+     _ex.openWebViewLocal(0, 0, stage.stageWidth, stage.stageHeight, File.documentsDirectory.resolvePath("webview/index.html"));
+     
+     // or you may load an online url as follow
+     //_ex.openWebViewURL(0, 0, stage.stageWidth, stage.stageHeight, "http://www.myflashlabs.com/");
+     
+     function onBackClicked(e:RichWebViewEvent):void
+     {
+         if (_ex.canGoBack) _ex.goBack();
+         else _ex.closeWebView();
+     }
+     
+     function onPageStarted(e:RichWebViewEvent):void
+     {
+         trace("page started to be loaded");
+     }
+     
+     function onPageProgress(e:RichWebViewEvent):void
+     {
+         trace("page loading: " + e.param + "%");
+     }
+     
+     function onPageFinished(e:RichWebViewEvent):void
+     {
+         trace("page load completed");
+     }
+     
+     function onReceivedError(e:RichWebViewEvent):void
+     {
+         trace("error = " + e.param);
+     }
+     
+     function onReceivedMessage(e:RichWebViewEvent):void
+     {
+         trace("onReceivedMessage: ", e.param);
+     }
+     
+     function onScreenshot(e:RichWebViewEvent):void
+     {
+         var bm:Bitmap = new Bitmap(e.param, "auto", true);
+         this.addChild(bm);
+     }
+     
+     function onTouch(e:RichWebViewEvent):void
+     {
+         trace("onTouch &gt; " + "x = " + e.param.x + " y = " + e.param.y);
+     }
+     
+     </pre></div>
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue May 17 2016, 09:56 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue May 17 2016, 09:56 AM +04:30  -->
