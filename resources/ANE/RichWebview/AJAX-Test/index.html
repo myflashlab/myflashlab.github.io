@@ -37,7 +37,7 @@ function loadingIsDone($XMLHttp)
 	if($XMLHttp.readyState == 4 && $XMLHttp.status == 200) { // if response is ready and its status is ok
 		document.getElementById("demo").innerHTML = $XMLHttp.responseText;
 	} else {
-		document.getElementById("demo").innerHTML = "File could not be loaded, there was an error!";
+		document.getElementById("demo").innerHTML = "File could not be loaded, there was an error!<br>readyState = " + $XMLHttp.readyState + "<br>status = " + $XMLHttp.status;
 	}
 }
 </script>
