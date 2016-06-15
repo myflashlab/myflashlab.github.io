@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Ali Tavakoli">
+<title>Rich Webview ANE - AJAX Test</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script>
+"use strict";
+
+function AJAXLoad($url, $func)
+{
+	if (!$url || $url == "") return; // if the provided $url was not ok, just return the function
+	
+	var XMLHttp;
+	
+	// first lets initialize the XMLHttpRequest Constructor Object
+	if(window.XMLHttpRequest) {
+		XMLHttp = new XMLHttpRequest(); // code for IE7+, Firefox, Chrome, Opera, Safari
+	} else {
+		XMLHttp = new ActiveXObject("Microsoft.XMLHTTP"); // code for IE6, IE5
+	}
+	
+	// the onreadystatechange event
+	XMLHttp.onreadystatechange = function(){$func(XMLHttp)};
+	
+	// send a Request to the server
+	XMLHttp.open("GET", $url, true);
+	XMLHttp.send();
+}
+
+function loadingIsDone($XMLHttp)
+{
+	if($XMLHttp.readyState == 4 && $XMLHttp.status == 200) { // if response is ready and its status is ok
+		document.getElementById("demo").innerHTML = $XMLHttp.responseText;
+	} else {
+		document.getElementById("demo").innerHTML = "File could not be loaded, there was an error!";
+	}
+}
+</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h2>Rich Webview ANE - AJAX Test</h2>
+			<p>
+				Click the below button to load 'loaded-by-ajax.txt' file and show its content on our HTML page!
+			</p>
+			<button class="btn btn-primary btn-lg" type="button" id="loadBtn" onClick="AJAXLoad('loaded-by-ajax.txt', loadingIsDone)">Click to load file by AJAX</button>
+			<hr>
+			<p id="demo">This text will be changed when 'loaded-by-ajax.txt' file is successfully loaded!</p>
+		</div>
+	</div>
+</body>
+</html>
