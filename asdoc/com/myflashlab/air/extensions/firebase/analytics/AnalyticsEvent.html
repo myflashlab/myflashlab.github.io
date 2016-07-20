@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="AnalyticsEvent,com.myflashlab.air.extensions.firebase.analytics.AnalyticsEvent,ACHIEVEMENT_ID,ADD_PAYMENT_INFO,ADD_TO_CART,ADD_TO_WISHLIST,APP_OPEN,BEGIN_CHECKOUT,CHARACTER,CONTENT_TYPE,COUPON,CURRENCY,DESTINATION,ECOMMERCE_PURCHASE,END_DATE,EXTENSION_ID,FLIGHT_NUMBER,GENERATE_LEAD,GROUP_ID,ITEM_CATEGORY,ITEM_ID,ITEM_LOCATION_ID,ITEM_NAME,JOIN_GROUP,LEVEL,LEVEL_UP,LOCATION,LOGIN,NUMBER_OF_NIGHTS,NUMBER_OF_PASSENGERS,NUMBER_OF_ROOMS,ORIGIN,POST_SCORE,PRESENT_OFFER,PRICE,PRODUCT_CATEGORY,PRODUCT_ID,PRODUCT_NAME,PURCHASE_REFUND,QUANTITY,SCORE,SEARCH,SEARCH_TERM,SELECT_CONTENT,SHARE,SHIPPING,SIGN_UP,SIGN_UP_METHOD,SPEND_VIRTUAL_CURRENCY,START_DATE,TAX,TRANSACTION_ID,TRAVEL_CLASS,TUTORIAL_BEGIN,TUTORIAL_COMPLETE,UNLOCK_ACHIEVEMENT,VALUE,VIEW_ITEM,VIEW_ITEM_LIST,VIEW_SEARCH_RESULTS,VIRTUAL_CURRENCY_NAME,analyticsCollectionEnabled,minimumSessionDuration,sessionTimeoutDuration,userId"><title>com.myflashlab.air.extensions.firebase.analytics.AnalyticsEvent</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'AnalyticsEvent - MyFlashLabs';
+				var baseRef = '../../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">MyFlashLabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../../index.html?com/myflashlab/air/extensions/firebase/analytics/AnalyticsEvent.html&amp;com/myflashlab/air/extensions/firebase/analytics/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">AnalyticsEvent</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#constantSummary">Constants</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("AnalyticsEvent"); titleBar_setSubNav(true,false,false,false,false,false,false,false,false,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.firebase.analytics</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  AnalyticsEvent</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AnalyticsEvent  <img src="../../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
+	              <p>
+	 An Event is an important occurrence in your app that you want to measure. You can report up to 500 different types of Events 
+	 per app and you can associate up to 25 unique parameters with each Event type. Some common events are suggested below, but you 
+	 may also choose to specify custom Event types that are associated with your specific app. Each event type is identified by a 
+	 unique name. Event names can be up to 32 characters long, may only contain alphanumeric characters and underscores ("_"), 
+	 and must start with an alphabetic character. The "firebase_" prefix is reserved and should not be used. 
+	 </p>
+	 
+	              <p>
+	                 <b>The following event names are reserved and cannot be used:</b>
+	                 <ul>
+	 	                  <li>app_clear_data</li>
+	 	                  <li>app_uninstall</li>
+	 	                  <li>app_update</li>
+	 	                  <li>error</li>
+	 	                  <li>first_open</li>
+	 	                  <li>in_app_purchase</li>
+	 	                  <li>notification_dismiss</li>
+	 	                  <li>notification_foreground</li>
+	 	                  <li>notification_open</li>
+	 	                  <li>notification_receive</li>
+	 	                  <li>os_update</li>
+	 	                  <li>session_start</li>
+	 	                  <li>user_engagement</li>
+	                 </ul>
+	              </p>
+	 
+	           <p></p><br/><hr></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ADD_PAYMENT_INFO" class="signatureLink">ADD_PAYMENT_INFO</a> : String = add_payment_info<div class="summaryTableDescription">[static]  Add Payment Info event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ADD_TO_CART" class="signatureLink">ADD_TO_CART</a> : String = add_to_cart<div class="summaryTableDescription">[static] 
+		 
+		 E-Commerce Add To Cart event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ADD_TO_WISHLIST" class="signatureLink">ADD_TO_WISHLIST</a> : String = add_to_wishlist<div class="summaryTableDescription">[static] 
+		 
+		 E-Commerce Add To Wishlist event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#APP_OPEN" class="signatureLink">APP_OPEN</a> : String = app_open<div class="summaryTableDescription">[static] 
+		 App Open event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#BEGIN_CHECKOUT" class="signatureLink">BEGIN_CHECKOUT</a> : String = begin_checkout<div class="summaryTableDescription">[static] 
+		 
+		 E-Commerce Begin Checkout event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ECOMMERCE_PURCHASE" class="signatureLink">ECOMMERCE_PURCHASE</a> : String = ecommerce_purchase<div class="summaryTableDescription">[static] 
+		 
+		 E-Commerce Purchase event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#GENERATE_LEAD" class="signatureLink">GENERATE_LEAD</a> : String = generate_lead<div class="summaryTableDescription">[static] 
+		 
+		 Generate Lead event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#JOIN_GROUP" class="signatureLink">JOIN_GROUP</a> : String = join_group<div class="summaryTableDescription">[static] 
+		 
+		 Join Group event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LEVEL_UP" class="signatureLink">LEVEL_UP</a> : String = level_up<div class="summaryTableDescription">[static] 
+		 
+		 Level Up event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#LOGIN" class="signatureLink">LOGIN</a> : String = login<div class="summaryTableDescription">[static]  Login event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#POST_SCORE" class="signatureLink">POST_SCORE</a> : String = post_score<div class="summaryTableDescription">[static] 
+		 
+		 Post Score event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PRESENT_OFFER" class="signatureLink">PRESENT_OFFER</a> : String = present_offer<div class="summaryTableDescription">[static] 
+		 
+		 Present Offer event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PURCHASE_REFUND" class="signatureLink">PURCHASE_REFUND</a> : String = purchase_refund<div class="summaryTableDescription">[static] 
+		 
+		 E-Commerce Purchase Refund event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SEARCH" class="signatureLink">SEARCH</a> : String = search<div class="summaryTableDescription">[static] 
+		 
+		 Search event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SELECT_CONTENT" class="signatureLink">SELECT_CONTENT</a> : String = select_content<div class="summaryTableDescription">[static] 
+		 
+		 Select Content event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SHARE" class="signatureLink">SHARE</a> : String = share<div class="summaryTableDescription">[static] 
+		 
+		 Share event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SIGN_UP" class="signatureLink">SIGN_UP</a> : String = sign_up<div class="summaryTableDescription">[static] 
+		 
+		 Sign Up event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#SPEND_VIRTUAL_CURRENCY" class="signatureLink">SPEND_VIRTUAL_CURRENCY</a> : String = spend_virtual_currency<div class="summaryTableDescription">[static] 
+		 
+		 Spend Virtual Currency event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#TUTORIAL_BEGIN" class="signatureLink">TUTORIAL_BEGIN</a> : String = tutorial_begin<div class="summaryTableDescription">[static]  Tutorial Begin event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#TUTORIAL_COMPLETE" class="signatureLink">TUTORIAL_COMPLETE</a> : String = tutorial_complete<div class="summaryTableDescription">[static]  Tutorial End event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#UNLOCK_ACHIEVEMENT" class="signatureLink">UNLOCK_ACHIEVEMENT</a> : String = unlock_achievement<div class="summaryTableDescription">[static] 
+		 
+		 Unlock Achievement event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VIEW_ITEM" class="signatureLink">VIEW_ITEM</a> : String = view_item<div class="summaryTableDescription">[static] 
+		 
+		 View Item event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VIEW_ITEM_LIST" class="signatureLink">VIEW_ITEM_LIST</a> : String = view_item_list<div class="summaryTableDescription">[static] 
+		 
+		 View Item List event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VIEW_SEARCH_RESULTS" class="signatureLink">VIEW_SEARCH_RESULTS</a> : String = view_search_results<div class="summaryTableDescription">[static] 
+		 
+		 View Search Results event.</div></td><td class="summaryTableOwnerCol">AnalyticsEvent</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ADD_PAYMENT_INFO"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ADD_PAYMENT_INFO</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ADD_PAYMENT_INFO:String = add_payment_info</code><p></p><p></p><p> Add Payment Info event. This event signifies that a user has submitted their payment information to your app. </p></div><a name="constantDetail"></a><a name="ADD_TO_CART"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ADD_TO_CART</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ADD_TO_CART:String = add_to_cart</code><p></p><p></p><p>
+		 <p>
+		 E-Commerce Add To Cart event. This event signifies that an item was added to a cart for purchase. Add this event to 
+		 a funnel with <code>ECOMMERCE_PURCHASE</code> to gauge the effectiveness of your checkout process. Note: If you supply the VALUE 
+		 parameter, you must also supply the <code>CURRENCY</code> parameter so that revenue metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>ITEM_ID (String)</li>
+		 <li>ITEM_NAME (String)</li>
+		 <li>ITEM_CATEGORY (String)</li>
+		 <li>QUANTITY (Number)</li>
+		 <li>PRICE (Number) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>ORIGIN (String) (optional)</li>
+		 <li>ITEM_LOCATION_ID (String) (optional)</li>
+		 <li>DESTINATION (String) (optional)</li>
+		 <li>START_DATE (String) (optional)</li>
+		 <li>END_DATE (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="ADD_TO_WISHLIST"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ADD_TO_WISHLIST</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ADD_TO_WISHLIST:String = add_to_wishlist</code><p></p><p></p><p>
+		 <p>
+		 E-Commerce Add To Wishlist event. This event signifies that an item was added to a wishlist. Use this event to identify popular 
+		 gift items in your app. Note: If you supply the VALUE parameter, you must also supply the <code>CURRENCY</code> parameter so that 
+		 revenue metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>ITEM_ID (String)</li>
+		 <li>ITEM_NAME (String)</li>
+		 <li>ITEM_CATEGORY (String)</li>
+		 <li>QUANTITY (Number)</li>
+		 <li>PRICE (Number) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>ITEM_LOCATION_ID (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="APP_OPEN"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">APP_OPEN</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const APP_OPEN:String = app_open</code><p></p><p></p><p>
+		 App Open event. By logging this event when an App is moved to the foreground, developers can understand 
+		 how often users leave and return during the course of a Session. Although Sessions are automatically reported, 
+		 this event can provide further clarification around the continuous engagement of app-users. 
+		 </p></div><a name="constantDetail"></a><a name="BEGIN_CHECKOUT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">BEGIN_CHECKOUT</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const BEGIN_CHECKOUT:String = begin_checkout</code><p></p><p></p><p>
+		 <p>
+		 E-Commerce Begin Checkout event. This event signifies that a user has begun the process of checking out. Add this event to a funnel 
+		 with your <code>ECOMMERCE_PURCHASE</code> event to gauge the effectiveness of your checkout process. Note: If you supply the VALUE 
+		 parameter, you must also supply the <code>CURRENCY</code> parameter so that revenue metrics can be computed accurately. Params:  
+		 
+		 <ul>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>TRANSACTION_ID (String) (optional)</li>
+		 <li>NUMBER_OF_NIGHTS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_ROOMS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_PASSENGERS (Number) (optional) for travel bookings</li>
+		 <li>ORIGIN (String) (optional) for travel bookings</li>
+		 <li>DESTINATION (String) (optional) for travel bookings</li>
+		 <li>START_DATE (String) (optional) for travel bookings</li>
+		 <li>END_DATE (String) (optional) for travel bookings</li>
+		 <li>TRAVEL_CLASS (String) (optional) for travel bookings</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="ECOMMERCE_PURCHASE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ECOMMERCE_PURCHASE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ECOMMERCE_PURCHASE:String = ecommerce_purchase</code><p></p><p></p><p>
+		 <p>
+		 E-Commerce Purchase event. This event signifies that an item was purchased by a user. Note: This is different from the in-app purchase
+		 event, which is reported automatically for Google Play-based apps. Note: If you supply the VALUE parameter, you must also supply the 
+		 <code>CURRENCY</code> parameter so that revenue metrics can be computed accurately. Params:
+		 
+		 <ul>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>TRANSACTION_ID (String) (optional)</li>
+		 <li>TAX (Number) (optional)</li>
+		 <li>SHIPPING (Number) (optional)</li>
+		 <li>COUPON (String) (optional)</li>
+		 <li>LOCATION (String) (optional)</li>
+		 <li>NUMBER_OF_NIGHTS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_ROOMS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_PASSENGERS (Number) (optional) for travel bookings</li>
+		 <li>ORIGIN (String) (optional) for travel bookings</li>
+		 <li>DESTINATION (String) (optional) for travel bookings</li>
+		 <li>START_DATE (String) (optional) for travel bookings</li>
+		 <li>END_DATE (String) (optional) for travel bookings</li>
+		 <li>TRAVEL_CLASS (String) (optional) for travel bookings</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="GENERATE_LEAD"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">GENERATE_LEAD</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const GENERATE_LEAD:String = generate_lead</code><p></p><p></p><p>
+		 <p>
+		 Generate Lead event. Log this event when a lead has been generated in the app to understand the efficacy of your install and 
+		 re-engagement campaigns. Note: If you supply the VALUE parameter, you must also supply the <code>CURRENCY</code> parameter so 
+		 that revenue metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="JOIN_GROUP"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">JOIN_GROUP</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const JOIN_GROUP:String = join_group</code><p></p><p></p><p>
+		 <p>
+		 Join Group event. Log this event when a user joins a group such as a guild, team or family. Use this event to analyze how 
+		 popular certain groups or social features are in your app. Params: 
+		 
+		 <ul>
+		 <li>GROUP_ID (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="LEVEL_UP"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LEVEL_UP</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LEVEL_UP:String = level_up</code><p></p><p></p><p>
+		 <p>
+		 Level Up event. This event signifies that a player has leveled up in your gaming app. It can help you gauge the level 
+		 distribution of your userbase and help you identify certain levels that are difficult to pass. Params: 
+		 
+		 <ul>
+		 <li>LEVEL (Number)</li>
+		 <li>CHARACTER (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="LOGIN"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LOGIN</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const LOGIN:String = login</code><p></p><p></p><p> Login event. Apps with a login feature can report this event to signify that a user has logged in.  </p></div><a name="constantDetail"></a><a name="POST_SCORE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">POST_SCORE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const POST_SCORE:String = post_score</code><p></p><p></p><p>
+		 <p>
+		 Post Score event. Log this event when the user posts a score in your gaming app. This event can help you understand how users 
+		 are actually performing in your game and it can help you correlate high scores with certain audiences or behaviors. Params: 
+		 
+		 <ul>
+		 <li>SCORE (Number)</li>
+		 <li>LEVEL (Number) (optional)</li>
+		 <li>CHARACTER (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="PRESENT_OFFER"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PRESENT_OFFER</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const PRESENT_OFFER:String = present_offer</code><p></p><p></p><p>
+		 <p>
+		 Present Offer event. This event signifies that the app has presented a purchase offer to a user. Add this event to a funnel with 
+		 the ADD_TO_CART and <code>ECOMMERCE_PURCHASE</code> to gauge your conversion process. Note: If you supply the VALUE parameter, 
+		 you must also supply the <code>CURRENCY</code> parameter so that revenue metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>ITEM_ID (String)</li>
+		 <li>ITEM_NAME (String)</li>
+		 <li>ITEM_CATEGORY (String)</li>
+		 <li>QUANTITY (Number)</li>
+		 <li>PRICE (Number) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>ITEM_LOCATION_ID (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="PURCHASE_REFUND"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PURCHASE_REFUND</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const PURCHASE_REFUND:String = purchase_refund</code><p></p><p></p><p>
+		 <p>
+		 E-Commerce Purchase Refund event. This event signifies that an item purchase was refunded. Note: If you supply the VALUE parameter, 
+		 you must also supply the <code>CURRENCY</code> parameter so that revenue metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>TRANSACTION_ID (String) (optional)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="SEARCH"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SEARCH</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SEARCH:String = search</code><p></p><p></p><p>
+		 <p>
+		 Search event. Apps that support search features can use this event to contextualize search operations by supplying the appropriate, 
+		 corresponding parameters. This event can help you identify the most popular content in your app. Params: 
+		 
+		 <ul>
+		 <li>SEARCH_TERM (String)</li>
+		 <li>NUMBER_OF_NIGHTS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_ROOMS (Number) (optional) for hotel bookings</li>
+		 <li>NUMBER_OF_PASSENGERS (Number) (optional) for travel bookings</li>
+		 <li>ORIGIN (String) (optional) for travel bookings</li>
+		 <li>DESTINATION (String) (optional) for travel bookings</li>
+		 <li>START_DATE (String) (optional) for travel bookings</li>
+		 <li>END_DATE (String) (optional) for travel bookings</li>
+		 <li>TRAVEL_CLASS (String) (optional) for travel bookings</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="SELECT_CONTENT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SELECT_CONTENT</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SELECT_CONTENT:String = select_content</code><p></p><p></p><p>
+		 <p>
+		 Select Content event. This general purpose event signifies that a user has selected some content of a certain type in an app. 
+		 The content can be any object in your app. This event can help you identify popular content and categories of content in your app. Params: 
+		 
+		 <ul>
+		 <li>CONTENT_TYPE (String)</li>
+		 <li>ITEM_ID (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="SHARE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SHARE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SHARE:String = share</code><p></p><p></p><p>
+		 <p>
+		 Share event. Apps with social features can log the Share event to identify the most viral content. Params: 
+		 
+		 <ul>
+		 <li>CONTENT_TYPE (String)</li>
+		 <li>ITEM_ID (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="SIGN_UP"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SIGN_UP</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SIGN_UP:String = sign_up</code><p></p><p></p><p>
+		 <p>
+		 Sign Up event. This event indicates that a user has signed up for an account in your app. The parameter signifies the method by which 
+		 the user signed up. Use this event to understand the different behaviors between logged in and logged out users. Params:  
+		 
+		 <ul>
+		 <li>SIGN_UP_METHOD (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="SPEND_VIRTUAL_CURRENCY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">SPEND_VIRTUAL_CURRENCY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const SPEND_VIRTUAL_CURRENCY:String = spend_virtual_currency</code><p></p><p></p><p>
+		 <p>
+		 Spend Virtual Currency event. This event tracks the sale of virtual goods in your app and can help you identify which virtual goods are 
+		 the most popular objects of purchase. Params:  
+		 
+		 <ul>
+		 <li>ITEM_NAME (String)</li>
+		 <li>VIRTUAL_CURRENCY_NAME (String)</li>
+		 <li>VALUE (long or double)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="TUTORIAL_BEGIN"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">TUTORIAL_BEGIN</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const TUTORIAL_BEGIN:String = tutorial_begin</code><p></p><p></p><p> Tutorial Begin event. This event signifies the start of the on-boarding process in your app. Use this in a funnel with <code>TUTORIAL_COMPLETE</code> to understand how many users complete this process and move on to the full app experience.  </p></div><a name="constantDetail"></a><a name="TUTORIAL_COMPLETE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">TUTORIAL_COMPLETE</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const TUTORIAL_COMPLETE:String = tutorial_complete</code><p></p><p></p><p> Tutorial End event. Use this event to signify the user’s completion of your app’s on-boarding process. Add this to a funnel with <code>TUTORIAL_BEGIN</code> to gauge the completion rate of your on-boarding process.  </p></div><a name="constantDetail"></a><a name="UNLOCK_ACHIEVEMENT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">UNLOCK_ACHIEVEMENT</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const UNLOCK_ACHIEVEMENT:String = unlock_achievement</code><p></p><p></p><p>
+		 <p>
+		 Unlock Achievement event. Log this event when the user has unlocked an achievement in your game. Since achievements generally 
+		 represent the breadth of a gaming experience, this event can help you understand how many users are experiencing all that your 
+		 game has to offer. Params: 
+		 
+		 <ul>
+		 <li>ACHIEVEMENT_ID (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="VIEW_ITEM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VIEW_ITEM</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VIEW_ITEM:String = view_item</code><p></p><p></p><p>
+		 <p>
+		 View Item event. This event signifies that some content was shown to the user. This content may be a product, a webpage or just 
+		 a simple image or text. Use the appropriate parameters to contextualize the event. Use this event to discover the most popular 
+		 items viewed in your app. Note: If you supply the VALUE parameter, you must also supply the <code>CURRENCY</code> parameter so that revenue 
+		 metrics can be computed accurately. Params: 
+		 
+		 <ul>
+		 <li>ITEM_ID (String)</li>
+		 <li>ITEM_NAME (String)</li>
+		 <li>ITEM_CATEGORY (String)</li>
+		 <li>ITEM_LOCATION_ID (String) (optional)</li>
+		 <li>PRICE (Number) (optional)</li>
+		 <li>QUANTITY (Number) (optional)</li>
+		 <li>CURRENCY (String) (optional)</li>
+		 <li>VALUE (Number) (optional)</li>
+		 <li>FLIGHT_NUMBER (String) (optional) for travel bookings</li>
+		 <li>NUMBER_OF_PASSENGERS (Number) (optional) for travel bookings</li>
+		 <li>NUMBER_OF_NIGHTS (Number) (optional) for travel bookings</li>
+		 <li>NUMBER_OF_ROOMS (Number) (optional) for travel bookings</li>
+		 <li>ORIGIN (String) (optional) for travel bookings</li>
+		 <li>DESTINATION (String) (optional) for travel bookings</li>
+		 <li>START_DATE (String) (optional) for travel bookings</li>
+		 <li>END_DATE (String) (optional) for travel bookings</li>
+		 <li>SEARCH_TERM (String) (optional) for travel bookings</li>
+		 <li>TRAVEL_CLASS (String) (optional) for travel bookings</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="VIEW_ITEM_LIST"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VIEW_ITEM_LIST</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VIEW_ITEM_LIST:String = view_item_list</code><p></p><p></p><p>
+		 <p>
+		 View Item List event. Log this event when the user has been presented with a list of items of a certain category. Params: 
+		 
+		 <ul>
+		 <li>ITEM_CATEGORY (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><a name="constantDetail"></a><a name="VIEW_SEARCH_RESULTS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VIEW_SEARCH_RESULTS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VIEW_SEARCH_RESULTS:String = view_search_results</code><p></p><p></p><p>
+		 <p>
+		 View Search Results event. Log this event when the user has been presented with the results of a search. Params: 
+		 
+		 <ul>
+		 <li>SEARCH_TERM (String)</li>
+		 </ul>
+		 </p>
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Jul 20 2016, 10:13 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Jul 20 2016, 10:13 AM +04:30  -->
