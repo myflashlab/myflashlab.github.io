@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="RichWebViewSettings,com.myflashlab.air.extensions.webView.RichWebViewSettings,ANDROID,BACK_CLICKED,BG_COLOR_HEX,ENABLE_BITMAP_CAPTURE,ENABLE_COOKIES,ENABLE_GPS,ENABLE_SCROLL_BOUNCE,ENABLE_ZOOM,EXTENSION_ID,IOS,PAGE_FINISHED,PAGE_PROGRESS,PAGE_STARTED,PAGE_STARTING,RECEIVED_MESSAGE_FROM_JS,RECEIVED_SSL_ERROR,SCREENSHOT,TOUCH,USER_AGENT,VERSION,canGoBack,canGoForward,contentHeight,height,maximumZoomScale,minimumZoomScale,os,scrollX,scrollY,sdkVersion,visible,width,x,y,zoomScale"><title>com.myflashlab.air.extensions.webView.RichWebViewSettings</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="RichWebViewSettings,com.myflashlab.air.extensions.webView.RichWebViewSettings,ANDROID,BACK_CLICKED,BG_COLOR_HEX,ENABLE_BITMAP_CAPTURE,ENABLE_COOKIES,ENABLE_GPS,ENABLE_SCROLL_BOUNCE,ENABLE_THIRD_PARTY_COOKIES,ENABLE_ZOOM,EXTENSION_ID,IOS,PAGE_FINISHED,PAGE_PROGRESS,PAGE_STARTED,PAGE_STARTING,RECEIVED_MESSAGE_FROM_JS,RECEIVED_SSL_ERROR,SCREENSHOT,TOUCH,USER_AGENT,VERSION,canGoBack,canGoForward,contentHeight,height,maximumZoomScale,minimumZoomScale,os,scrollX,scrollY,sdkVersion,visible,width,x,y,zoomScale"><title>com.myflashlab.air.extensions.webView.RichWebViewSettings</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'RichWebViewSettings - MyFlashLabs';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -13,28 +13,87 @@
 			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.webView</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  RichWebViewSettings</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">RichWebViewSettings  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p>
 	 
 	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#BG_COLOR_HEX" class="signatureLink">BG_COLOR_HEX</a> : String = #FFFFFFFF<div class="summaryTableDescription">[static] 
+		 
 		 Set a background color for your webview content in hex #AARRGGBB format.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_BITMAP_CAPTURE" class="signatureLink">ENABLE_BITMAP_CAPTURE</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
 		 You must set this property to true if you want to take screenshot from your web content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_COOKIES" class="signatureLink">ENABLE_COOKIES</a> : Boolean = true<div class="summaryTableDescription">[static] 
-		 Set to true to enable cookies in your webpage content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_GPS" class="signatureLink">ENABLE_GPS</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
+		 Set to false to disable cookies in your webpages content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_GPS" class="signatureLink">ENABLE_GPS</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
 		 Set this property to true so you will be able to use JS GPS APIs in your web content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_SCROLL_BOUNCE" class="signatureLink">ENABLE_SCROLL_BOUNCE</a> : Boolean = true<div class="summaryTableDescription">[static] 
-		 Set this property to false if you don't wish the webview to bounce your content at the top or bottom of the scroll content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_ZOOM" class="signatureLink">ENABLE_ZOOM</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
+		 Set this property to false if you don't wish the webview to bounce your content at the top or bottom of the scroll content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_THIRD_PARTY_COOKIES" class="signatureLink">ENABLE_THIRD_PARTY_COOKIES</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
+		 Set to true to enable third party cookies in your webpages content.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ENABLE_ZOOM" class="signatureLink">ENABLE_ZOOM</a> : Boolean = false<div class="summaryTableDescription">[static] 
+		 
 		 Set this property to true if you wish your web content be zoomed in/out with pinch finger patterns.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#USER_AGENT" class="signatureLink">USER_AGENT</a> : String<div class="summaryTableDescription">[static] 
+		 
 		 Set browser UserAgent for webview or leave it empty for the default agent.</div></td><td class="summaryTableOwnerCol">RichWebViewSettings</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
 										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="BG_COLOR_HEX"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">BG_COLOR_HEX</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public static var BG_COLOR_HEX:String = #FFFFFFFF</code><p></p><p></p><p>
+		 <p>
 		 Set a background color for your webview content in hex #AARRGGBB format. The first two digits will represent the alpha channel
 		 of your webview background color.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>#FFFFFFFF</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="ENABLE_BITMAP_CAPTURE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_BITMAP_CAPTURE</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_BITMAP_CAPTURE:Boolean = false</code><p></p><p></p><p>
+		 <p>
 		 You must set this property to <code>true</code> if you want to take screenshot from your web content. If you don't need
 		 to take screenshots, set it to <code>false</code> for better performance.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>false</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="ENABLE_COOKIES"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_COOKIES</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_COOKIES:Boolean = true</code><p></p><p></p><p>
-		 Set to <code>true</code> to enable cookies in your webpage content.
+		 <p>
+		 Set to <code>false</code> to disable cookies in your webpages content.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>true</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="ENABLE_GPS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_GPS</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_GPS:Boolean = false</code><p></p><p></p><p>
+		 <p>
 		 Set this property to <code>true</code> so you will be able to use JS GPS APIs in your web content.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>false</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="ENABLE_SCROLL_BOUNCE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_SCROLL_BOUNCE</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_SCROLL_BOUNCE:Boolean = true</code><p></p><p></p><p>
+		 <p>
 		 Set this property to false if you don't wish the webview to bounce your content at the top or bottom of the scroll content.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>true</code>
+		 </p>
+		 </p></div><a name="propertyDetail"></a><a name="ENABLE_THIRD_PARTY_COOKIES"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_THIRD_PARTY_COOKIES</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_THIRD_PARTY_COOKIES:Boolean = false</code><p></p><p></p><p>
+		 <p>
+		 Set to <code>true</code> to enable third party cookies in your webpages content.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>false</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="ENABLE_ZOOM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ENABLE_ZOOM</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var ENABLE_ZOOM:Boolean = false</code><p></p><p></p><p>
+		 <p>
 		 Set this property to <code>true</code> if you wish your web content be zoomed in/out with pinch finger patterns.
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>false</code>
+		 </p>
 		 </p></div><a name="propertyDetail"></a><a name="USER_AGENT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">USER_AGENT</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var USER_AGENT:String</code><p></p><p></p><p>
+		 <p>
 		 Set browser UserAgent for webview or leave it empty for the default agent.
-		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue Jul 26 2016, 12:41 PM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue Jul 26 2016, 12:41 PM +04:30  -->
+		 </p>
+		 
+		 <p>
+		 Default value is set to <code>""</code> (an empty string, which will use the default native user agent value provided by your device)
+		 </p>
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue Sep 6 2016, 11:20 AM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue Sep 6 2016, 11:20 AM +04:30  -->
