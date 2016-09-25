@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="VRApi,com.myflashlab.air.extensions.googleVR.VRApi,ANDROID,EXTENSION_ID,IOS,VERSION,VERSION_ANDROID_SDK,VERSION_IOS_SDK,api,imageView,os"><title>com.myflashlab.air.extensions.googleVR.VRApi</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="VRApi,com.myflashlab.air.extensions.googleVR.VRApi,ANDROID,DID_TAP,DISPLAY_MODE_CHANGED,EMBEDDED,EXTENSION_ID,FULLSCREEN_MONO,FULLSCREEN_STEREO,IOS,LOAD_FAILED,LOAD_SUCCESS,PAUSED,POS_UPDATED,REACHED_END,RESUMED,STOPPED,TYPE_MONO,TYPE_STEREO_OVER_UNDER,VERSION,VERSION_ANDROID_SDK,VERSION_IOS_SDK,VR_CLOSED,_btnExit,_btnExitAddress,_fullscreenButtonEnabled,_infoButtonEnabled,_stereoModeButtonEnabled,_touchTrackingEnabled,api,btnExit,displayMode,displaymode,duration,fullscreenButtonEnabled,headRotation,image360,imageType,imageView,infoButtonEnabled,msg,os,position,stereoModeButtonEnabled,touchTrackingEnabled,video360,video360URL,videoType,videoView"><title>com.myflashlab.air.extensions.googleVR.VRApi</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'VRApi - MyFlashLabs';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -14,10 +14,46 @@
 	 This class will let you access different VR APIs supported by this ANE.
 	 Access this class like <code>VR.api</code>.
 	 
-	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#imageView" class="signatureLink">imageView</a> : <a href="../../../../../com/myflashlab/air/extensions/googleVR/imgView/ApiImgView.html">ApiImgView</a><div class="summaryTableDescription">[read-only] 
+	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#displayMode" class="signatureLink">displayMode</a> : int<div class="summaryTableDescription">
+		 Programmatically updates the DisplayMode of the VR View to simulate pressing one of the UI buttons.</div></td><td class="summaryTableOwnerCol">VRApi</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#headRotation" class="signatureLink">headRotation</a> : Array<div class="summaryTableDescription">[read-only] 
+		 
+		 Provides yaw and pitch angles corresponding to where the user is looking.</div></td><td class="summaryTableOwnerCol">VRApi</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#imageView" class="signatureLink">imageView</a> : <a href="../../../../../com/myflashlab/air/extensions/googleVR/ApiImgView.html">ApiImgView</a><div class="summaryTableDescription">[read-only] 
 		 Access to the VR imageView API
+		 </div></td><td class="summaryTableOwnerCol">VRApi</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#videoView" class="signatureLink">videoView</a> : ApiVideoView<div class="summaryTableDescription">[read-only] 
+		 Access to the VR videoView API
 		 </div></td><td class="summaryTableOwnerCol">VRApi</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
-										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="imageView"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">imageView</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>imageView:<a href="../../../../../com/myflashlab/air/extensions/googleVR/imgView/ApiImgView.html">ApiImgView</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="displayMode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">displayMode</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>displayMode:int</code><p></p><p></p><p>
+		 Programmatically updates the DisplayMode of the VR View to simulate pressing one of the UI buttons.
+		 If the getter returns -1, it means that the vr view is not accessible.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get displayMode():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set displayMode(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="headRotation"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">headRotation</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>headRotation:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 <p>
+		 Provides yaw and pitch angles corresponding to where the user is looking. 
+		 yaw is the rotation along the vertical (y) axis. Values are in the [-180, 180] range with:
+		 
+		 <ul>
+		 	<li>0 == looking straight at the initial image orientation</li>
+		 	<li>90 == looking 90 degrees to the right</li>
+		 	<li>-90 == looking 90 degrees to the left</li>
+		 	<li>180 == -180 == looking in the direction opposite to the initial one</li>
+		 </ul>
+		 </p>
+		 
+		 <p>
+		 pitch is the rotation along the right (x) axis previously rotated by yaw. Values are in the [-90, 90] range with:
+		 
+		 <ul>
+		 	<li>0 == looking straight, level with the ground</li>
+		 	<li>90 == looking up</li>
+		 	<li>-90 == looking down</li>
+		 </ul>
+		 </p>
+		 
+		 <p>
+		 When pitch approaches 90 or -90, yaw values are reset to zero as computing the yaw values becomes numerically unstable.
+		 </p>
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get headRotation():Array</code><br/></div><a name="propertyDetail"></a><a name="imageView"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">imageView</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>imageView:<a href="../../../../../com/myflashlab/air/extensions/googleVR/ApiImgView.html">ApiImgView</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
 		 Access to the VR imageView API
-		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get imageView():<a href="../../../../../com/myflashlab/air/extensions/googleVR/imgView/ApiImgView.html">ApiImgView</a></code><br/></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Sep 14 2016, 01:51 PM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Sep 14 2016, 01:51 PM +04:30  -->
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get imageView():<a href="../../../../../com/myflashlab/air/extensions/googleVR/ApiImgView.html">ApiImgView</a></code><br/></div><a name="propertyDetail"></a><a name="videoView"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">videoView</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>videoView:ApiVideoView</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Access to the VR videoView API
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get videoView():ApiVideoView</code><br/></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Sun Sep 25 2016, 03:23 PM +03:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Sun Sep 25 2016, 03:23 PM +03:30  -->

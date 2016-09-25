@@ -15,12 +15,12 @@
 	 
 	 <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isLoggin" class="signatureLink">isLoggin</a> : Boolean<div class="summaryTableDescription">[static] [read-only] </div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#listener" class="signatureLink">listener</a> : EventDispatcher<div class="summaryTableDescription">[static] [read-only] </div></td><td class="summaryTableOwnerCol">Auth</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#checkDependencies()" class="signatureLink">checkDependencies</a>():Boolean</div><div class="summaryTableDescription">[static] 
 		 
-		 Use this method to check if you have correctly added all the dependency ANEs.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createUserWithEmailAndPassword()" class="signatureLink">createUserWithEmailAndPassword</a>($email:String, $password:String):void</div><div class="summaryTableDescription">[static] 
+		 This method is deprecated from V1.2.0.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#createUserWithEmailAndPassword()" class="signatureLink">createUserWithEmailAndPassword</a>($email:String, $password:String):void</div><div class="summaryTableDescription">[static] 
 		 
 		 Tries to create a new user account with the given email address and password.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>():void</div><div class="summaryTableDescription">[static] 
 		 Call this method prior to any other Auth methods.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#sendPasswordResetEmail()" class="signatureLink">sendPasswordResetEmail</a>($emailAddress:String):void</div><div class="summaryTableDescription">[static] 
 		 
-		 Triggers the Firebase Authentication backend to send a password-reset email to the given email address, which must correspond to an existing user of your app.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#signIn()" class="signatureLink">signIn</a>($credential:Object):void</div><div class="summaryTableDescription">[static] 
+		 Triggers the Firebase Authentication backend to send a password-reset email to the given email address, which must correspond to an existing user of your app.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#signIn()" class="signatureLink">signIn</a>($credential:Object = null):void</div><div class="summaryTableDescription">[static] 
 		 
 		 Tries to sign in a user with the given credential info.</div></td><td class="summaryTableOwnerCol">Auth</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#signOut()" class="signatureLink">signOut</a>():void</div><div class="summaryTableDescription">[static] 
 		 
@@ -43,12 +43,8 @@
 										showHideInherited();
 										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="isLoggin"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isLoggin</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>isLoggin:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isLoggin():Boolean</code><br/></div><a name="propertyDetail"></a><a name="listener"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listener</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>listener:EventDispatcher</code>&nbsp;&nbsp;[read-only] <p></p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get listener():EventDispatcher</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="checkDependencies()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">checkDependencies</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function checkDependencies():Boolean</code><p></p><p></p><p>
 		 <p>
-		 Use this method to check if you have correctly added all the dependency ANEs. When releasing your app, it's a 
-		 good idea to remove this check so your app is not doing unnecessary operations.
-		 </p>
-		 
-		 <p>
-		 <b>NOTE:</b> Always returns <code>true</code> on iOS because dependency ANEs are required for the Android side only.
+		 This method is deprecated from V1.2.0. Please use the inspector ANE instead of this.
+		 https://github.com/myflashlab/ANE-Inspector-Tool
 		 </p>
 		 
 		 </p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; 
@@ -85,11 +81,15 @@
 		 </ul>
 		 </p>
 		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$emailAddress</span>:String</code></td></tr></table></p></div><a name="signIn()"></a><a name="signIn(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">signIn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function signIn($credential:Object):void</code><p></p><p></p><p>
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$emailAddress</span>:String</code></td></tr></table></p></div><a name="signIn()"></a><a name="signIn(Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">signIn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function signIn($credential:Object = null):void</code><p></p><p></p><p>
 		 <p>
 		 Tries to sign in a user with the given credential info. Use this method to sign in a user into your Firebase Authentication system. 
 		 First retrieve the credential either directly from the user, in case of <code>AuthProvider.EMAIL</code>, or from a supported authentication 
 		 SDK, such as Google Sign-In or Facebook.
+		 </p>
+		 
+		 <p>
+		 To sign in a user a anonymously, simply pass <code>null</code> when calling this method.
 		 </p>
 		 
 		 <p>
@@ -99,7 +99,8 @@
 		 </p>
 		 
 		 <p>
-		 For all credential types except <code>AuthProvider.EMAIL</code>, this method will create an account for the user in the case that it didn't exist before. 
+		 For all credential types except <code>AuthProvider.EMAIL</code>, this method will create an account for the user in the case that it didn't 
+		 exist before. 
 		 </p>
 		 
 		 <p>
@@ -118,7 +119,8 @@
 		 </ul>
 		 </p>
 		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$credential</span>:Object</code></td></tr></table></p></div><a name="signOut()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">signOut</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function signOut():void</code><p></p><p></p><p>
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$credential</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; 	If you pass <code>null</code>, the user will be signed in anonymously.
+		 </td></tr></table></p></div><a name="signOut()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">signOut</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function signOut():void</code><p></p><p></p><p>
 		 <p>
 		 Signs out the current user and clears it from the disk cache. Upon successful completion, this operation triggers
 		 <code>AuthEvents.AUTH_STATE_CHANGED</code>
@@ -183,4 +185,4 @@
 		 </p>
 		 </p></div><a name="constantDetail"></a><a name="RESULT_SUCCESS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">RESULT_SUCCESS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const RESULT_SUCCESS:int = 0</code><p></p><p></p><p>
 		 Indicates that the operation has been successfull.
-		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Sep 14 2016, 01:51 PM +04:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Sep 14 2016, 01:51 PM +04:30  -->
+		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Sun Sep 25 2016, 03:23 PM +03:30  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Sun Sep 25 2016, 03:23 PM +03:30  -->
