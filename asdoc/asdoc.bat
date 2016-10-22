@@ -1,6 +1,6 @@
-set FLEX_SDK=C:\flex_sdk_4.6_air_sdk_19-190
+set FLEX_SDK=D:\flex_sdk_4.6_air_sdk_23-257
 set PROJECT_PATH=
-set AS_SOURCE_PATH=E:\project\as
+set AS_SOURCE_PATH=D:\project\as
 set SWF_VERSION=13
 
 "%FLEX_SDK%\bin\asdoc.exe" ^
