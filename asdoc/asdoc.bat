@@ -1,4 +1,4 @@
-set FLEX_SDK=D:\flex_sdk_4.6_air_sdk_23-257
+set FLEX_SDK=D:\flex_sdk_4.6_air_sdk_24-180
 set PROJECT_PATH=
 set AS_SOURCE_PATH=D:\project\as
 set SWF_VERSION=13
