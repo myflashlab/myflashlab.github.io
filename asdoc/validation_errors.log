@@ -1,3 +1,0 @@
-Text for description in com.myflashlab.air.extensions.billing:Purchase/signature is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 17; Attribute name "ONLY" associated with an element type "Android" must be followed by the ' = ' character.
-
