@@ -21,47 +21,48 @@
 	 
 	           <p></p><p><a href="#includeExamplesSummary">View the examples</a></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#call()" class="signatureLink">call</a>($url:String, $urlRequestMethod:String, $urlVariables:URLVariables):void</div><div class="summaryTableDescription">
 		 
-		 Depricated and will be removed in future versions of this ANE, instead use the call method.</div></td><td class="summaryTableOwnerCol">Graph</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+		 Use this method to request for information from Facebook graph API
+		 
+		 		 
+		 read here for detailed information about how you should use the graph: https://developers.facebook.com/docs/graph-api/using-graph-api/v2.8
+		 
+		 		 </div></td><td class="summaryTableOwnerCol">Graph</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
 										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="call()"></a><a name="call(String,String,flash.net.URLVariables)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">call</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function call($url:String, $urlRequestMethod:String, $urlVariables:URLVariables):void</code><p></p><p></p><p>
 		 <p>
-		 Depricated and will be removed in future versions of this ANE, instead use the <b>call</b> method.
+		 Use this method to request for information from Facebook graph API
 		 </p>
-		 
-		 <p>
-		 call this method to request for information from Facebook graph API
-		 </p>
-		 
-		 <p>
+		 		 <p>
 		 read here for detailed information about how you should use the graph: https://developers.facebook.com/docs/graph-api/using-graph-api/v2.8
 		 </p>
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$url</span>:String</code> &mdash; 	message to send
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$urlRequestMethod</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$urlVariables</span>:URLVariables</code></td></tr></table></p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">This example shows how you can call the simplest request on the graph
+		 		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$url</span>:String</code> &mdash; 		The address on the graph which you wish to connect to, for example https://graph.facebook.com/v2.8/me
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$urlRequestMethod</span>:String</code> &mdash; 	can be URLRequestMethod.GET for example
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$urlVariables</span>:URLVariables</code> &mdash; 		can be new URLVariables("fields=name,email,picture&metadata=0") for example
+		 </td></tr></table></p></div><a name="includeExamplesSummary"></a><div class="detailSectionHeader">Examples</div><div class="detailBody">This example shows how you can call the simplest request on the graph
 	 <div class="listing" version="3.0"><pre>
-     FB.graph.addEventListener(FBEvent.GRAPH_RESPONSE, onResponse);
-     FB.graph.addEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onError);
-     FB.graph.request("me/");
+     FB.graph.addEventListener(FBEvent.GRAPH_RESPONSE, onGraphResponse);
+     FB.graph.addEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onGraphError);
+     FB.graph.call("https://graph.facebook.com/v2.8/me", URLRequestMethod.GET, new URLVariables("fields=name,email,picture&metadata=0"));
      
-     function onResponse(event:FBEvent):void
+     function onGraphResponse(event:FBEvent):void
      {
-         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE, onResponse);
-         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onError);
+         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE, onGraphResponse);
+         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onGraphError);
          
          trace(event.graphRequest);
          trace(event.param);
          trace("----------------");
      }
      
-     function onError(event:FBEvent):void
+     function onGraphError(event:FBEvent):void
      {
-         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE, onResponse);
-         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onError);
-         
+         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE, onGraphResponse);
+         FB.graph.removeEventListener(FBEvent.GRAPH_RESPONSE_ERROR, onGraphError);
+              trace("ERROR!");
          trace(event.graphRequest);
          trace(event.param);
          trace("----------------");
      }
      </pre></div>
 	 
-	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Tue Jan 30 2018, 02:21 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Tue Jan 30 2018, 02:21 PM +04:00  -->
+	 </div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Thu Feb 8 2018, 11:47 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Thu Feb 8 2018, 11:47 AM +04:00  -->
