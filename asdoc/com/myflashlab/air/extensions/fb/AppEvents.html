@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="AppEvents,com.myflashlab.air.extensions.fb.AppEvents,ACTION_TYPE_ASKFOR,ACTION_TYPE_SEND,ACTION_TYPE_TURN,ANDROID,APP_EVENTS,AUTO,CACHE,DEVELOPER_ERRORS,DEVICE_AUTH,EVERYONE,EXPLICIT_ONLY,EXTENSION_ID,FILTERS_APP_NON_USERS,FILTERS_APP_USERS,FRIENDS,GRAPH_API_DEBUG_INFO,GRAPH_API_DEBUG_WARNING,INCLUDE_ACCESS_TOKENS,INCLUDE_RAW_RESPONSES,INIT,INVOKE,IOS,KATANA_ONLY,NATIVE_ONLY,NATIVE_WITH_FALLBACK,NONE,ONLY_ME,REQUESTS,VERSION,WEB_ONLY,WEB_VIEW_ONLY,actionType,appEvents,auth,contentUrl,currentAccessToken,data,declinedPermissions,deeplink,defaultAudience,email,expiration,filters,firstName,flushBehavior,games,grantedPermissions,graph,hashKey,hashtag,id,isFacebookMessengerAppInstalled,lastName,lastRefresh,limitEventAndDataUsage,link,listener,loginBehavior,manage_pages,message,middleName,name,objectID,os,pageId,picture,placeId,public_profile,publish_actions,publish_pages,pushNotificationRegistrationId,quote,read_custom_friendlists,read_insights,read_mailbox,read_page_mailboxes,recipientSuggestions,recipients,ref,share,title,token,userId,userId,user_about_me,user_actions_books,user_actions_fitness,user_actions_music,user_actions_news,user_actions_video,user_birthday,user_education_history,user_events,user_friends,user_games_activity,user_groups,user_hometown,user_likes,user_location,user_managed_groups,user_photos,user_posts,user_relationship_details,user_relationships,user_religion_politics,user_status,user_tagged_places,user_videos,user_website,user_work_history,addLoggingBehavior,call,clearLoggingBehaviors,clearUserID,flush,getCurrentProfile,getLoggingBehaviors,init,isLoggingBehaviorEnabled,logEvent,logPurchase,logPushNotificationOpen,login,logout,refreshCurrentAccessToken,removeLoggingBehavior,requestDialog,shareDialog,shareMessenger,toString,toString,updateUserProperties"><title>com.myflashlab.air.extensions.fb.AppEvents</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'AppEvents - Myflashlabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Myflashlabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/fb/AppEvents.html&amp;com/myflashlab/air/extensions/fb/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt="AdobeLogo" title="AdobeLogo"></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">AppEvents</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("AppEvents"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.fb</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  AppEvents</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">AppEvents  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
+               <p>
+ The AppEvents class allows the developer to log various types of events back to Facebook. In order to log
+ events, the ANE must have been initialized first. and then call the various "log" methods.
+ </p>
+               <p>
+ This client-side event logging is then available through Facebook App Insights
+ and for use with Facebook Ads conversion tracking and optimization.
+ </p>
+               <p>
+ The AppEvents class has a few related roles:
+ </p>
+               <ul>
+                  <li>
+ Logging predefined and application-defined events to Facebook App Insights with a
+ numeric value to sum across a large number of events, and an optional set of key/value
+ parameters that define "segments" for this event (e.g., 'purchaserStatus' : 'frequent', or
+ 'gamerLevel' : 'intermediate').  These events may also be used for ads conversion tracking,
+ optimization, and other ads related targeting in the future.
+ </li>
+                  <li>
+ Methods that control the way in which events are flushed out to the Facebook servers.
+ </li>
+               </ul>
+               <p>
+ Below are some important characteristics of the logging mechanism provided by AppEvents:
+ </p>
+               <p>
+ Events are not sent immediately when logged.  They're cached and flushed out to the Facebook servers in a number of
+ situations:
+  <ul>
+ 	                   <li>when an event count threshold is passed (currently 100 logged events).</li>
+ 	                   <li>when a time threshold is passed (currently 15 seconds).</li>
+ 	                   <li>when an app has gone to background and is then brought back to the foreground.</li>
+                  </ul>
+               </p>
+               <ul>
+                  <li>Events will be accumulated when the app is in a disconnected state, and sent when the connection is
+     restored and one of the above 'flush' conditions are met.</li>
+                  <li>The developer can call the set FlushBehavior method to force the flushing of events to only occur on an
+     explicit call to the 'flush' method.</li>
+                  <li>The developer can turn on console debug output for event logging and flushing to the server by calling
+     <code>Facebook.addLoggingBehavior(LoggingBehavior.APP_EVENTS);</code>
+                  </li>
+               </ul>
+               <p>
+ Some things to note when logging events:
+ <ul>
+ 	                   <li>There is a limit on the number of unique event names an app can use, on the order of 1000.</li>
+ 	                   <li>There is a limit to the number of unique parameter names in the provided parameters that can be used per
+ 	event, on the order of 25.  This is not just for an individual call, but for all invocations for that eventName.</li>
+ 	                   <li>Event names and parameter names must be between 2 and 40 characters, and must consist of alphanumeric
+ 	characters, _, -, or spaces.</li>
+ 	                   <li>The length of each parameter value can be no more than on the order of 100 characters.</li>
+                  </ul>
+               </p>
+            <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#flushBehavior" class="signatureLink">flushBehavior</a> : int<div class="summaryTableDescription">
+	 Access the behavior that AppEvents uses to determine when to flush logged events to the server.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#pushNotificationRegistrationId" class="signatureLink">pushNotificationRegistrationId</a> : String<div class="summaryTableDescription">[write-only] 
+	 
+	 Sets and sends registration id to register the current app for push notifications.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#userId" class="signatureLink">userId</a> : String<div class="summaryTableDescription">
+	 Indicates a user id to associate with all app events.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearUserID()" class="signatureLink">clearUserID</a>():void</div><div class="summaryTableDescription">
+	 Clears the currently set user id.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#flush()" class="signatureLink">flush</a>():void</div><div class="summaryTableDescription">
+	 Explicitly flush any stored events to the server.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#logEvent()" class="signatureLink">logEvent</a>($eventName:String, $valueToSum:Number = -1, $parameters:Object = null):void</div><div class="summaryTableDescription">
+	 
+	 Log an app event with the specified name, supplied value, and set of parameters.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#logPurchase()" class="signatureLink">logPurchase</a>($purchaseAmount:Number, $currency:String, $parameters:Object = null):void</div><div class="summaryTableDescription">
+	 Logs a purchase event with Facebook, in the specified amount and with the specified
+	 currency.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#logPushNotificationOpen()" class="signatureLink">logPushNotificationOpen</a>($payload:String):void</div><div class="summaryTableDescription">
+	 
+	 Logs an app event that tracks that the application was open via Push Notification.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#updateUserProperties()" class="signatureLink">updateUserProperties</a>($properties:Object, $callback:Function):void</div><div class="summaryTableDescription">
+	 
+	 An AS3 Object of key-value pairs representing user properties and their values.</div></td><td class="summaryTableOwnerCol">AppEvents</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="flushBehavior"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">flushBehavior</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>flushBehavior:int</code><p></p><p></p><p>
+	 Access the behavior that AppEvents uses to determine when to flush logged events to the server.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get flushBehavior():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set flushBehavior(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="pushNotificationRegistrationId"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">pushNotificationRegistrationId</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>pushNotificationRegistrationId:String</code>&nbsp;&nbsp;[write-only] <p></p><p></p><p>
+	 <p>
+	 Sets and sends registration id to register the current app for push notifications.
+	 </p>
+	 	 <p>
+	 You shouldn't call this on the iOS side. on iOS, it will be done automatically for you.
+	 </p>
+	 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set pushNotificationRegistrationId(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="userId"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">userId</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>userId:String</code><p></p><p></p><p>
+	 Indicates a user id to associate with all app events. This can be used to associate your own
+	 user id with the app events logged from this instance of an application.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get userId():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set userId(value:String):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="clearUserID()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearUserID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function clearUserID():void</code><p></p><p></p><p>
+	 Clears the currently set user id.
+	 </p></div><a name="flush()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">flush</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function flush():void</code><p></p><p></p><p>
+	 Explicitly flush any stored events to the server.  Implicit flushes may happen depending on
+	 the value of <code>flushBehavior</code>.  This method allows for explicit, app invoked flushing.
+	 </p></div><a name="logEvent()"></a><a name="logEvent(String,Number,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function logEvent($eventName:String, $valueToSum:Number = -1, $parameters:Object = null):void</code><p></p><p></p><p>
+	 <p>
+	 Log an app event with the specified name, supplied value, and set of parameters. <code>$valueToSum</code>
+	 and <code>$parameters</code> are optional.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$eventName</span>:String</code> &mdash; 	$eventName used to denote the event. Choose amongst the EVENT_NAME_	                   		constants in <code>AppEventsConstants</code> when possible.  Or create your own
+	                   		if none of the EVENT_NAME_constants are applicable. Event names should be
+	                   		40 characters or less, alphanumeric, and can include spaces, underscores or
+	                   		hyphens, but must not have a space or hyphen as the first character.  Any
+	                   		given app should have no more than 1000 distinct event names.
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$valueToSum</span>:Number</code> (default = <code>-1</code>)<code></code> &mdash; 	a value to associate with the event which will be summed up in Insights for
+	                   		across all instances of the event, so that average values can be
+	                  		determined, etc. This value shouldn't be negative or it won't be considered.
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$parameters</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; 	A Bundle of parameters to log with the event.  Insights will allow looking
+	                   		at the logs of these events via different parameter values.  You can log on
+	                   		the order of 25 parameters with each distinct eventName.  It's advisable to
+	                   		limit the number of unique values provided for each parameter in the
+	                   		thousands.  As an example, don't attempt to provide a unique
+	                   		parameter value for each unique user in your app.  You won't get meaningful
+	                   		aggregate reporting on so many parameter values.  The values in the bundles
+	                   		should be Strings.
+	 </td></tr></table></p></div><a name="logPurchase()"></a><a name="logPurchase(Number,String,Object)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logPurchase</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function logPurchase($purchaseAmount:Number, $currency:String, $parameters:Object = null):void</code><p></p><p></p><p>
+	 Logs a purchase event with Facebook, in the specified amount and with the specified
+	 currency. Additional detail about the purchase can be passed in through the
+	 parameters object.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$purchaseAmount</span>:Number</code> &mdash; Amount of purchase, in the currency specified by the 'currency'
+	                       	parameter. This value will be rounded to the thousandths place (e.g.,
+	                       	12.34567 becomes 12.346).
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$currency</span>:String</code> &mdash; 		Currency used to specify the amount.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$parameters</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; 	Arbitrary additional information for describing this event. This should
+	                       	have no more than 24 entries, and keys should be mostly consistent from
+	                       	one purchase event to the next.
+	 </td></tr></table></p></div><a name="logPushNotificationOpen()"></a><a name="logPushNotificationOpen(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">logPushNotificationOpen</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function logPushNotificationOpen($payload:String):void</code><p></p><p></p><p>
+	 <p>
+	 Logs an app event that tracks that the application was open via Push Notification.
+	 </p>
+	 	 <p>
+	 You shouldn't call this on the iOS side. on iOS, it will be done automatically for you.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$payload</span>:String</code> &mdash; Notification payload received.
+	 </td></tr></table></p></div><a name="updateUserProperties()"></a><a name="updateUserProperties(Object,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">updateUserProperties</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function updateUserProperties($properties:Object, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
+	 An AS3 Object of key-value pairs representing user properties and their values. Values should be strings or
+	 numbers only. Each key must be less than 40 character in length, and the key can contain only letters, number,
+	 whitespace, hyphens (-), or underscores (_). Each value must be less than 100 characters. The total number of
+	 properties associated with your users cannot exceed 100.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$properties</span>:Object</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	This callback function will be called with the result of this operation. It expects
+	 one parameter as $error:Error in case an error happened.
+	 </td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Apr 4 2018, 01:51 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Apr 4 2018, 01:51 PM +04:00  -->
