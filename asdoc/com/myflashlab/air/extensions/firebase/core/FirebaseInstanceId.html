@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseInstanceId,com.myflashlab.air.extensions.firebase.core.FirebaseInstanceId,checkGoogleAvailability,deleteIID,deleteToken,getConfig,getID,getToken,init,setLoggerLevel"><title>com.myflashlab.air.extensions.firebase.core.FirebaseInstanceId</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../../override.css" type="text/css"><meta name="keywords" content="FirebaseInstanceId,com.myflashlab.air.extensions.firebase.core.FirebaseInstanceId,checkGoogleAvailability,deleteIID,deleteToken,getConfig,getID,getInstanceId,getToken,init,setLoggerLevel"><title>com.myflashlab.air.extensions.firebase.core.FirebaseInstanceId</title></head><body><script language="javascript" type="text/javascript" src="../../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'FirebaseInstanceId - Myflashlabs';
 				var baseRef = '../../../../../../';
 				window.onload = configPage;
@@ -19,42 +19,51 @@
  	Access the FirebaseInstanceId by calling methods and properties through <code>Firebase.iid.</code>.
  </p>
             <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteIID()" class="signatureLink">deleteIID</a>():void</div><div class="summaryTableDescription">
-	 Resets Instance ID and revokes all tokens.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteToken()" class="signatureLink">deleteToken</a>($authorizedEntity:String, $scope:String):void</div><div class="summaryTableDescription">
 	 
-	     Revokes access to a scope (action) for an entity previously authorized by Firebase.iid.getToken();
-	     
-	 
+	 Delete the Instance ID and the data associated with it.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#deleteToken()" class="signatureLink">deleteToken</a>($authorizedEntity:String, $scope:String):void</div><div class="summaryTableDescription">
+	 Revokes access to a scope (action) for an entity previously authorized by Firebase.iid.getToken();
 	 	 </div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getID()" class="signatureLink">getID</a>():void</div><div class="summaryTableDescription">
-	 Returns a stable identifier that uniquely identifies the app instance.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getToken()" class="signatureLink">getToken</a>($authorizedEntity:String = null, $scope:String = null):void</div><div class="summaryTableDescription">
+	 Returns a stable identifier that uniquely identifies the app instance.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getInstanceId()" class="signatureLink">getInstanceId</a>():void</div><div class="summaryTableDescription">
+	 Returns the ID and automatically generated token for this Firebase project.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getToken()" class="signatureLink">getToken</a>($authorizedEntity:String, $scope:String):void</div><div class="summaryTableDescription">
 	 
-	     Returns a token that authorizes an Entity to perform an action on behalf of the application identified by
-	     Instance ID.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+	 Returns a token that authorizes an Entity to perform an action on behalf of the application identified by
+	 Instance ID.</div></td><td class="summaryTableOwnerCol">FirebaseInstanceId</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
 										--></script><div class="MainContent"><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="deleteIID()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteIID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function deleteIID():void</code><p></p><p></p><p>
-	 Resets Instance ID and revokes all tokens.
-	 </p></div><a name="deleteToken()"></a><a name="deleteToken(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteToken($authorizedEntity:String, $scope:String):void</code><p></p><p></p><p>
 	 <p>
-	     Revokes access to a scope (action) for an entity previously authorized by <code>Firebase.iid.getToken();
-	     </code>
+	 Delete the Instance ID and the data associated with it. This stops the periodic sending of data to the
+	 Firebase backend started when the Instance ID was generated, unless another library that requires InstanceId
+	 (like FCM, RemoteConfig or Analytics) is used.
 	 </p>
+	 	 <p>
+	 A new Instance ID is generated asynchronously if Firebase Cloud Messaging auto-init is enabled.
+	 </p>
+	 </p></div><a name="deleteToken()"></a><a name="deleteToken(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">deleteToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function deleteToken($authorizedEntity:String, $scope:String):void</code><p></p><p></p><p>
+	 Revokes access to a scope (action) for an entity previously authorized by <code>Firebase.iid.getToken();</code>
 	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$authorizedEntity</span>:String</code> &mdash; 	Entity that must no longer have access.
 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$scope</span>:String</code> &mdash; 			Action that entity is no longer authorized to perform.
 	 </td></tr></table></p></div><a name="getID()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getID():void</code><p></p><p></p><p>
-	 Returns a stable identifier that uniquely identifies the app instance.
-	 	 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="FirebaseEvents.html#IID_ID" target="">FirebaseEvents.IID_ID</a></div></div><a name="getToken()"></a><a name="getToken(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getToken($authorizedEntity:String = null, $scope:String = null):void</code><p></p><p></p><p>
+	 Returns a stable identifier that uniquely identifies the app instance. Once an Instance ID is generated,
+	 the library periodically sends information about the application and the device where it's running to the
+	 Firebase backend. To stop this, see deleteInstanceId().
+	 	 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="FirebaseEvents.html#IID_ID" target="">FirebaseEvents.IID_ID</a></div></div><a name="getInstanceId()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getInstanceId</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getInstanceId():void</code><p></p><p></p><p>
+	 Returns the ID and automatically generated token for this Firebase project. This generates an Instance ID if
+	 it does not exist yet, which starts periodically sending information to the Firebase backend (see getId()).
+	 You should listen to <code>FirebaseEvents.IID_TOKEN</code> event to receive the generated token.
+	 </p></div><a name="getToken()"></a><a name="getToken(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getToken</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getToken($authorizedEntity:String, $scope:String):void</code><p></p><p></p><p>
 	 <p>
-	     Returns a token that authorizes an Entity to perform an action on behalf of the application identified by
-	     Instance ID. If <code>$authorizedEntity</code> and <code>$scope</code> are null, this will
-	     return the master token for the default Firebase project.
+	 Returns a token that authorizes an Entity to perform an action on behalf of the application identified by
+	 Instance ID.
 	 </p>
 	 	 <p>
-	     You should listen to <code>FirebaseEvents.IID_TOKEN</code> event to receive the generated token.
+	 This generates an Instance ID if it does not exist yet, which starts periodically sending information to the
+	 Firebase backend.
 	 </p>
 	 	 <p>
-	     This is similar to an OAuth2 token except, it applies to the application instance instead of a user.
+	 This is similar to an OAuth2 token except, it applies to the application instance instead of a user.
 	 </p>
 	 	 <p>
-	     For example, to get a token that can be used to send messages to an application via FirebaseMessaging,
-	     set to the sender ID, and set to "FCM".
+	 For example, to get a token that can be used to send messages to an application via FirebaseMessaging, set
+	 authorizedEntity to the sender ID, and set scope to "FCM".
 	 </p>
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$authorizedEntity</span>:String</code> (default = <code>null</code>)<code></code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$scope</span>:String</code> (default = <code>null</code>)<code></code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="FirebaseEvents.html#IID_TOKEN" target="">FirebaseEvents.IID_TOKEN</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Jul 18 2018, 01:58 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Jul 18 2018, 01:58 PM +04:00  -->
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$authorizedEntity</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$scope</span>:String</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="FirebaseEvents.html#IID_TOKEN" target="">FirebaseEvents.IID_TOKEN</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Wed Sep 26 2018, 12:18 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Wed Sep 26 2018, 12:18 PM +04:00  -->
