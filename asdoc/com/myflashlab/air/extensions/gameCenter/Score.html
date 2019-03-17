@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Score,com.myflashlab.air.extensions.gameCenter.Score,ACHIEVEMENTS,ALL_TIME,CHALLENGES,COMPLETED,DECLINED,DEFAULT,EXTENSION_ID,FRIENDS_ONLY,GLOBAL,INVALID,LEADERBOARDS,NORMAL,PENDING,SMALL,TODAY,VERSION,WEEK,_alias,_context,_displayName,_guestIdentifier,_id,achievement,achievements,achievementsDesc,achievementsDescInstances,achievementsInstances,alias,cache,challenges,challengesInstances,completeDefImgPath,completionDate,context,date,deviceName,displayName,formattedValue,groupIdentifier,groupIdentifier,groupIdentifier,guestIdentifier,identifier,identifier,identifier,identifier,incompleteDefImgPath,isAuthenticated,isCompleted,isHidden,isLoading,isReplayable,isUnderage,issueDate,issuingPlayer,lastReportedDate,leaderboardIdentifier,leaderboardSets,leaderboardSetsInstances,leaderboards,leaderboardsInstances,localPlayerScore,localPlayer,maxRange,maximumPoints,message,modificationDate,name,percentComplete,player,player,playerID,playerScope,players,playersInstances,rank,receivingPlayer,savedGames,savedGamesInstances,score,scores,scores,scoresInstances,shouldSetDefaultLeaderboard,showsCompletionBanner,state,timeScope,title,title,title,unachievedDescription,value,authenticate,challengeCompose,challengeCompose,clear,createGuestPlayer,decline,deleteSavedGame,fetchSavedGames,init,initNew,initNew,initNew,load,load,load,load,load,load,loadAchievementDescriptions,loadData,loadDefaultLeaderboardId,loadImage,loadImage,loadImage,loadLeaderboards,loadPhoto,loadRecentPlayers,loadScores,observeAuthentication,onStatus,onStatus,openNativeWindow,report,report,reset,resolveConflicts,saveGame,selectChallengeablePlayers,setDefaultLeaderboardId,setRange,showBanner"><title>com.myflashlab.air.extensions.gameCenter.Score</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Score - Myflashlabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Myflashlabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/gameCenter/Score.html&amp;com/myflashlab/air/extensions/gameCenter/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt="AdobeLogo" title="AdobeLogo"></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Score</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Score"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.gameCenter</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Score</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Score  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
+               <p>
+ An object containing information for a score that was earned by the player. Your game creates Score objects to post
+ scores to a leaderboard on Game Center. When your game retrieves score information from a leaderboard, those scores
+ are returned as Score objects.
+ </p>
+               <p>
+ Scores and leaderboards work together to help you create a better game. Whenever a new Score object is created, it
+ is associated with a leaderboard. You must ensure that the score being sent to a leaderboard is compatible with the
+ leaderboard scoring format set in App Store Connect. See Leaderboards and Leaderboard Sets for information on how to
+ create a leaderboard in App Store Connect.
+ </p>
+               <p>
+ To report a score to Game Center, your game allocates and initializes a new object, sets the value property to the
+ score the player earned, and then calls the <code>Score.report</code> method. The mechanism your game uses to
+ calculate scores is up to you to design; scores are only compared within your game.
+ </p>
+            <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#context" class="signatureLink">context</a> : Number<div class="summaryTableDescription">
+	 
+	 An integer value used by your game.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#date" class="signatureLink">date</a> : Date<div class="summaryTableDescription">[read-only] 
+	 The date and time when the score was earned.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#formattedValue" class="signatureLink">formattedValue</a> : String<div class="summaryTableDescription">[read-only] 
+	 
+	 Returns the player's score as a localized string.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#leaderboardIdentifier" class="signatureLink">leaderboardIdentifier</a> : String<div class="summaryTableDescription">
+	 The identifier for the leaderboard.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#player" class="signatureLink">player</a> : <a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a><div class="summaryTableDescription">[read-only] 
+	 the player that earned the score.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#rank" class="signatureLink">rank</a> : int<div class="summaryTableDescription">[read-only] 
+	 The position of the score in the results of a leaderboard search.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#shouldSetDefaultLeaderboard" class="signatureLink">shouldSetDefaultLeaderboard</a> : Boolean<div class="summaryTableDescription">
+	 A Boolean value that indicates whether this score should also update the default leaderboard.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#value" class="signatureLink">value</a> : Number<div class="summaryTableDescription">
+	 
+	 The score earned by the player.</div></td><td class="summaryTableOwnerCol">Score</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#challengeCompose()" class="signatureLink">challengeCompose</a>($msg:String, $players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</div><div class="summaryTableDescription">
+	 Provides a challenge compose view controller with pre-selected player identifiers and a preformatted,
+	 player-editable message.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initNew()" class="signatureLink">initNew</a>($leaderboardId:String, $player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a> = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a></div><div class="summaryTableDescription">[static] 
+	 
+	 Returns an initialized score object for the specified leaderboard and player.</div></td><td class="summaryTableOwnerCol">Score</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#report()" class="signatureLink">report</a>($scores:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;, $challenges:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 
+	 Reports a list of scores to Game Center.</div></td><td class="summaryTableOwnerCol">Score</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="context"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">context</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>context:Number</code><p></p><p></p><p>
+	 <p>
+	 An integer value used by your game. The context property is stored and returned to your game, but is otherwise
+	 ignored by Game Center. It allows your game to associate an arbitrary value with the score data reported to Game
+	 Center. You decide how this value is interpreted by your game. For example, you might use the context property
+	 to store flags that provide game-specific details about a player’s score, or you might use the context as a key
+	 to other data stored on the device or on your own server. The context is most useful when your game displays a
+	 custom leaderboard user interface.
+	 </p>
+	 	 <p>
+	 could be NaN in case of an error
+	 </p>
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get context():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set context(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="date"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">date</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>date:Date</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The date and time when the score was earned. When you initialize the new score object, the date property is
+	 automatically set to the current date and time.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get date():Date</code><br/></div><a name="propertyDetail"></a><a name="formattedValue"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">formattedValue</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>formattedValue:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 <p>
+	 Returns the player's score as a localized string. This property is invalid on a newly initialized score object.
+	 On a score returned from GameKit, it contains a formatted string based on the player's score. You determine how
+	 a score is formatted when you define the leaderboard in App Store Connect.
+	 </p>
+	 	 <p>
+	 Never convert the value property into a string directly; always use this method to receive the formatted string.
+	 </p>
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get formattedValue():String</code><br/></div><a name="propertyDetail"></a><a name="leaderboardIdentifier"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">leaderboardIdentifier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>leaderboardIdentifier:String</code><p></p><p></p><p>
+	 The identifier for the leaderboard.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get leaderboardIdentifier():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set leaderboardIdentifier(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="player"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">player</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 the player that earned the score. When you initialize a new score object, the player property is set to the
+	 local player. If the score object was returned to your game by loading scores from Game Center, the player
+	 property identifies the player who recorded that score.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get player():<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a></code><br/></div><a name="propertyDetail"></a><a name="rank"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">rank</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>rank:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The position of the score in the results of a leaderboard search. Returns -1 if any problem. The value of this
+	 property is only valid on score objects returned from Game Center. The rank property represents the position of
+	 the score in the returned results, with 1 being the best score, 2 being the second best, and so on.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rank():int</code><br/></div><a name="propertyDetail"></a><a name="shouldSetDefaultLeaderboard"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">shouldSetDefaultLeaderboard</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>shouldSetDefaultLeaderboard:Boolean</code><p></p><p></p><p>
+	 A Boolean value that indicates whether this score should also update the default leaderboard. If the value of
+	 this property is true, when the score is reported to Game Center, Game Center also updates the local player's
+	 default leaderboard to match the value stored in the leaderboardIdentifier property of the score object. This
+	 matches the behavior of the LocalPlayer class's <code>setDefaultLeaderboardId</code> class method. If the value
+	 of this property is false, the default leaderboard is not changed by reporting the score. The default value of
+	 this property is false.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get shouldSetDefaultLeaderboard():Boolean</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set shouldSetDefaultLeaderboard(value:Boolean):void</code><br/></div><a name="propertyDetail"></a><a name="value"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">value</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>value:Number</code><p></p><p></p><p>
+	 <p>
+	 The score earned by the player. You can use any algorithm you want to calculate scores in your game. Your game
+	 must set the value property before reporting a score, otherwise an error is returned.
+	 </p>
+	 	 <p>
+	 The value provided by a score object is interpreted by Game Center only when formatted for display. You
+	 determine how your scores are formatted when you define the leaderboard in App Store Connect.
+	 </p>
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get value():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set value(value:Number):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="challengeCompose()"></a><a name="challengeCompose(String,Vector$com.myflashlab.air.extensions.gameCenter.Player,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">challengeCompose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function challengeCompose($msg:String, $players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</code><p></p><p></p><p>
+	 Provides a challenge compose view controller with pre-selected player identifiers and a preformatted,
+	 player-editable message.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$msg</span>:String</code> &mdash; 		The preformatted, player-editable message that is being sent to other players.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$players</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;</code> &mdash; 	An array of Player objects that contains the player identifiers that the challenge is to be
+	 sent to.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($didIssueChallenge:Boolean, $sentPlayerIDs:Array(String)):void</code> is
+	 called after the view controller has been displayed. Contains the reason the handler was called and all player
+	 identifiers that the challenge was sent to. <code>$didIssueChallenge</code> is a Boolean variable designating if
+	 the challenge was sent out. <code>$sentPlayerIDs</code> is an array of Player objects containing the player
+	 identifiers that the challenge was sent to.
+	 </td></tr></table></p></div><a name="initNew()"></a><a name="initNew(String,com.myflashlab.air.extensions.gameCenter.Player)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initNew</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function initNew($leaderboardId:String, $player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a> = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a></code><p></p><p></p><p>
+	 <p>
+	 Returns an initialized score object for the specified leaderboard and player. if the <code>$player</code> param
+	 is null, local player will be used instead.
+	 </p>
+	 	 <p>
+	 Your game explicitly allocates and initializes a score object using the designated player and current date when
+	 it needs to report a new score to Game Center.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$leaderboardId</span>:String</code> &mdash; Identifies the leaderboard that the score is being sent to.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$player</span>:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a></code> (default = <code>null</code>)<code></code> &mdash; 		The Player object identifying the player who's score is being initialized.
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a></code> &mdash; An initialized score object, or nil if an error occurred.
+	 </td></tr></table></div><a name="report()"></a><a name="report(Vector$com.myflashlab.air.extensions.gameCenter.Score,Vector$com.myflashlab.air.extensions.gameCenter.Challenge,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">report</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function report($scores:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;, $challenges:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
+	 Reports a list of scores to Game Center. if <code>$challenges</code> param is not null, all eligible challenges
+	 will be submitted too.
+	 </p>
+	 	 <p>
+	 Use this class method whenever you need to submit scores to Game Center, whether you are reporting a single
+	 score or multiple scores. The method runs through the array of Score objects, submitting scores one at a time.
+	 </p>
+	 	 <p>
+	 The Score object is initialized with the leaderboard ID for the leaderboard it reports its score to and then the
+	 <code>value</code> and <code>context</code> for the score are assigned. The leaderboard ID must be the identifier
+	 for a leaderboard you configured in App Store Connect. Scores are always reported for the current local player
+	 and never for friends.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$scores</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;</code> &mdash; 		An array of Score objects that contains all of the scores to be reported.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$challenges</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;</code> &mdash; 	(can be null) An array of Challenge objects that represents all challenges associated
+	 with the reported scores.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		<code>function($error:String):void</code> is called when the download is completed.
+	 <code>$error</code> If an error occurred, this object describes the error. If the operation completed
+	 successfully, this value is nil.
+	 </td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Sun Mar 17 2019, 09:13 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Sun Mar 17 2019, 09:13 AM +04:00  -->

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Leaderboard,com.myflashlab.air.extensions.gameCenter.Leaderboard,ACHIEVEMENTS,ALL_TIME,CHALLENGES,COMPLETED,DECLINED,DEFAULT,EXTENSION_ID,FRIENDS_ONLY,GLOBAL,INVALID,LEADERBOARDS,NORMAL,PENDING,SMALL,TODAY,VERSION,WEEK,_alias,_context,_displayName,_guestIdentifier,_id,achievement,achievements,achievementsDesc,achievementsDescInstances,achievementsInstances,alias,cache,challenges,challengesInstances,completeDefImgPath,completionDate,context,date,deviceName,displayName,formattedValue,groupIdentifier,groupIdentifier,groupIdentifier,guestIdentifier,identifier,identifier,identifier,identifier,incompleteDefImgPath,isAuthenticated,isCompleted,isHidden,isLoading,isReplayable,isUnderage,issueDate,issuingPlayer,lastReportedDate,leaderboardIdentifier,leaderboardSets,leaderboardSetsInstances,leaderboards,leaderboardsInstances,localPlayerScore,localPlayer,maxRange,maximumPoints,message,modificationDate,name,percentComplete,player,player,playerID,playerScope,players,playersInstances,rank,receivingPlayer,savedGames,savedGamesInstances,score,scores,scores,scoresInstances,shouldSetDefaultLeaderboard,showsCompletionBanner,state,timeScope,title,title,title,unachievedDescription,value,authenticate,challengeCompose,challengeCompose,clear,createGuestPlayer,decline,deleteSavedGame,fetchSavedGames,init,initNew,initNew,initNew,load,load,load,load,load,load,loadAchievementDescriptions,loadData,loadDefaultLeaderboardId,loadImage,loadImage,loadImage,loadLeaderboards,loadPhoto,loadRecentPlayers,loadScores,observeAuthentication,onStatus,onStatus,openNativeWindow,report,report,reset,resolveConflicts,saveGame,selectChallengeablePlayers,setDefaultLeaderboardId,setRange,showBanner"><title>com.myflashlab.air.extensions.gameCenter.Leaderboard</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'Leaderboard - Myflashlabs';
+				var baseRef = '../../../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">Myflashlabs ANEs</td><td class="titleTableTopNav" align="right"><a href="../../../../../package-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../../../class-summary.html" onclick="loadClassListFrame('../../../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../../../all-index-A.html" onclick="loadClassListFrame('../../../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../../../index.html?com/myflashlab/air/extensions/gameCenter/Leaderboard.html&amp;com/myflashlab/air/extensions/gameCenter/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../../../images/logo.jpg" class="logoImage" alt="AdobeLogo" title="AdobeLogo"></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">Leaderboard</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Leaderboard"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.gameCenter</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Leaderboard</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Leaderboard  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
+               <p>
+ An object used to read data from a leaderboard stored on Game Center. Your game uses GKLeaderboard objects when it
+ wants to retrieve localized information about a specific leaderboard or to retrieve scores from a leaderboard.
+ Typically, you do this when you want the data needed to implement your own custom leaderboard user interface.
+ </p>
+               <p>
+ During the development process, you create the leaderboards for your game on App Store Connect.
+ </p>
+               <p>
+ To retrieve information about the available leaderboards, use the <code>Leaderboard.load()</code> static method.
+ </p>
+               <p>
+ To request score data from Game Center, your game allocates and initializes a Leaderboard object, configures its
+ search properties, and then calls the object’s <code>loadScores</code> method. GameKit retrieves the score data from
+ Game Center and calls your completion handler.
+ </p>
+               <p>
+ The search properties are used to filter the score data returned to your game:
+ <ul>
+                     <li>The <code>identifier</code> property allows you to choose which leaderboard in App Store Connect is searched.</li>
+                     <li>The playerScope property allows you to restrict the search to a local player’s friends. Optionally, you can
+  also explicitly initialize a leaderboard object to search for scores for a specific group of players.</li>
+                     <li>The timeScope property allows you to filter based on when the score was earned.</li>
+                     <li>The range property allows you to pick scores within a specific range. For example, the range [1,10] returns the
+  best ten scores.</li>
+                  </ul>
+               </p>
+               <p>
+ The algorithm used by the GKLeaderboard object is as follows:
+ <ul>
+                     <li>Start with the set of all possible scores.</li>
+                     <li>Discard any scores that do not match the playerScope, timeScope and category properties.</li>
+                     <li>For each player, keep the best score that player has earned and discard the rest.</li>
+                     <li>Sort the scores from best to worst.</li>
+                     <li>Use the range property to determine which scores are returned.</li>
+                  </ul>
+               </p>
+            <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#groupIdentifier" class="signatureLink">groupIdentifier</a> : String<div class="summaryTableDescription">[read-only] 
+	 The identifier for the group the leaderboard is part of.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#identifier" class="signatureLink">identifier</a> : String<div class="summaryTableDescription">
+	 The named leaderboard to retrieve information from.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isLoading" class="signatureLink">isLoading</a> : Boolean<div class="summaryTableDescription">[read-only] 
+	 A Boolean value that indicates whether the leaderboard object is retrieving scores.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#localPlayerScore" class="signatureLink">localPlayerScore</a> : <a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a><div class="summaryTableDescription">[read-only] 
+	 The score earned by the local player.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#maxRange" class="signatureLink">maxRange</a> : int<div class="summaryTableDescription">[read-only] 
+	 The size of the leaderboard.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#playerScope" class="signatureLink">playerScope</a> : int<div class="summaryTableDescription">
+	 A filter used to restrict the search to a subset of the players on Game Center.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#scores" class="signatureLink">scores</a> : Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;<div class="summaryTableDescription">[read-only] 
+	 An array of Score objects that contains the scores returned by the search.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#timeScope" class="signatureLink">timeScope</a> : int<div class="summaryTableDescription">
+	 A filter used to restrict the search to scores that were posted within a specific period of time.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#title" class="signatureLink">title</a> : String<div class="summaryTableDescription">[read-only] 
+	 The localized title for the leaderboard.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initNew()" class="signatureLink">initNew</a>($players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt; = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Leaderboard.html">Leaderboard</a></div><div class="summaryTableDescription">[static] 
+	 
+	 Initializes a default leaderboard request.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#load()" class="signatureLink">load</a>($callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 Loads the list of leaderboards from Game Center
+	 	 </div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadImage()" class="signatureLink">loadImage</a>($callback:Function):void</div><div class="summaryTableDescription">
+	 The image associated with the default leaderboard.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadScores()" class="signatureLink">loadScores</a>($callback:Function):void</div><div class="summaryTableDescription">
+	 Retrieves a set of scores from Game Center.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setRange()" class="signatureLink">setRange</a>($begin:int, $end:int):void</div><div class="summaryTableDescription">
+	 
+	 The numerical score rankings to return from the search.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="groupIdentifier"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">groupIdentifier</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>groupIdentifier:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The identifier for the group the leaderboard is part of. If your game was configured to be part of a group in
+	 App Store Connect, this property holds the identifier you assigned to the group.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get groupIdentifier():String</code><br/></div><a name="propertyDetail"></a><a name="identifier"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">identifier</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>identifier:String</code><p></p><p></p><p>
+	 The named leaderboard to retrieve information from. If non-nil, Game Center only returns scores from the
+	 matching leaderboard. If nil, all scores previously reported by the game are searched. Default is nil.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get identifier():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set identifier(value:String):void</code><br/></div><a name="propertyDetail"></a><a name="isLoading"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isLoading</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isLoading:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 A Boolean value that indicates whether the leaderboard object is retrieving scores. The value of the loading
+	 property is true if the leaderboard object has any pending requests for scores.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get isLoading():Boolean</code><br/></div><a name="propertyDetail"></a><a name="localPlayerScore"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">localPlayerScore</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>localPlayerScore:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The score earned by the local player. This property is invalid until a call to <code>loadScores()</code> is
+	 completed. Afterward, it contains a score object representing the local player’s score on the leaderboard given
+	 the filters you applied to the query.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get localPlayerScore():<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a></code><br/></div><a name="propertyDetail"></a><a name="maxRange"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">maxRange</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>maxRange:int</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The size of the leaderboard. Returns -1 if <code>loadScores</code> has not been completed on this leaderboard yet.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxRange():int</code><br/></div><a name="propertyDetail"></a><a name="playerScope"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">playerScope</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>playerScope:int</code><p></p><p></p><p>
+	 A filter used to restrict the search to a subset of the players on Game Center. The playerScope property is
+	 ignored if the leaderboard request was initialized using the <code>initNew($players)</code> method. Otherwise,
+	 if <code>initNew()</code> is used, the playerScope property determines which players are included in the request
+	 for high scores. The default is <code>PlayerScope.GLOBAL</code>.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get playerScope():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set playerScope(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="scores"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">scores</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>scores:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 An array of Score objects that contains the scores returned by the search. This property is invalid until a call
+	 to <code>loadScores()</code> is complete. Afterward, it contains the same score objects that were returned to
+	 the completion handler.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get scores():Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Score.html">Score</a>&gt;</code><br/></div><a name="propertyDetail"></a><a name="timeScope"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">timeScope</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>timeScope:int</code><p></p><p></p><p>
+	 A filter used to restrict the search to scores that were posted within a specific period of time. This property
+	 determines how far back in time to look for scores. The default value is <code>TimeScope.ALL_TIME</code>.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get timeScope():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set timeScope(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="title"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">title</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>title:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 The localized title for the leaderboard. If you initialized a new leaderboard object, this property is invalid
+	 until a call to <code>loadScores()</code> is complete. Afterward, it contains the localized title for the
+	 leaderboard identified by the identifier property.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get title():String</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="initNew()"></a><a name="initNew(Vector$com.myflashlab.air.extensions.gameCenter.Player)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initNew</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function initNew($players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt; = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Leaderboard.html">Leaderboard</a></code><p></p><p></p><p>
+	 <p>
+	 Initializes a default leaderboard request. If <code>$players</code> parameter is not null, Initializes a
+	 leaderboard request to retrieve the scores of a specific group of players.
+	 </p>
+	 	 <p>
+	 A leaderboard object initialized with this method uses the playerScope, timeScope, and range properties to
+	 search Game Center for scores. If <code>$players</code> parameter is not null, a leaderboard object initialized
+	 with this method ignores the playerScope and range properties. Instead, it retrieves scores for the specific
+	 list of players whose Player objects are included in the <code>$players</code> parameter.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$players</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;</code> (default = <code>null</code>)<code></code> &mdash; 	An array of Player objects that holds the player identifiers to be retrieved. can be null.
+	 	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/gameCenter/Leaderboard.html">Leaderboard</a></code> &mdash; An initialized leaderboard request.
+	 </td></tr></table></div><a name="load()"></a><a name="load(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function load($callback:Function):void</code><p></p><p></p><p>
+	 Loads the list of leaderboards from Game Center
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($leaderboards:Vector.(Leaderboard), $error:String):void</code> is called
+	 when the categories have been retrieved from the server. <code>$leaderboards</code> is an array of Leaderboard
+	 objects that provides the leaderboards for your game. If an error occurred, this value may be non-nil. In this
+	 case, the array holds whatever data Game Kit was able to download before the error occurred. <code>$error</code>
+	 If an error occurred, this error object describes the error. If the operation completed successfully,
+	 the value is nil.
+	 </td></tr></table></p></div><a name="loadImage()"></a><a name="loadImage(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loadImage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadImage($callback:Function):void</code><p></p><p></p><p>
+	 The image associated with the default leaderboard.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($photo:String, $error:String):void</code> to be called after the scores are
+	 retrieved from the server. <code>$photo</code> Contains the image path associated with the leaderboard. <code>
+	 $error</code> If an error occurred, this error object describes the error. If the operation was completed
+	 successfully, the value is nil.
+	 </td></tr></table></p></div><a name="loadScores()"></a><a name="loadScores(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loadScores</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadScores($callback:Function):void</code><p></p><p></p><p>
+	 Retrieves a set of scores from Game Center.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($scores:Vector.&lt;Score&gt;, $error:String):void</code> to be called after
+	 the scores are retrieved from the server. <code>$scores</code> is an array of Score objects that holds the
+	 requested scores. If an error occurred, this value may be non-nil. In this case, the array holds whatever score
+	 data could be retrieved from Game Center before the error occurred. <code>$error</code> If an error occurred,
+	 this error object describes the error. If the operation was completed successfully, the value is nil.
+	 </td></tr></table></p></div><a name="setRange()"></a><a name="setRange(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setRange</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setRange($begin:int, $end:int):void</code><p></p><p></p><p>
+	 <p>
+	 The numerical score rankings to return from the search. The range property is ignored if the leaderboard request
+	 was initialized using the <code>initNew($players)</code> method. Otherwise, if <code>initNew()</code> is used,
+	 the range property is used to filter which scores are returned to your game. For example, if you specified a
+	 range of [1,10], after the search is complete, your game receives the best ten scores. The default range
+	 is [1,25].
+	 </p>
+	 	 <p>
+	 The minimum index is 1. The maximum length is 100.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$begin</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$end</span>:int</code></td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Sun Mar 17 2019, 09:13 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Sun Mar 17 2019, 09:13 AM +04:00  -->
