@@ -60,9 +60,17 @@
 	 The localized title for the leaderboard.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initNew()" class="signatureLink">initNew</a>($players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt; = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Leaderboard.html">Leaderboard</a></div><div class="summaryTableDescription">[static] 
 	 
 	 Initializes a default leaderboard request.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#load()" class="signatureLink">load</a>($callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 
 	 Loads the list of leaderboards from Game Center
-	 	 </div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadImage()" class="signatureLink">loadImage</a>($callback:Function):void</div><div class="summaryTableDescription">
+	 
+	 	 Below shows what parameters the callback function must have
+	 
+	 function($leaderboards:Vector.&lt;Leaderboard&gt;, $error:String):void
+	 {
+	     // $leaderboards: is an array of Leaderboard objects that provides the leaderboards for your game.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadImage()" class="signatureLink">loadImage</a>($callback:Function):void</div><div class="summaryTableDescription">
+	 
 	 The image associated with the default leaderboard.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#loadScores()" class="signatureLink">loadScores</a>($callback:Function):void</div><div class="summaryTableDescription">
+	 
 	 Retrieves a set of scores from Game Center.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#setRange()" class="signatureLink">setRange</a>($begin:int, $end:int):void</div><div class="summaryTableDescription">
 	 
 	 The numerical score rankings to return from the search.</div></td><td class="summaryTableOwnerCol">Leaderboard</td></tr></table></div><script language="javascript" type="text/javascript"><!--
@@ -112,26 +120,46 @@
 	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$players</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;</code> (default = <code>null</code>)<code></code> &mdash; 	An array of Player objects that holds the player identifiers to be retrieved. can be null.
 	 	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/gameCenter/Leaderboard.html">Leaderboard</a></code> &mdash; An initialized leaderboard request.
 	 </td></tr></table></div><a name="load()"></a><a name="load(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">load</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function load($callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Loads the list of leaderboards from Game Center
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($leaderboards:Vector.(Leaderboard), $error:String):void</code> is called
-	 when the categories have been retrieved from the server. <code>$leaderboards</code> is an array of Leaderboard
-	 objects that provides the leaderboards for your game. If an error occurred, this value may be non-nil. In this
-	 case, the array holds whatever data Game Kit was able to download before the error occurred. <code>$error</code>
-	 If an error occurred, this error object describes the error. If the operation completed successfully,
-	 the value is nil.
-	 </td></tr></table></p></div><a name="loadImage()"></a><a name="loadImage(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loadImage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadImage($callback:Function):void</code><p></p><p></p><p>
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($leaderboards:Vector.&lt;Leaderboard&gt;, $error:String):void
+     {
+         // $leaderboards: is an array of Leaderboard objects that provides the leaderboards for your game. If an error occurred, this value may be non-nil. In this case, the array holds whatever data Game Kit was able to download before the error occurred.
+         // $error: If an error occurred, this error object describes the error. If the operation completed successfully, the value is nil.
+     }
+     </pre></div>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	is called when the categories have been retrieved from the server.
+	 	 </td></tr></table></p></div><a name="loadImage()"></a><a name="loadImage(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loadImage</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadImage($callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 The image associated with the default leaderboard.
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($photo:String, $error:String):void</code> to be called after the scores are
-	 retrieved from the server. <code>$photo</code> Contains the image path associated with the leaderboard. <code>
-	 $error</code> If an error occurred, this error object describes the error. If the operation was completed
-	 successfully, the value is nil.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($leaderboard:Leaderboard, $photo:String, $error:String):void
+     {
+         // $leaderboard: is a reference to the object which initiated this method.
+         // $photo: Contains the image path associated with the leaderboard.
+         // $error: If an error occurred, this error object describes the error. If the operation was completed successfully, the value is nil.
+     }
+     </pre></div>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	to be called after the scores are retrieved from the server.
 	 </td></tr></table></p></div><a name="loadScores()"></a><a name="loadScores(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">loadScores</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function loadScores($callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Retrieves a set of scores from Game Center.
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($scores:Vector.&lt;Score&gt;, $error:String):void</code> to be called after
-	 the scores are retrieved from the server. <code>$scores</code> is an array of Score objects that holds the
-	 requested scores. If an error occurred, this value may be non-nil. In this case, the array holds whatever score
-	 data could be retrieved from Game Center before the error occurred. <code>$error</code> If an error occurred,
-	 this error object describes the error. If the operation was completed successfully, the value is nil.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($leaderboard:Leaderboard, $scores:Vector.&lt;Score&gt;, $error:String):void
+     {
+         // $leaderboard: is a reference to the object which initiated this method.
+         // $scores: is an array of Score objects that holds the requested scores. If an error occurred, this value may be non-nil. In this case, the array holds whatever score data could be retrieved from Game Center before the error occurred.
+         // $error: If an error occurred, this error object describes the error. If the operation was completed successfully, the value is nil.
+     }
+     </pre></div>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	to be called after the scores are retrieved from the server.
 	 </td></tr></table></p></div><a name="setRange()"></a><a name="setRange(int,int)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">setRange</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function setRange($begin:int, $end:int):void</code><p></p><p></p><p>
 	 <p>
 	 The numerical score rankings to return from the search. The range property is ignored if the leaderboard request
@@ -143,4 +171,4 @@
 	 	 <p>
 	 The minimum index is 1. The maximum length is 100.
 	 </p>
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$begin</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$end</span>:int</code></td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Sun Mar 17 2019, 09:13 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Sun Mar 17 2019, 09:13 AM +04:00  -->
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$begin</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$end</span>:int</code></td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Mon Mar 18 2019, 02:08 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Mon Mar 18 2019, 02:08 PM +04:00  -->
