@@ -1,27 +1,3 @@
-Text for param in com.myflashlab.air.extensions.gameCenter:Leaderboard/loadScores is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Score" must be terminated by the matching end-tag "</Score>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:Leaderboard/load is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Leaderboard" must be terminated by the matching end-tag "</Leaderboard>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:LeaderboardSet/loadLeaderboards is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Leaderboard" must be terminated by the matching end-tag "</Leaderboard>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:LeaderboardSet/load is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "LeaderboardSet" must be terminated by the matching end-tag "</LeaderboardSet>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:Player/load is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Player" must be terminated by the matching end-tag "</Player>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:Achievement/load is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Achievement" must be terminated by the matching end-tag "</Achievement>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:LocalPlayer/fetchSavedGames is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "SavedGame" must be terminated by the matching end-tag "</SavedGame>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:LocalPlayer/loadRecentPlayers is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "Player" must be terminated by the matching end-tag "</Player>".
-
-Text for param in com.myflashlab.air.extensions.gameCenter:LocalPlayer/resolveConflicts is not valid.
-org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 5; The element type "SavedGame" must be terminated by the matching end-tag "</SavedGame>".
+Text for description in com.myflashlab.air.extensions.billing:Billing/iOSReceipt/get is not valid.
+org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 5; The element type "b" must be terminated by the matching end-tag "</b>".
 

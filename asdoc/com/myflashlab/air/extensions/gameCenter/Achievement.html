@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Achievement,com.myflashlab.air.extensions.gameCenter.Achievement,ACHIEVEMENTS,ALL_TIME,CHALLENGES,COMPLETED,DECLINED,DEFAULT,EXTENSION_ID,FRIENDS_ONLY,GLOBAL,INVALID,LEADERBOARDS,NORMAL,PENDING,SMALL,TODAY,VERSION,WEEK,_alias,_context,_displayName,_guestIdentifier,_id,achievement,achievements,achievementsDesc,achievementsDescInstances,achievementsInstances,alias,cache,challenges,challengesInstances,completeDefImgPath,completionDate,context,date,deviceName,displayName,formattedValue,groupIdentifier,groupIdentifier,groupIdentifier,guestIdentifier,identifier,identifier,identifier,identifier,incompleteDefImgPath,isAuthenticated,isCompleted,isHidden,isLoading,isReplayable,isUnderage,issueDate,issuingPlayer,lastReportedDate,leaderboardIdentifier,leaderboardSets,leaderboardSetsInstances,leaderboards,leaderboardsInstances,localPlayerScore,localPlayer,maxRange,maximumPoints,message,modificationDate,name,percentComplete,player,player,playerID,playerScope,players,playersInstances,rank,receivingPlayer,savedGames,savedGamesInstances,score,scores,scores,scoresInstances,shouldSetDefaultLeaderboard,showsCompletionBanner,state,timeScope,title,title,title,unachievedDescription,value,authenticate,challengeCompose,challengeCompose,clear,createGuestPlayer,decline,deleteSavedGame,fetchSavedGames,init,initNew,initNew,initNew,load,load,load,load,load,load,loadAchievementDescriptions,loadData,loadDefaultLeaderboardId,loadImage,loadImage,loadImage,loadLeaderboards,loadPhoto,loadRecentPlayers,loadScores,observeAuthentication,onStatus,onStatus,openNativeWindow,report,report,reset,resolveConflicts,saveGame,selectChallengeablePlayers,setDefaultLeaderboardId,setRange,showBanner"><title>com.myflashlab.air.extensions.gameCenter.Achievement</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Achievement,com.myflashlab.air.extensions.gameCenter.Achievement,ACHIEVEMENTS,ALL_TIME,CHALLENGES,COMPLETED,DECLINED,DEFAULT,EXTENSION_ID,FRIENDS_ONLY,GLOBAL,INVALID,LEADERBOARDS,NORMAL,PENDING,SMALL,TODAY,VERSION,WEEK,_alias,_context,_displayName,_guestIdentifier,_id,achievedDescription,achievement,achievements,achievementsDesc,achievementsDescInstances,achievementsInstances,alias,cache,challenges,challengesInstances,completeDefImgPath,completionDate,context,date,deviceName,displayName,formattedValue,groupIdentifier,groupIdentifier,groupIdentifier,guestIdentifier,identifier,identifier,identifier,identifier,incompleteDefImgPath,isAuthenticated,isCompleted,isHidden,isLoading,isReplayable,isUnderage,issueDate,issuingPlayer,lastReportedDate,leaderboardIdentifier,leaderboardSets,leaderboardSetsInstances,leaderboards,leaderboardsInstances,localPlayerScore,localPlayer,maxRange,maximumPoints,message,modificationDate,name,percentComplete,player,player,playerID,playerScope,players,playersInstances,rank,receivingPlayer,savedGames,savedGamesInstances,score,scores,scores,scoresInstances,shouldSetDefaultLeaderboard,showsCompletionBanner,state,timeScope,title,title,title,unachievedDescription,value,authenticate,challengeCompose,challengeCompose,clear,createGuestPlayer,decline,deleteSavedGame,fetchSavedGames,init,initNew,initNew,initNew,load,load,load,load,load,load,loadAchievementDescriptions,loadData,loadDefaultLeaderboardId,loadImage,loadImage,loadImage,loadLeaderboards,loadPhoto,loadRecentPlayers,loadScores,observeAuthentication,onStatus,onStatus,openNativeWindow,report,report,reset,resolveConflicts,saveGame,selectChallengeablePlayers,setDefaultLeaderboardId,setRange,showBanner"><title>com.myflashlab.air.extensions.gameCenter.Achievement</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'Achievement - Myflashlabs';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -11,14 +11,16 @@
 					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Achievement"); titleBar_setSubNav(false,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
 				-->
 			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.gameCenter</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Achievement</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Achievement  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
+               <p>
  An object that communicates with Game Center about the local player’s progress toward completing an achievement.
  You can’t just add an achievement to your game programmatically. There are several steps that you must accomplish
  to add achievements to your game. Read official docs: https://developer.apple.com/documentation/gamekit/gkachievement?language=objc
-  <p>
-     By default, when an achievement is completed, GameKit displays a notification banner to the player. If your game
-     wants to display its own achievement user interface, you can prevent the banner from being displayed by setting
-     the <code>showsCompletionBanner</code> property of the achievement object to NO before reporting the player’s
-     progress.
+ </p>
+               <p>
+ By default, when an achievement is completed, GameKit displays a notification banner to the player. If your game
+ wants to display its own achievement user interface, you can prevent the banner from being displayed by setting
+ the <code>showsCompletionBanner</code> property of the achievement object to NO before reporting the player’s
+ progress.
  </p>
             <p></p><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#identifier" class="signatureLink">identifier</a> : String<div class="summaryTableDescription">[read-only] 
 	 A string used to uniquely identify the specific achievement the object refers to.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isCompleted" class="signatureLink">isCompleted</a> : Boolean<div class="summaryTableDescription">[read-only] 
@@ -27,6 +29,7 @@
 	 A percentage value that states how far the player has progressed on this achievement.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#player" class="signatureLink">player</a> : <a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a><div class="summaryTableDescription">[read-only] 
 	 A Player object used to identify the player who earned the achievement.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#showsCompletionBanner" class="signatureLink">showsCompletionBanner</a> : Boolean<div class="summaryTableDescription">
 	 A Boolean value that states whether a banner is displayed when the achievement is completed.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#challengeCompose()" class="signatureLink">challengeCompose</a>($msg:String, $players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</div><div class="summaryTableDescription">
+	 
 	 Provides a challenge compose view controller with a preformatted message for the achievement and pre-selected
 	 Player objects.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#initNew()" class="signatureLink">initNew</a>($identifier:String, $player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a> = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Achievement.html">Achievement</a></div><div class="summaryTableDescription">[static] 
 	 
@@ -34,8 +37,11 @@
 	     param to initializes a new achievement object for the local player.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#load()" class="signatureLink">load</a>($callback:Function):void</div><div class="summaryTableDescription">[static] 
 	 
 	 Loads previously submitted achievement progress for the local player from Game Center.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#report()" class="signatureLink">report</a>($achievements:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Achievement.html">Achievement</a>&gt;, $challenges:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 
 	 Reports a list of achievements and limits the challenges those achievements may complete.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#reset()" class="signatureLink">reset</a>($callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 
 	 Resets all achievement progress for the local player.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#selectChallengeablePlayers()" class="signatureLink">selectChallengeablePlayers</a>($players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</div><div class="summaryTableDescription">
+	 
 	 Finds the subset of players that can earn an achievement.</div></td><td class="summaryTableOwnerCol">Achievement</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
 										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="identifier"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">identifier</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>identifier:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
@@ -49,17 +55,29 @@
 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get percentComplete():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set percentComplete(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="player"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">player</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a></code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
 	 A Player object used to identify the player who earned the achievement.
 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get player():<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a></code><br/></div><a name="propertyDetail"></a><a name="showsCompletionBanner"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">showsCompletionBanner</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>showsCompletionBanner:Boolean</code><p></p><p></p><p>
-	 A Boolean value that states whether a banner is displayed when the achievement is completed.
+	 A Boolean value that states whether a banner is displayed when the achievement is completed. When an achievement
+	 is completed and the value of this property is true, a notification banner is displayed to the player to inform
+	 them of the completed achievement. If the value of this property is false, there is no visual indication that
+	 the achievement is completed. Your game should set this property to false to provide its own visual indicator
+	 that the achievement was earned. The default value is false.
 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get showsCompletionBanner():Boolean</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set showsCompletionBanner(value:Boolean):void</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="challengeCompose()"></a><a name="challengeCompose(String,Vector$com.myflashlab.air.extensions.gameCenter.Player,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">challengeCompose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function challengeCompose($msg:String, $players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Provides a challenge compose view controller with a preformatted message for the achievement and pre-selected
 	 Player objects.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($achievement:Achievement, $didIssueChallenge:Boolean, $sentPlayerIDs:Array):void
+     {
+         // $achievement: is a reference to the object which initiated this method.
+         // $didIssueChallenge: is a Boolean variable designating if the challenge was sent out.
+         // $sentPlayerIDs: An array of playerIDs that the challenge was sent to.
+     }
+     </pre></div>
 	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$msg</span>:String</code> &mdash; 		The message that is sent to other players. This message can be edited by the player.
 	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$players</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;</code> &mdash; 	An array of Player objects that contains the player identifiers that the challenge is to be
 	 sent to.
-	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($didIssueChallenge:Boolean, $sentPlayerIDs:Array(String)):void</code>
-	 callback function that determines if a challenge has been issued and if so, who it is sent to. <code>
-	 $didIssueChallenge:</code> is a Boolean variable designating if the challenge was sent out. And <code>
-	 $sentPlayerIDs:</code> An array of playerIDs that the challenge was sent to.
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	callback function that determines if a challenge has been issued and if so, who it is sent to.
 	 </td></tr></table></p></div><a name="initNew()"></a><a name="initNew(String,com.myflashlab.air.extensions.gameCenter.Player)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">initNew</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function initNew($identifier:String, $player:<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a> = null):<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Achievement.html">Achievement</a></code><p></p><p></p><p>
 	 <p>
 	     Initializes an achievement object for a specific player or pass <code>null</code> for <code>$player</code>
@@ -84,29 +102,59 @@
 	 <p>
 	 Loads previously submitted achievement progress for the local player from Game Center.
 	 </p>
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($achievements:Vector.&lt;Achievement&gt;, $error:String):void</code> will be
-	 called when the download is completed.
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($achievements:Vector.&lt;Achievement&gt;, $error:String):void
+     {
+         // $achievements: A array of loaded Achievement objects.
+         // $error: If an error occurred, this error object describes the error.
+     }
+     </pre></div>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	will be called when the download is completed.
 	 </td></tr></table></p></div><a name="report()"></a><a name="report(Vector$com.myflashlab.air.extensions.gameCenter.Achievement,Vector$com.myflashlab.air.extensions.gameCenter.Challenge,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">report</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function report($achievements:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Achievement.html">Achievement</a>&gt;, $challenges:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Reports a list of achievements and limits the challenges those achievements may complete.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($error:String):void
+     {
+         // $error: will be null if the operation was completed successfully.
+     }
+     </pre></div>
 	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$achievements</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Achievement.html">Achievement</a>&gt;</code> &mdash; 	An array of Achievement objects that represents all achievements that are being reported.
 	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$challenges</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Challenge.html">Challenge</a>&gt;</code> &mdash; 	(can be set to null) An array of Challenge objects that represents the limited challenges that are associated
 	 with the reported achievements. If an error occurred, this parameter may be non-nil, in which case the array
 	 holds whatever challenge information Game Kit was able to fetch.
-	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		<code>function($error:String):void</code> will be called when the download is completed.
-	 The <code>$error</code> parameter will be null if the operation was completed successfully.
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		will be called when the download is completed.
 	 </td></tr></table></p></div><a name="reset()"></a><a name="reset(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">reset</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function reset($callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Resets all achievement progress for the local player. Calling this class method deletes all progress towards
 	 achievements previously reported for the local player. Hidden achievements that were previously visible are now
 	 hidden again.
-	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		<code>function($error:String):void</code> will be called when the reset action is
-	 completed. If the operation was successful, <code>$error</code> is null.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($error:String):void
+     {
+         // $error: will be null if the operation was completed successfully.
+     }
+     </pre></div>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		will be called when the reset action is completed.
 	 </td></tr></table></p></div><a name="selectChallengeablePlayers()"></a><a name="selectChallengeablePlayers(Vector$com.myflashlab.air.extensions.gameCenter.Player,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">selectChallengeablePlayers</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function selectChallengeablePlayers($players:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
 	 Finds the subset of players that can earn an achievement.
+	 </p>
+	 	 Below shows what parameters the callback function must have
+	 <div class="listing" version="3.0"><pre>
+     function($achievement:Achievement, $players:Vector.&lt;Player&gt;, $error:String):void
+     {
+         // $achievement: is a reference to the object which initiated this method.
+         // $players: is an array of Player objects representing the players in the original array that are able to complete the challenge. If an error occurred, this parameter may be non-nil, in which case the array holds whatever achievement information Game Kit was able to fetch.
+         // $error: If an error occurred, this object describes the error. If the operation completed successfully, this value is nil.
+     }
+     </pre></div>
 	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$players</span>:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/gameCenter/Player.html">Player</a>&gt;</code> &mdash; 	    An array of Player objects containing a list of players. The list of players is used to
 	 find those players that are eligible to earn the achievement.
-	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	<code>function($players:Vector.&lt;Player&gt;, $error:String):void</code> will be called
-	 when the download is completed. <code>$players</code> is an array of Player objects representing the players in
-	 the original array that are able to complete the challenge. If an error occurred, this parameter may be non-nil,
-	 in which case the array holds whatever achievement information Game Kit was able to fetch. <code>$error</code>
-	 If an error occurred, this object describes the error. If the operation completed successfully, this value is nil.
-	 </td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Mon Mar 18 2019, 02:08 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Mon Mar 18 2019, 02:08 PM +04:00  -->
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 	will be called when the download is completed.
+	 </td></tr></table></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Fri Apr 5 2019, 10:10 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Fri Apr 5 2019, 10:10 AM +04:00  -->

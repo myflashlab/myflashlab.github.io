@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Billing,com.myflashlab.air.extensions.billing.Billing,ALREADY_OWNED_ITEM,ANDROID,AUTO_RENEWAL,CONSUMABLE,EXTENSION_ID,IOS,IS_DEBUG_MODE,NOT_FOUND_ITEM,PARENTAL_GATE,PARENT_PERMISSION_REQUIRED,PERMANENT,PROMO_PURCHASE_FAILED,PROMO_PURCHASE_SUCCESS,VERSION,autoRenewing,billingType,currency,description,developerPayload,iOSReceipt,listener,msg,orderId,os,price,productId,productId,products,purchaseState,purchaseTime,purchaseToken,purchase,signature,status,title,clearCache,continueThePreventedPurchaseFlow,dispose,doPayment,forceConsume,getPurchases,init"><title>com.myflashlab.air.extensions.billing.Billing</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="Billing,com.myflashlab.air.extensions.billing.Billing,ALREADY_OWNED_ITEM,ANDROID_LIBRARY_VERSION,AUTO_RENEWAL,BILLING_UNAVAILABLE,CHILD_DIRECTED,CHILD_DIRECTED,CONSUMABLE,DEFERRED,DEVELOPER_ERROR,ERROR,EXTENSION_ID,FEATURE_NOT_SUPPORTED,IMMEDIATE_AND_CHARGE_PRORATED_PRICE,IMMEDIATE_WITHOUT_PRORATION,IMMEDIATE_WITH_TIME_PRORATION,ITEM_ALREADY_OWNED,ITEM_NOT_OWNED,ITEM_UNAVAILABLE,NOT_CHILD_DIRECTED,NOT_FOUND_ITEM,NOT_UNDER_AGE_OF_CONSENT,OK,PARENTAL_GATE,PARENT_PERMISSION_REQUIRED,PERMANENT,PRICE_CHANGE_CONFIRMATION,PROMO_PURCHASE_FAILED,PROMO_PURCHASE_SUCCESS,SERVICE_DISCONNECTED,SERVICE_DISCONNECTED,SERVICE_TIMEOUT,SERVICE_UNAVAILABLE,SUBSCRIPTIONS_UPDATE,SUBSCRIPTIONS,UNDER_AGE_OF_CONSENT,UNDER_AGE_OF_CONSENT,UNKNOWN_SUBSCRIPTION_UPGRADE_DOWNGRADE_POLICY,UNSPECIFIED,UNSPECIFIED,USER_CANCELED,VERSION,autoRenewing,billingType,currency,description,freeTrialPeriod,hashCode,iOSReceipt,introductoryPrice,introductoryPriceAmountMicros,introductoryPriceCycles,introductoryPricePeriod,isInitialized,listener,msg,orderId,originalJson,paymentMode,price,productId,productId,products,publicKey,purchaseState,purchaseTime,purchaseToken,purchase,signature,status,subscriptionPeriod,title,clearCache,continueThePreventedPurchaseFlow,dispose,doPayment,forceConsume,getPurchases,init,isFeatureSupported,priceChangeConfirmation,redeem,replaceSubscription,setData,verifyAndroidPurchaseLocally"><title>com.myflashlab.air.extensions.billing.Billing</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'Billing - Myflashlabs';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -10,354 +10,288 @@
 				
 					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Billing"); titleBar_setSubNav(true,true,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
 				-->
-			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.billing</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Billing</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Billing  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
-	              <p>In-app-payments ANE is the first ANE which has made sure the Android and iOS in-app-billing work flows are identical so Air developers won't be confused at all. 
-	 While making these two completly different APIs identical, we made sure that you will have access to almost all their powers so you are not missing anything important.</p>
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.billing</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  Billing</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">Billing  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> Object</td></tr></table><p></p><p></p><p></p><p></p>
+               <p>
+ In-app-payments ANE is making the Android and iOS in-app-billing work flows similar to each other so AIR developers
+ won't be confused. While making these two completely-different-APIs identical, we made sure that you will have
+ access to all their powers so you are not missing anything.</p>
+               <p>
+ To learn more about the usage of this ANE, please read the examples in this documentation.
+ </p>
+               <p>
+                  <b>NOTICE:</b> If you have a permanent product in your app, you MUST have a restore button in your app UI or
+ your app will be rejected in the apple's review process so make sure to add that button and when it's clicked,
+ you should call <code>Billing.getPurchases()</code> method to get the list of previously purchased items</p>
+            <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="Billing.html#getPurchases()" target="">getPurchases()</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#CHILD_DIRECTED" class="signatureLink">CHILD_DIRECTED</a> : int = 0<div class="summaryTableDescription">[static] 
 	 
-	              <p>To learn more about the usage of this ANE, please read the examples in this documentation.</p>
+	 (Android) Developers are able to specify whether you would like your app to be treated as child-directed
+	 for purposes of the Children’s Online Privacy Protection Act (COPPA)
 	 
-	              <p>
-                  <b>NOTICE:</b> If you have a permanent product in your app, you MUST have a restore button in your app UI or your app will be rejected in the apple's review process
-	 so make sure to add that button and when it's clicked, you should call <code>Billing.getPurchases()</code> method to get the list of previously purchased items</p>
+	 	 
+	 By setting this method, you certify that this notification is accurate and you are
+	 authorized to act on behalf of the owner of the app.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#iOSReceipt" class="signatureLink">iOSReceipt</a> : String<div class="summaryTableDescription">[static] [read-only] 
+	 (iOS), Returns a base64 encoded string which you can send to your server and eventually to app store for
+	 verification.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#isInitialized" class="signatureLink">isInitialized</a> : Boolean<div class="summaryTableDescription">[static] [read-only]  Returns true if the ANE is initialized successfully </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#listener" class="signatureLink">listener</a> : EventDispatcher<div class="summaryTableDescription">[static] [read-only] 
+	 (iOS) This property is used for app store promotions for iOS devices 11+.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PARENTAL_GATE" class="signatureLink">PARENTAL_GATE</a> : Boolean = false<div class="summaryTableDescription">[static] 
 	 
-	              <p>
-	 Make sure to take care of the permissions manually if you are targeting AIR SDK 24+: 
-	 <b>https://github.com/myflashlab/inAppPayments-ANE/#permissions</b>
-	              </p>
+	 (iOS) If you are targeting your app for kids, apple requires you to show a parental gate before a purchase flow
+	 starts.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#products" class="signatureLink">products</a> : Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/billing/Product.html">Product</a>&gt;<div class="summaryTableDescription">[static] [read-only] 
+	 Returns a list of confirmed products found on iTunesConnect or GooglePlay console.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#publicKey" class="signatureLink">publicKey</a> : String<div class="summaryTableDescription">[static] [write-only] 
 	 
-	           <p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso"><a href="Billing.html#getPurchases()" target="">getPurchases()</a></div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#iOSReceipt" class="signatureLink">iOSReceipt</a> : String<div class="summaryTableDescription">[static] [read-only] 
-		 Returns a base64 encoded string which you can send to your server and eventually to app store for
-		 verification.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#IS_DEBUG_MODE" class="signatureLink">IS_DEBUG_MODE</a> : Boolean = false<div class="summaryTableDescription">[static] 
-		 When developing and testing your app, set this to true so you can test in-app-billing on
-		 Android side.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#listener" class="signatureLink">listener</a> : EventDispatcher<div class="summaryTableDescription">[static] [read-only] 
-		 This property is used for app store promotions for iOS devices 11+.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#os" class="signatureLink">os</a> : String<div class="summaryTableDescription">[static] [read-only] 
-		 indicates the current OS which the app is running in.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#PARENTAL_GATE" class="signatureLink">PARENTAL_GATE</a> : Boolean = false<div class="summaryTableDescription">[static] 
-		 
-		 If you are targeting your app for kids, apple requires you to show a parental gate before a purchase flow
-		 starts.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#products" class="signatureLink">products</a> : Array<div class="summaryTableDescription">[static] [read-only] </div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearCache()" class="signatureLink">clearCache</a>():void</div><div class="summaryTableDescription">[static] 
-		 Call this method to clear the local cache of purchase records saved on the device.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#continueThePreventedPurchaseFlow()" class="signatureLink">continueThePreventedPurchaseFlow</a>():void</div><div class="summaryTableDescription">[static] 
-		 On iOS, you can set Billing.PARENTAL_GATE = true if your app targets kids and promo purchases
-		 will be prevented from automatic continuation.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">[static] 
-		 
-		 Dispose the extension to disconnect from the native billing system.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#doPayment()" class="signatureLink">doPayment</a>($type:int, $id:String, $payload:String, $onResult:Function):void</div><div class="summaryTableDescription">[static] 
-		 Call this method to let users make payments.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#forceConsume()" class="signatureLink">forceConsume</a>($id:String, $onResult:Function):void</div><div class="summaryTableDescription">[static] 
-		 Force consume a managed purchased product on the Android side.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getPurchases()" class="signatureLink">getPurchases</a>($onResult:Function):void</div><div class="summaryTableDescription">[static] 
-		 Call this method to get an Array list of all products that your user has purchased before.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>($androidKey:String = null, $androidProductIDs:Array = null, $iOSProductIDs:Array = null, $onResult:Function = null):<a href="../../../../../com/myflashlab/air/extensions/billing/Billing.html">Billing</a></div><div class="summaryTableDescription">[static] 
-		 Call this method to initialize the Billing ANE.</div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ALREADY_OWNED_ITEM" class="signatureLink">ALREADY_OWNED_ITEM</a> : String = This item is already purchased, you should let user use this item.<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ANDROID" class="signatureLink">ANDROID</a> : String = android<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.billing<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#IOS" class="signatureLink">IOS</a> : String = ios<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NOT_FOUND_ITEM" class="signatureLink">NOT_FOUND_ITEM</a> : String = This item not found on Google or Apple servers.<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 2.5.7<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+	 (Android), sets the public Android key for your app found in your GooglePlay console.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#UNDER_AGE_OF_CONSENT" class="signatureLink">UNDER_AGE_OF_CONSENT</a> : int = 0<div class="summaryTableDescription">[static] 
+	 Developers are able to specify whether to mark your ad requests to receive treatment for
+	 users in the European Economic Area (EEA) under the age of consent.</div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#clearCache()" class="signatureLink">clearCache</a>():void</div><div class="summaryTableDescription">[static] 
+	 Deprecated, the ANE will clear the cache when required internally and you no longer have to worry
+	 about it.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#continueThePreventedPurchaseFlow()" class="signatureLink">continueThePreventedPurchaseFlow</a>():void</div><div class="summaryTableDescription">[static] 
+	 (iOS), you can set Billing.PARENTAL_GATE = true if your app targets kids and promo purchases
+	 will be prevented from automatic continuation.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#dispose()" class="signatureLink">dispose</a>():void</div><div class="summaryTableDescription">[static] 
+	 
+	 You normally won't need to dispose this ANE when initialized!
+	 
+	 	 </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#doPayment()" class="signatureLink">doPayment</a>($type:int, $id:String, $accountId:String, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 Call this method to let users make payments.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#forceConsume()" class="signatureLink">forceConsume</a>($purchaseToken:String, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 
+	 (Android), Force consume a managed purchased product.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getPurchases()" class="signatureLink">getPurchases</a>($callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 Call this method to get a Vector list of all products that user has purchased before.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#init()" class="signatureLink">init</a>($androidInAppIDs:Array, $androidSubsIDs:Array, $iOSInAppIDs:Array, $iOSSubsIDs:Array, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 Call this method to initialize the Billing ANE.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#isFeatureSupported()" class="signatureLink">isFeatureSupported</a>($featureType:String):int</div><div class="summaryTableDescription">[static] 
+	 (Android), check if the named featureType is supported or not.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#priceChangeConfirmation()" class="signatureLink">priceChangeConfirmation</a>($productId:String, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 (Android), Initiate a flow to confirm the change of price for an item subscribed by the user.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#redeem()" class="signatureLink">redeem</a>():void</div><div class="summaryTableDescription">[static] 
+	 
+	 (Android), You can create promotional codes and your users can redeem those codes to get your in-app-products for
+	 free! To do that, call this method and it will open the redeem window in GooglePlay app.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#replaceSubscription()" class="signatureLink">replaceSubscription</a>($oldProductId:String, $newProductId:String, $prorationMode:int, $accountId:String, $callback:Function):void</div><div class="summaryTableDescription">[static] 
+	 (Android), Use this method to let users downgrade/upgrade their exciting subscription.</div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#verifyAndroidPurchaseLocally()" class="signatureLink">verifyAndroidPurchaseLocally</a>($purchase:<a href="../../../../../com/myflashlab/air/extensions/billing/Purchase.html">Purchase</a>):Boolean</div><div class="summaryTableDescription">[static] 
+	 
+	 (Android), like the iOS side, for security reasons you are recommended to verify the purchases using your own
+	 server.</div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><a name="constantSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Constants</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableConstant"><tr><th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ALREADY_OWNED_ITEM" class="signatureLink">ALREADY_OWNED_ITEM</a> : String = This item is already purchased, you should let user use this item.<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ANDROID_LIBRARY_VERSION" class="signatureLink">ANDROID_LIBRARY_VERSION</a> : String = 1.2.2<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#EXTENSION_ID" class="signatureLink">EXTENSION_ID</a> : String = com.myflashlab.air.extensions.billing<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#NOT_FOUND_ITEM" class="signatureLink">NOT_FOUND_ITEM</a> : String = This item not found on Google or Apple servers.<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#VERSION" class="signatureLink">VERSION</a> : String = 3.0.0<div class="summaryTableDescription">[static] </div></td><td class="summaryTableOwnerCol">Billing</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
-										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="iOSReceipt"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">iOSReceipt</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>iOSReceipt:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
-		 Returns a base64 encoded string which you can send to your server and eventually to app store for
-		 verification. To learn about how to verify the purchases, read here:
-		 https://developer.apple.com/library/content/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html#//apple_ref/doc/uid/TP40010573-CH104-SW1
-		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get iOSReceipt():String</code><br/></div><a name="propertyDetail"></a><a name="IS_DEBUG_MODE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">IS_DEBUG_MODE</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var IS_DEBUG_MODE:Boolean = false</code><p></p><p></p><p>
-		 When developing and testing your app, set this to <code>true</code> so you can test in-app-billing on
-		 Android side. The default value is <code>false</code>
-		 </p></div><a name="propertyDetail"></a><a name="listener"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listener</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>listener:EventDispatcher</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
-		 This property is used for app store promotions for iOS devices 11+. You need to listen to
-		 <code>PROMO_PURCHASE_FAILED</code> and <code>PROMO_PURCHASE_SUCCESS</code> right after you initialized the
-		 ANE with <code>Billing.init</code>
-		 		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get listener():EventDispatcher</code><br/><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how you can listen to promo purchase events that might happen on iOS 11+
-		 <div class="listing" version="3.0"><pre>
-         Billing.listener.addEventListener(BillingEvent.PROMO_PURCHASE_FAILED, onIosPromoPurchaseFailed);
-         Billing.listener.addEventListener(BillingEvent.PROMO_PURCHASE_SUCCESS, onIosPromoPurchaseSuccess);
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="CHILD_DIRECTED"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">CHILD_DIRECTED</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>public static var CHILD_DIRECTED:int = 0</code><p></p><p></p><p>
+	 <p>
+	 (Android) Developers are able to specify whether you would like your app to be treated as child-directed
+	 for purposes of the Children’s Online Privacy Protection Act (COPPA)
+	 </p>
+	 	 <p>
+	 By setting this method, you certify that this notification is accurate and you are
+	 authorized to act on behalf of the owner of the app. You understand that abuse of this
+	 setting may result in termination of your Google account.
+	 </p>
+	 	 <p>
+	 Note: it may take some time for this designation to be fully implemented in applicable Google services.
+	 </p>
+	 	 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#PARENTAL_GATE" target="">PARENTAL_GATE</a></div></div><a name="propertyDetail"></a><a name="iOSReceipt"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">iOSReceipt</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>iOSReceipt:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 (iOS), Returns a base64 encoded string which you can send to your server and eventually to app store for
+	 verification. To learn about how to verify the purchases, read here:<b>
+	 https://developer.apple.com/library/content/releasenotes/General/ValidateAppStoreReceipt/Chapters/ValidateRemotely.html#//apple_ref/doc/uid/TP40010573-CH104-SW1
+	 </b>
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get iOSReceipt():String</code><br/></div><a name="propertyDetail"></a><a name="isInitialized"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isInitialized</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>isInitialized:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p> Returns true if the ANE is initialized successfully </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get isInitialized():Boolean</code><br/></div><a name="propertyDetail"></a><a name="listener"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">listener</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>listener:EventDispatcher</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 (iOS) This property is used for app store promotions for iOS devices 11+. You need to listen to
+	 <code>PROMO_PURCHASE_FAILED</code> and <code>PROMO_PURCHASE_SUCCESS</code> right after you initialized the
+	 ANE with <code>Billing.init</code>
+	 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get listener():EventDispatcher</code><br/><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how you can listen to promo purchase events that might happen on iOS 11+
+	 <div class="listing" version="3.0"><pre>
+        Billing.listener.addEventListener(BillingEvent.PROMO_PURCHASE_FAILED, onIosPromoPurchaseFailed);
+        Billing.listener.addEventListener(BillingEvent.PROMO_PURCHASE_SUCCESS, onIosPromoPurchaseSuccess);
+        &nbsp;
+        function onIosPromoPurchaseFailed(e:BillingEvent):void
+        {
+         trace("onPromoPurchaseFailed: " + e.msg);
+     }
+        &nbsp;
+        function onIosPromoPurchaseSuccess(e:BillingEvent):void
+        {
+         trace("onPromoPurchase status: " + e.status);
+         trace("onPromoPurchase msg: " + e.msg);
          &nbsp;
-         function onIosPromoPurchaseFailed(e:BillingEvent):void
+         if (e.purchase)
          {
-             trace("onPromoPurchaseFailed: " + e.msg);
+             trace("----------------");
+             // we cannot determine the "billingType" on promo purchases!
+             // It's your job to name your productId in a way so you will know this.
+             trace("$data.orderId = " +                 e.purchase.orderId);
+             trace("$data.productId = " +            e.purchase.productId);
+             trace("$data.purchaseState = " +        e.purchase.purchaseState);
+             trace("$data.purchaseTime = " +            e.purchase.purchaseTime);
+             trace("$data.purchaseToken = " +        e.purchase.purchaseToken);
+             trace("----------------");
          }
-         &nbsp;
-         function onIosPromoPurchaseSuccess(e:BillingEvent):void
-         {
-             trace("onPromoPurchase status: " + e.status);
-             trace("onPromoPurchase msg: " + e.msg);
-             &nbsp;
-             if (e.purchase)
-             {
-                 trace("----------------");
-                 // we cannot determine the "billingType" on promo purchases!
-                 // It's your job to name your productId in a way so you will know this.
-                 trace("$data.orderId = " +                 e.purchase.orderId);
-                 trace("$data.developerPayload = " +     e.purchase.developerPayload); // is always empty on promo purchases
-                 trace("$data.productId = " +            e.purchase.productId);
-                 trace("$data.purchaseState = " +        e.purchase.purchaseState);
-                 trace("$data.purchaseTime = " +            e.purchase.purchaseTime);
-                 trace("$data.purchaseToken = " +        e.purchase.purchaseToken);
-                 trace("----------------");
-                 &nbsp;
-                 // If your promo purchase is not a consumable one, you surely expect to see it when
-                 // Billing.getPurchases(onGetPurchasesResult); is called, right?
-                 // to make sure you are seeing it, always clear cache when PROMO_PURCHASE_SUCCESS happens.
-                 &nbsp;
-                 // When you clear the cache, the ANE will try to get the purchase results fresh from app store.
-                 Billing.clearCache();
-             }
-         }
-         </pre></div>
-		 </div></div><a name="propertyDetail"></a><a name="os"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">os</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>os:String</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
-		 indicates the current OS which the app is running in. it's either <code>Billing.ANDROID</code> or
-		 <code>Billing.IOS</code>
-		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get os():String</code><br/></div><a name="propertyDetail"></a><a name="PARENTAL_GATE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PARENTAL_GATE</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var PARENTAL_GATE:Boolean = false</code><p></p><p></p><p>
-		 <p>
-		 If you are targeting your app for kids, apple requires you to show a parental gate before a purchase flow
-		 starts. The default value is <code>false</code> but set this to <code>true</code> and when automatic payment
-		 flow starts, the event <code>BillingEvent.PARENT_PERMISSION_REQUIRED</code> will be dispatched.
-		 </p>
-		 		 <p>
-		 When the event is dispatched, you must show some parental-gate in your app. read here for more information:
-		 https://developer.apple.com/app-store/parental-gates/
-		 </p>
-		 		 <p>
-		 When you are sure that a parent is using the app, you should simply call the method
-		 <code>Billing.continueThePreventedPurchaseFlow();</code> to continue the halted purchase flow.
-		 </p>
-		 </p></div><a name="propertyDetail"></a><a name="products"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">products</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>products:Array</code>&nbsp;&nbsp;[read-only] <p></p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get products():Array</code><br/></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="clearCache()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearCache</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function clearCache():void</code><p></p><p></p><p>
-		 <p>Call this method to clear the local cache of purchase records saved on the device. In this ANE, we are
-		 saving purchase records in an encrypted sqlite database based on Adobe's Standards in
-		 <code>File.applicationStorageDirectory</code> to boost the performance and speed of your app. While saving
-		 the information like this increases the ANE's performance and helps it to be identical on both Android and
-		 iOS sides, you must know when to clear this cache based on your app's logic.</p>
-		 
-		 <p><b>NOTICE 1:</b> When user uninstalls your app, this cache will also be deleted but if the same user
-		 installs your app again, all purchases will be restored after ANE connects Google/Apple servers and the
-		 cache database will be regenerated again. This process is exactly like when you call the
-		 <code>clearCache</code> method.</p>
-		 
-		 <p><b>NOTICE 2:</b> Only payments of types <code>BillingType.PERMANENT</code> and
-		 <code>BillingType.AUTO_RENEWAL</code> are cached. Consumable items will never be cached. if you need to keep
-		 a record of them, you should do that on your own side.</p>
-		 
-		 <p>
-		 Here are some tips for you to decide when is the best time to clear the cache.
-		 <ul>
-		 	<li>If you have login/logout logic on your app, it's a very good idea to clear the cache whenever user
-		 	logouts from your app</li>
-		 	<li>Or you may prefer to clear the cache when the user loggs in. it really depends on your preferences.
-		 	the objective is to make sure that the new user who loggs in, is not seeing the purchase records of another
-		 	old user.</li>
-		 	<li>Even if you don't have a login/logout logic in your app, it's always a good idea to clear the cache on
-		 	successful purchase callbacks to make sure your cache is always synced.</li>
-		 </ul>
-		 </p>
-		 
-		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="BillingType.html" target="">BillingType</a></div></div><a name="continueThePreventedPurchaseFlow()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">continueThePreventedPurchaseFlow</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function continueThePreventedPurchaseFlow():void</code><p></p><p></p><p>
-		 On iOS, you can set <code>Billing.PARENTAL_GATE = true</code> if your app targets kids and promo purchases
-		 will be prevented from automatic continuation. This method will continue the purchase flow after it's being
-		 halted.
-		 </p></div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function dispose():void</code><p></p><p></p><p>
-		 <p>
-		 Dispose the extension to disconnect from the native billing system. if you want to access the billing again,
-		 you will need to call <code>Billing.init()</code> again.
-		 </p>
-		 		 <p>
-		 You normally won't need to dispose this ANE when initialized!
-		 </p>
-		 		 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#init()" target="">init()</a></div></div><a name="doPayment()"></a><a name="doPayment(int,String,String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">doPayment</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function doPayment($type:int, $id:String, $payload:String, $onResult:Function):void</code><p></p><p></p><p>
-		 Call this method to let users make payments. You should set an onResult function to know the result of the
-		 purchase.
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$type</span>:int</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$id</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$payload</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="BillingType.html" target="">BillingType</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The returning result function you are writting must accept the following parameters as this example.
-		 <div class="listing" version="3.0"><pre>
-         Billing.doPayment(BillingType.CONSUMABLE, "android.test.purchased", "Payload CONSUMABLE", onPurchaseResult);
-         
-         private function onPurchaseResult($status:int, $data:Purchase, $msg:String):void
-         {
-             trace("\n purchase was successful? " + Boolean($status));
-             &nbsp;
-             if ($msg == Billing.ALREADY_OWNED_ITEM)
-             {
-                 if(Billing.os == Billing.IOS)
-                 {
-                     trace($msg);
-                 }
-                 else
-                 {
-                     trace("On Android, you can force consume already purchased items");
-                     Billing.forceConsume("android.test.purchased", onForceConsumeResult);
-                 }
-             }
-             else if ($msg == Billing.NOT_FOUND_ITEM)
-             {
-                 trace($msg);
-             }
-             else
-             {
-                 trace("purchase result message = " + $msg);
-             }
-             &nbsp;
-             // to make sure your purchases are synced, it's always a good idea to clear local cache on a successful
-             // purchase callback.
-             Billing.clearCache();
-             &nbsp;
-             if ($data)
-             {
-                 trace("----------------");
-                 trace("$data.billingType = " +             $data.billingType);
-                 trace("$data.orderId = " +                 $data.orderId);
-                 trace("$data.developerPayload = " +     $data.developerPayload);
-                 trace("$data.productId = " +            $data.productId);
-                 trace("$data.purchaseState = " +        $data.purchaseState);
-                 trace("$data.purchaseTime = " +            $data.purchaseTime);
-                 trace("$data.purchaseToken = " +        $data.purchaseToken);
-                 &nbsp;
-                 if(Billing.os == Billing.ANDROID)
-                 {
-                     trace("$data.autoRenewing = " +        $data.autoRenewing);
-                     trace("$data.signature = " +        $data.signature);
-                 }
-                 trace("----------------");
-             }
-             &nbsp;
-             function onForceConsumeResult($result:Boolean):void
-             {
-                 if($result)
-                 {
-                     trace("your purchase has been consumed successfully");
-                 }
-                 else
-                 {
-                     trace("something went wrong! You may try again.");
-                 }
-             }
-         }
-         </pre></div>
-		 
-		 </div></div><a name="forceConsume()"></a><a name="forceConsume(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">forceConsume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function forceConsume($id:String, $onResult:Function):void</code><p></p><p></p><p>
-		 Force consume a managed purchased product on the Android side. This method is not allowed on the iOS side.
-		 
-		  </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$id</span>:String</code> &mdash; 		product id to be consumed
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> &mdash; callback function to let you know the result of the consume
-		 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">When developing, you may need to consume an already owned item. On the Android side, you may do as follow:
-		 <div class="listing" version="3.0"><pre>
-         Billing.forceConsume("productId", onResult);
-         
-         private function onResult($result:Boolean):void
-         {
-             if($result)
-             {
-                 // your purchase has been consumed successfully
-             }
-             else
-             {
-                 // something went wrong! You may try again.
-             }
-         }
-         </pre></div>
-		 
-		 </div></div><a name="getPurchases()"></a><a name="getPurchases(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getPurchases</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getPurchases($onResult:Function):void</code><p></p><p></p><p>
-		 Call this method to get an Array list of all products that your user has purchased before. Please note that
-		 only <code>BillingType.PERMANENT</code> and <code>BillingType.AUTO_RENEWAL</code> are saved and returned.
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#clearCache()" target="">clearCache()</a><br/><a href="Purchase.html" target="">Purchase</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The returning result function you are writing must accept the following parameters as this example.
-		 <div class="listing" version="3.0"><pre>
-         Billing.getPurchases(onGetPurchasesResult);
-         &nbsp;
-         private function onGetPurchasesResult($purchases:Array):void
-         {
-             if ($purchases) // means we have successfully connected the server.
-             {
-                 if ($purchases.length &gt; 0)
-                 {
-                     var purchaseData:Purchase;
-                     var lng:int = $purchases.length;
-                     var i:int;
-                     &nbsp;
-                     for (i = 0; i &lt; lng; i++)
-                     {
-                         purchaseData = $purchases[i];
-                         trace("----------------");
-                         trace("purchaseData.orderId = " +             purchaseData.orderId);
-                         trace("purchaseData.productId = " +            purchaseData.productId);
-                         trace("purchaseData.purchaseState = " +        purchaseData.purchaseState);
-                         trace("purchaseData.purchaseTime = " +        purchaseData.purchaseTime);
-                         trace("purchaseData.purchaseToken = " +        purchaseData.purchaseToken);
-                         &nbsp;
-                         if(Billing.os == Billing.ANDROID)
-                         {
-                             trace("purchaseData.autoRenewing = " +        purchaseData.autoRenewing);
-                             trace("purchaseData.signature = " +            purchaseData.signature);
-                         }
-                         trace("----------------");
-                     }
-                 }
-                 else // if it's an empty Array, it means there are no purchase records for this user on the server.
-                 {
-                     trace("\n There are no purchase records for this user on Google or Apple servers.");
-                 }
-             }
-             else
-             {
-                 trace("\n Error while trying to get the list of previously purchased records.")
-             }
-         }
-         </pre></div>
-		 
-		 </div></div><a name="init()"></a><a name="init(String,Array,Array,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function init($androidKey:String = null, $androidProductIDs:Array = null, $iOSProductIDs:Array = null, $onResult:Function = null):<a href="../../../../../com/myflashlab/air/extensions/billing/Billing.html">Billing</a></code><p></p><p></p><p>
-		 <p>Call this method to initialize the Billing ANE. If you are building for iOS only, you can pass null for
-		 Android parameters. The same thing is true if you are building for Android only.</p>
-		 
-		 <p>When you initalize this ANE, you must pass the returning result function to know when the initializing
-		 job is finished. You must wait for a successful result before calling any other methods on this extension.</p>
-		 
-		 <p>The initialization job checks and verifies the list of product IDs you have passed in, to make sure your
-		 product IDs are valid. Please be alerted that when you add your products on Google Play or iTunes Connect,
-		 it may take a few hours before they are propagate globally, so make sure you are waiting enough before
-		 testing your products availability</p>
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$androidKey</span>:String</code> (default = <code>null</code>)<code></code> &mdash; 			This key can be found in your Google Play console after you uploaded your demo .apk
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$androidProductIDs</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; 	An Array of product IDs you have already registered in your Google Play console
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$iOSProductIDs</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; 		An Array of product IDs you have already registered in your iTunes Connect
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; 			The result of the ANE initialization. only if the ANE is initialized successfully, you can call other methods.
-		 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code><a href="../../../../../com/myflashlab/air/extensions/billing/Billing.html">Billing</a></code> &mdash; </td></tr></table><br/><span class="label"> Example </span><br/><div class="detailBody">The init returning result function you are writing must accept two parameters as this example.
-		 <div class="listing" version="3.0"><pre>
-         Billing.init(ANDROID_KEY, [ANDROID PRODUCT IDs], [iOS PRODUCT IDs], onInitResult);
-         &nbsp;
-         private function onInitResult($status:int, $msg:String):void
-         {
-             trace("init was successful: " + Boolean($status));
-             trace("init msg = " + $msg);
-             &nbsp;
-             if (!Boolean($status))
-             {
-                 trace("\nThere's been a problem initializing or supporting in-app-purchases. Are you sure you have setup your project correctly?");
-                 trace("check the following probable causes:");
-                 &nbsp;
-                 trace("General reasons:");
-                 trace("\t1) Check your internet connection");
-                 &nbsp;
-                 trace("Android reasons:");
-                 trace("\t1) Have you uploaded your test .apk to your Google play console?");
-                 trace("\t2) Check your Android Key");
-                 trace("\t3) Your app must be in alpha, beta or release state on the Google console.");
-                 trace("\t4) Make sure your product IDs are matching the ones you entered in Google Play console?");
-                 trace("\t5) Sometimes it takes a few hours before Google can propagate your product IDs across all servers.");
-                 trace("\t6) Check this link: http://bfy.tw/3d26");
-                 &nbsp;
-                 trace("iOS reasons:");
-                 trace("\t1) Check your product IDs based on what you setup in iTunes Connect console");
-                 trace("\t2) Have you completed the bank information and billing contracts with Apple yet?!");
-                 trace("\t3) Sometimes it takes a few hours before iTunes Connect can propagate your product IDs across all servers.");
-                 trace("\t4) read apple information here: https://developer.apple.com/in-app-purchase/");
-                 trace("\t5) Check this link: http://bfy.tw/3d1v");
-                 &nbsp;
-                 return;
-             }
-             else
-             {
-                 trace("Here's the list of available/online products which you can make purchases on them: \n");
-                 var availableProducts:Array = Billing.products;
-                 var currProduct:Product;
-                 for (var i:int = 0; i &lt; availableProducts.length; i++)
-                 {
-                     currProduct = availableProducts[i];
-                     trace("\t productId = " +     currProduct.productId);
-                     trace("\t title = " +         currProduct.title);
-                     trace("\t description = " + currProduct.description);
-                     trace("\t price = " +         currProduct.price);
-                     trace("\t currency = " +     currProduct.currency);
-                     trace("---------------------------------------");
-                 }
-             }
-         }
-         </pre></div>
-		 
-		 </div></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ALREADY_OWNED_ITEM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ALREADY_OWNED_ITEM</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ALREADY_OWNED_ITEM:String = This item is already purchased, you should let user use this item.</code><p></p></div><a name="constantDetail"></a><a name="ANDROID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ANDROID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ANDROID:String = android</code><p></p></div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.billing</code><p></p></div><a name="constantDetail"></a><a name="IOS"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">IOS</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const IOS:String = ios</code><p></p></div><a name="constantDetail"></a><a name="NOT_FOUND_ITEM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NOT_FOUND_ITEM</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NOT_FOUND_ITEM:String = This item not found on Google or Apple servers.</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 2.5.7</code><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Mon Mar 18 2019, 02:08 PM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Mon Mar 18 2019, 02:08 PM +04:00  -->
+     }
+     </pre></div>
+	 </div></div><a name="propertyDetail"></a><a name="PARENTAL_GATE"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">PARENTAL_GATE</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var PARENTAL_GATE:Boolean = false</code><p></p><p></p><p>
+	 <p>
+	 (iOS) If you are targeting your app for kids, apple requires you to show a parental gate before a purchase flow
+	 starts. The default value is <code>false</code> but set this to <code>true</code> and when automatic payment
+	 flow starts, the event <code>BillingEvent.PARENT_PERMISSION_REQUIRED</code> will be dispatched.
+	 </p>
+	 	 <p>
+	 When the event is dispatched, you must show some parental-gate in your app. read here for more information:
+	 https://developer.apple.com/app-store/parental-gates/
+	 </p>
+	 	 <p>
+	 When you are sure that a parent is using the app, you should simply call the method
+	 <code>Billing.continueThePreventedPurchaseFlow();</code> to continue the halted purchase flow.
+	 </p>
+	 	 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#CHILD_DIRECTED" target="">CHILD_DIRECTED</a></div></div><a name="propertyDetail"></a><a name="products"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">products</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>products:Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/billing/Product.html">Product</a>&gt;</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+	 Returns a list of confirmed products found on iTunesConnect or GooglePlay console.
+	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get products():Vector.&lt;<a href="../../../../../com/myflashlab/air/extensions/billing/Product.html">Product</a>&gt;</code><br/></div><a name="propertyDetail"></a><a name="publicKey"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">publicKey</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>publicKey:String</code>&nbsp;&nbsp;[write-only] <p></p><p></p><p>
+	 <p>
+	 (Android), sets the public Android key for your app found in your GooglePlay console.
+	 </p>
+	 	 <p>
+	 Set this property only if you want to verify purchases on device!
+	 </p>
+	 	 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public static function set publicKey(value:String):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#verifyAndroidPurchaseLocally()" target="">verifyAndroidPurchaseLocally()</a></div></div><a name="propertyDetail"></a><a name="UNDER_AGE_OF_CONSENT"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">UNDER_AGE_OF_CONSENT</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static var UNDER_AGE_OF_CONSENT:int = 0</code><p></p><p></p><p>
+	 Developers are able to specify whether to mark your ad requests to receive treatment for
+	 users in the European Economic Area (EEA) under the age of consent.
+	 </p></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="clearCache()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clearCache</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public static function clearCache():void</code><p></p><p></p><p>
+	 <p>Deprecated, the ANE will clear the cache when required internally and you no longer have to worry
+	 about it. This method will be removed in future versions of the ANE.</p>
+	 </p></div><a name="continueThePreventedPurchaseFlow()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">continueThePreventedPurchaseFlow</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function continueThePreventedPurchaseFlow():void</code><p></p><p></p><p>
+	 (iOS), you can set <code>Billing.PARENTAL_GATE = true</code> if your app targets kids and promo purchases
+	 will be prevented from automatic continuation. This method will continue the purchase flow after it's being
+	 halted.
+	 </p></div><a name="dispose()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">dispose</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function dispose():void</code><p></p><p></p><p>
+	 <p>
+	 You normally won't need to dispose this ANE when initialized!
+	 </p>
+	 	 </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Billing.html#init()" target="">init()</a></div></div><a name="doPayment()"></a><a name="doPayment(int,String,String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">doPayment</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function doPayment($type:int, $id:String, $accountId:String, $callback:Function):void</code><p></p><p></p><p>
+	 Call this method to let users make payments. You should set a $callback function to know the result of the
+	 purchase.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$type</span>:int</code> &mdash; Specify if this is a consumable, permanent or a subscription. <code>BillingType.PERMANENT</code>
+	 , <code>BillingType.CONSUMABLE</code> or <code>BillingType.AUTO_RENEWAL</code>
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$id</span>:String</code> &mdash; Specify the product id which you have already created in GooglePlay or iTunesConnect.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$accountId</span>:String</code> &mdash; 	Specify an optional obfuscated string that is uniquely associated with the user's
+	 account in your app. If you pass this value, Google Play can use it to detect irregular activity, such as many
+	 devices making purchases on the same account in a short period of time. Do not use the developer ID or the
+	 user's Google ID for this field. In addition, this field should not contain the user's ID in cleartext.
+	 We recommend that you use a one-way hash to generate a string from the user's ID and store the hashed string in
+	 this field.
+	 	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; Will be called with the result of the purchase.
+	 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="BillingType.html" target="">BillingType</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">the $callback function must be constructed like below
+	 <div class="listing" version="3.0"><pre>
+     function($status:int, $purchase:Purchase, $msg:String, $wasConsumed:Boolean):void
+     {
+       //$status: if 1, it means that the purchase has been made successfully. 0 if otherwise.
+       //$purchase: will be non-null if the purchase was successful.
+       //$msg: a string representing the purchase result.
+       //$wasConsumed: true if the purchase has been consumed already. This is meaningless when dealing with subscriptions
+                  IMPORTANT:
+             Unlike iOS which you could create consumable products inside iTunesConnect, in Android you
+             can only create managed products. This means that native devs will always need to manually consume
+             their products. To make your job easier and make sure the Android and iOS sides work similar to each
+             other on this ANE, we are consuming the purchases on Android automatically (if you have set
+             BillingType.CONSUMABLE in the doPayment method).
+                  However, it is possible, that due to internet connection or any other reason, the process fails. So
+             your Android consumable item will be purchased but not consumed! When this happens, you must
+             forceConsume the item yourself. To know if this problem has happened, all you have to do is to
+             check if the $wasConsumed param is true or not. and if it's false, call forceConsume on it.
+                  This problem might happen on Android side only. on iOS, it will be fine because the product is marked
+             consumable by iTunesConnect and will be consumed without ANE's help.
+     }
+     </pre></div>
+	 	 </div></div><a name="forceConsume()"></a><a name="forceConsume(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">forceConsume</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function forceConsume($purchaseToken:String, $callback:Function):void</code><p></p><p></p><p>
+	 <p>
+	 (Android), Force consume a managed purchased product. Unlike iOS, you can only create managed products on the
+	 Android side but then, you can consume them using this method. On iOS, you can create consumable products in
+	 iTunesConnect and they will be consumed automatically when being purchased.
+	 </p>
+	 	 <p>
+	 When a purchase happens successfully or when you are restoring the previous purchases, you must use the
+	 returned <code>$purchase.purchaseToken</code> and pass it through the <code>forceConsume</code> method to
+	 consume it.
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$purchaseToken</span>:String</code> &mdash;     purchaseToken received when a managed item is purchased successfully
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash;    		callback function to let you know the result of the consume
+	 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">the $callback function must be constructed like below
+	 <div class="listing" version="3.0"><pre>
+     function($result:Boolean):void
+     {
+         //$result: true if the product has been consumed successfully
+     }
+     </pre></div>
+	 	 </div></div><a name="getPurchases()"></a><a name="getPurchases(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getPurchases</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function getPurchases($callback:Function):void</code><p></p><p></p><p>
+	 Call this method to get a Vector list of all products that user has purchased before. Please note that
+	 only <code>BillingType.PERMANENT</code> and <code>BillingType.AUTO_RENEWAL</code> are returned.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code></td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="Purchase.html" target="">Purchase</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">the $callback function must be constructed like below
+	 <div class="listing" version="3.0"><pre>
+     function($purchases:Vector.&lt;Purchase&gt;):void
+     {
+       //$purchases: If null, it means there's been a problem in retriving the list of purchases from server.
+       // if not null, but $purchases.length is 0, it means that there are no purchase records for this user on server
+     }
+     </pre></div>
+	 	 </div></div><a name="init()"></a><a name="init(Array,Array,Array,Array,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function init($androidInAppIDs:Array, $androidSubsIDs:Array, $iOSInAppIDs:Array, $iOSSubsIDs:Array, $callback:Function):void</code><p></p><p></p><p>
+	 <p>Call this method to initialize the Billing ANE. If you are building for iOS only, you can pass null for
+	 Android parameters. The same thing is true if you are building for Android only.</p>
+	 	 <p>When you initalize this ANE, you must pass the returning result function to know when the initializing
+	 job is finished. You must wait for a successful result before calling any other methods on this extension.</p>
+	 	 <p>The initialization job checks and verifies the list of product IDs you have passed in, to make sure your
+	 product IDs are valid. Please be alerted that when you add your products on Google Play or iTunes Connect,
+	 it may take a few hours before they are propagate globally, so make sure you are waiting enough before
+	 testing your products availability</p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$androidInAppIDs</span>:Array</code> &mdash; An Array of Android managed product IDs you have already registered in your Google Play console
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$androidSubsIDs</span>:Array</code> &mdash; An Array of Android subscription product IDs you have already registered in your Google Play console
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$iOSInAppIDs</span>:Array</code> &mdash; 	An Array of iOS product IDs you have already registered in your iTunes Connect
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$iOSSubsIDs</span>:Array</code> &mdash; 	An Array of iOS subscription IDs you have already registered in your iTunes Connect
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		The result of the ANE initialization. only if the ANE is initialized successfully, you can call other methods.
+	 </td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">the $callback function must be constructed like below
+	 <div class="listing" version="3.0"><pre>
+     function($status:int, $msg:String):void
+     {
+         //$status: if 1, means the initialization has been successful. if 0, it means the native code was NOT initialized successfully
+         //$msg: a string message describing what is possibly wrong in case $status is 0.
+     }
+     </pre></div>
+	 	 </div></div><a name="isFeatureSupported()"></a><a name="isFeatureSupported(String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">isFeatureSupported</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function isFeatureSupported($featureType:String):int</code><p></p><p></p><p>
+	 (Android), check if the named featureType is supported or not.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$featureType</span>:String</code> &mdash; String value from <code>FeatureType</code> class.
+	 </td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>int</code> &mdash; if <code>BillingResponse.OK</code> it means that the feature is supported and corresponding
+	 error code otherwise.
+	 </td></tr></table></div><a name="priceChangeConfirmation()"></a><a name="priceChangeConfirmation(String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">priceChangeConfirmation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function priceChangeConfirmation($productId:String, $callback:Function):void</code><p></p><p></p><p>
+	 (Android), Initiate a flow to confirm the change of price for an item subscribed by the user.
+	 	 <p>When the price of a user subscribed item has changed, launch this flow to take users to
+	 a screen with price change information. User can confirm the new price or cancel the flow.</p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$productId</span>:String</code> &mdash; must be of type <code>BillingType.AUTO_RENEWAL</code>
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code></td></tr></table></p><br/><span class="label"> Example </span><br/><div class="detailBody">the $callback function must be constructed like below
+	 <div class="listing" version="3.0"><pre>
+     function($agreed:Boolean, $productId:String):void
+     {
+         //$agreed: true if user agreed with the price change
+         //$productId: the productId initially passed through the priceChangeConfirmation method
+     }
+     </pre></div>
+	 	 </div></div><a name="redeem()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">redeem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function redeem():void</code><p></p><p></p><p>
+	 <p>
+	 (Android), You can create promotional codes and your users can redeem those codes to get your in-app-products for
+	 free! To do that, call this method and it will open the redeem window in GooglePlay app. To learn more about how
+	 promo-codes work in Android, read here:
+	 <ul>
+	     <li><b>https://support.google.com/googleplay/android-developer/answer/6321495?hl=en</b></li>
+	     <li><b>https://developer.android.com/google/play/billing/billing_onetime#redeem_a_promo_code</b></li>
+	 </ul>
+	 </p>
+	 </p></div><a name="replaceSubscription()"></a><a name="replaceSubscription(String,String,int,String,Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">replaceSubscription</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function replaceSubscription($oldProductId:String, $newProductId:String, $prorationMode:int, $accountId:String, $callback:Function):void</code><p></p><p></p><p>
+	 (Android), Use this method to let users downgrade/upgrade their exciting subscription. The returning callback
+	 will be similar to the one being used with the <code>doPayment</code> method.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$oldProductId</span>:String</code> &mdash; 	The current productId which the user is subscribed to
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$newProductId</span>:String</code> &mdash; 	The new productId which you wish the user downgrade/upgrade to
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$prorationMode</span>:int</code> &mdash; Specifies the mode of proration during subscription upgrade/downgrade.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$accountId</span>:String</code> &mdash; 	Specify an optional obfuscated string that is uniquely associated with the user's
+	 account in your app. If you pass this value, Google Play can use it to detect irregular activity, such as many
+	 devices making purchases on the same account in a short period of time. Do not use the developer ID or the
+	 user's Google ID for this field. In addition, this field should not contain the user's ID in cleartext.
+	 We recommend that you use a one-way hash to generate a string from the user's ID and store the hashed string in
+	 this field.
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$callback</span>:Function</code> &mdash; 		Will be called with the result of the purchase.
+	 	 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="ProrationMode.html" target="">ProrationMode</a></div></div><a name="verifyAndroidPurchaseLocally()"></a><a name="verifyAndroidPurchaseLocally(com.myflashlab.air.extensions.billing.Purchase)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">verifyAndroidPurchaseLocally</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public static function verifyAndroidPurchaseLocally($purchase:<a href="../../../../../com/myflashlab/air/extensions/billing/Purchase.html">Purchase</a>):Boolean</code><p></p><p></p><p>
+	 <p>
+	 (Android), like the iOS side, for security reasons you are recommended to verify the purchases using your own
+	 server. But yet, you may use this method to locally verify the purchases on device.
+	 </p>
+	 	 <p>
+	 Before calling this method, you must have set the Android public key using the <code>publicKey</code> property.
+	 </p>
+	 	 <p>
+	 Read here to learn how a purchase should be verified using your server:
+	 https://developer.android.com/google/play/billing/billing_library_overview#Verify-purchase
+	 </p>
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$purchase</span>:<a href="../../../../../com/myflashlab/air/extensions/billing/Purchase.html">Purchase</a></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Boolean</code> &mdash; true if the purchase is verified.
+	 </td></tr></table></div><div class="detailSectionHeader">Constant Detail</div><a name="constantDetail"></a><a name="ALREADY_OWNED_ITEM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ALREADY_OWNED_ITEM</td><td class="detailHeaderType">Constant</td></tr></table><div class="detailBody"><code>public static const ALREADY_OWNED_ITEM:String = This item is already purchased, you should let user use this item.</code><p></p></div><a name="constantDetail"></a><a name="ANDROID_LIBRARY_VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ANDROID_LIBRARY_VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const ANDROID_LIBRARY_VERSION:String = 1.2.2</code><p></p></div><a name="constantDetail"></a><a name="EXTENSION_ID"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">EXTENSION_ID</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const EXTENSION_ID:String = com.myflashlab.air.extensions.billing</code><p></p></div><a name="constantDetail"></a><a name="NOT_FOUND_ITEM"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NOT_FOUND_ITEM</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NOT_FOUND_ITEM:String = This item not found on Google or Apple servers.</code><p></p></div><a name="constantDetail"></a><a name="VERSION"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">VERSION</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const VERSION:String = 3.0.0</code><p></p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Born to Mobilize The Future</footer><br/>Fri Apr 5 2019, 10:10 AM +04:00  </center></div></body></html><!--myflashlabs.com - Born to Mobilize The Future<br/>Fri Apr 5 2019, 10:10 AM +04:00  -->
