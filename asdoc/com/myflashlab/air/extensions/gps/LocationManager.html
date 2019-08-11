@@ -11,98 +11,82 @@
 					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("LocationManager"); titleBar_setSubNav(false,false,false,false,false,false,false,false,true,false,false	,false,false,false,false,false);}	
 				-->
 			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">com.myflashlab.air.extensions.gps</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  LocationManager</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">LocationManager  <img src="../../../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.events.EventDispatcher</td></tr></table><p></p><p></p><p></p><p></p>
-	 This class is responsible for getting Gps information. find sample usage codes in Gps class.
-	 
-	 <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#LocationManager()" class="signatureLink">LocationManager</a>($os:String, $context:ExtensionContext)</div><div class="summaryTableDescription">
-		 do not try to initialize this class manually.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCurrentLocation()" class="signatureLink">getCurrentLocation</a>($onResult:Function):void</div><div class="summaryTableDescription">
-		 Use this method to receive the current user location.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLastLocation()" class="signatureLink">getLastLocation</a>($onResult:Function):void</div><div class="summaryTableDescription">
-		 Use this method to receive the last known Gps information which is not necessarilly the user's actual location.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>($accuracy:int, $distance:Number, $interval:Number):void</div><div class="summaryTableDescription">
-		 Use this method only if you need Gps information periodically in your app.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stop()" class="signatureLink">stop</a>():void</div><div class="summaryTableDescription">
-		 Call this method to stop the Gps service.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+ This class is responsible for getting Gps information. find sample usage codes in Gps class.
+  <p></p><br/><hr></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#LocationManager()" class="signatureLink">LocationManager</a>($context:ExtensionContext)</div><div class="summaryTableDescription">
+	 do not try to initialize this class manually.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getCurrentLocation()" class="signatureLink">getCurrentLocation</a>($onResult:Function):void</div><div class="summaryTableDescription">
+	 Use this method to receive the current user location.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#getLastLocation()" class="signatureLink">getLastLocation</a>($onResult:Function):void</div><div class="summaryTableDescription">
+	 Use this method to receive the last known Gps information which is not necessarilly the user's actual location.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#start()" class="signatureLink">start</a>($accuracy:int, $distance:Number, $interval:Number):void</div><div class="summaryTableDescription">
+	 Use this method only if you need Gps information periodically in your app.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#stop()" class="signatureLink">stop</a>():void</div><div class="summaryTableDescription">
+	 Call this method to stop the Gps service.</div></td><td class="summaryTableOwnerCol">LocationManager</td></tr></table></div><script language="javascript" type="text/javascript"><!--
 										showHideInherited();
-										--></script><div class="MainContent"><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="LocationManager()"></a><a name="LocationManager(String,flash.external.ExtensionContext)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LocationManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function LocationManager($os:String, $context:ExtensionContext)</code><p></p><p>
-		 do not try to initialize this class manually. instead, init the main Gps class and access this class using <code>Gps.location</code>
-		 
-		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$os</span>:String</code></td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$context</span>:ExtensionContext</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="getCurrentLocation()"></a><a name="getCurrentLocation(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getCurrentLocation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function getCurrentLocation($onResult:Function):void</code><p></p><p></p><p>
-		 Use this method to receive the current user location. If user Gps settings are off, a dialog will automatically promote the user
-		 to turn Gps service on.
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> &mdash; A function that you specify to receive location information. the function you specify must receive one parameter of type <code>Location</code>
-		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#getLastLocation()" target="">getLastLocation()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>getCurrentLocation</code>
-		 <div class="listing" version="3.0"><pre>
-         import com.myflashlab.air.extensions.gps.Gps;
-         import com.myflashlab.air.extensions.gps.Location;
-         
-         Gps.init(); // call init only once in your project
-         
-         // may take a while depending on when gps info is found
-         Gps.location.getCurrentLocation(onLocationResult);
-         
-         function onLocationResult($result:Location):void
+										--></script><div class="MainContent"><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="LocationManager()"></a><a name="LocationManager(flash.external.ExtensionContext)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">LocationManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function LocationManager($context:ExtensionContext)</code><p></p><p>
+	 do not try to initialize this class manually. instead, init the main Gps class and access this class using <code>Gps.location</code>
+	 	 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$context</span>:ExtensionContext</code></td></tr></table></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="getCurrentLocation()"></a><a name="getCurrentLocation(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getCurrentLocation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function getCurrentLocation($onResult:Function):void</code><p></p><p></p><p>
+	 Use this method to receive the current user location. If user Gps settings are off, a dialog will automatically promote the user
+	 to turn Gps service on.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> &mdash;    A function that you specify to receive location information. the function you specify must receive one parameter of type <code>Location</code>
+	 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#getLastLocation()" target="">getLastLocation()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>getCurrentLocation</code>
+	 <div class="listing" version="3.0"><pre>
+        import com.myflashlab.air.extensions.gps.Gps;
+        import com.myflashlab.air.extensions.gps.Location;
+             Gps.init(); // call init only once in your project
+             // may take a while depending on when gps info is found
+        Gps.location.getCurrentLocation(onLocationResult);
+             function onLocationResult($result:Location):void
+        {
+         if (!$result)
          {
-             if (!$result)
-             {
-                 trace("location is null");
-                 return;
-             }
-             
-             trace("accuracy = " + $result.accuracy);
-             trace("altitude = " + $result.altitude);
-             trace("bearing = " + $result.bearing);
-             trace("latitude = " + $result.latitude);
-             trace("longitude = " + $result.longitude);
-             trace("provider = " + $result.provider);
-             trace("speed = " + $result.speed);
-             trace("time = " + $result.time);
-             trace("---------------------------------");
+             trace("location is null");
+             return;
          }
-         </pre></div>
-		 
-		 </div></div><a name="getLastLocation()"></a><a name="getLastLocation(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getLastLocation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getLastLocation($onResult:Function):void</code><p></p><p></p><p>
-		 Use this method to receive the last known Gps information which is not necessarilly the user's actual location. to make sure you are receiving the user's
-		 actual location, use <code>getCurrentLocation</code> method. if your app is running for the first time, this method will return null location
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> &mdash; A function that you specify to receive location information. the function you specify must receive one parameter of type <code>Location</code>
-		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#getCurrentLocation()" target="">getCurrentLocation()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>getLastLocation</code>
-		 <div class="listing" version="3.0"><pre>
-         import com.myflashlab.air.extensions.gps.Gps;
-         import com.myflashlab.air.extensions.gps.Location;
-         
-         Gps.init(); // call init only once in your project
-         
-         // will return null if no known last location has been found
-         Gps.location.getLastLocation(onLocationResult);
-         
-         function onLocationResult($result:Location):void
+              trace("accuracy = " + $result.accuracy);
+         trace("altitude = " + $result.altitude);
+         trace("bearing = " + $result.bearing);
+         trace("latitude = " + $result.latitude);
+         trace("longitude = " + $result.longitude);
+         trace("provider = " + $result.provider);
+         trace("speed = " + $result.speed);
+         trace("time = " + $result.time);
+         trace("---------------------------------");
+     }
+     </pre></div>
+	 	 </div></div><a name="getLastLocation()"></a><a name="getLastLocation(Function)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">getLastLocation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function getLastLocation($onResult:Function):void</code><p></p><p></p><p>
+	 Use this method to receive the last known Gps information which is not necessarilly the user's actual location. to make sure you are receiving the user's
+	 actual location, use <code>getCurrentLocation</code> method. if your app is running for the first time, this method will return null location
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$onResult</span>:Function</code> &mdash;    A function that you specify to receive location information. the function you specify must receive one parameter of type <code>Location</code>
+	 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#getCurrentLocation()" target="">getCurrentLocation()</a></div><br/><span class="label"> Example </span><br/><div class="detailBody">The following example shows how to use <code>getLastLocation</code>
+	 <div class="listing" version="3.0"><pre>
+        import com.myflashlab.air.extensions.gps.Gps;
+        import com.myflashlab.air.extensions.gps.Location;
+             Gps.init(); // call init only once in your project
+             // will return null if no known last location has been found
+        Gps.location.getLastLocation(onLocationResult);
+             function onLocationResult($result:Location):void
+        {
+         if (!$result)
          {
-             if (!$result)
-             {
-                 trace("location is null");
-                 return;
-             }
-             
-             trace("accuracy = " + $result.accuracy);
-             trace("altitude = " + $result.altitude);
-             trace("bearing = " + $result.bearing);
-             trace("latitude = " + $result.latitude);
-             trace("longitude = " + $result.longitude);
-             trace("provider = " + $result.provider);
-             trace("speed = " + $result.speed);
-             trace("time = " + $result.time);
-             trace("---------------------------------");
+             trace("location is null");
+             return;
          }
-         </pre></div>
-		 
-		 </div></div><a name="start()"></a><a name="start(int,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">start</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function start($accuracy:int, $distance:Number, $interval:Number):void</code><p></p><p></p><p>
-		 Use this method only if you need Gps information periodically in your app. you can specify the distance and interval and the extension will keep
-		 dispatching the location to your app. When you use this method, the Gps icon will be shown on your device status bar. Also it's good to know that
-		 this method will use battery a lot. so, make sure to turn it off when you no longer need it.
-		 
-		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$accuracy</span>:int</code> &mdash; The accuracy level you need for receiving gps information
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$distance</span>:Number</code> &mdash; The minimum user movement you need to be updated with gps information
-		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$interval</span>:Number</code> &mdash; The minimum time intervals you want to receive Gps information
-		 
-		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#stop()" target="">stop()</a></div></div><a name="stop()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stop():void</code><p></p><p></p><p>
-		 Call this method to stop the Gps service. as soon as you call this method, the Gps icon will be removed from the device's status bar and your Gps
-		 listener won't receive any events anymore.
-		 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Best collection of ANEs</footer><br/>Mon Jul 8 2019, 11:45 AM +04:00  </center></div></body></html><!--myflashlabs.com - Best collection of ANEs<br/>Mon Jul 8 2019, 11:45 AM +04:00  -->
+              trace("accuracy = " + $result.accuracy);
+         trace("altitude = " + $result.altitude);
+         trace("bearing = " + $result.bearing);
+         trace("latitude = " + $result.latitude);
+         trace("longitude = " + $result.longitude);
+         trace("provider = " + $result.provider);
+         trace("speed = " + $result.speed);
+         trace("time = " + $result.time);
+         trace("---------------------------------");
+     }
+     </pre></div>
+	 	 </div></div><a name="start()"></a><a name="start(int,Number,Number)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">start</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function start($accuracy:int, $distance:Number, $interval:Number):void</code><p></p><p></p><p>
+	 Use this method only if you need Gps information periodically in your app. you can specify the distance and interval and the extension will keep
+	 dispatching the location to your app. When you use this method, the Gps icon will be shown on your device status bar. Also it's good to know that
+	 this method will use battery a lot. so, make sure to turn it off when you no longer need it.
+	 	 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">$accuracy</span>:int</code> &mdash;    The accuracy level you need for receiving gps information
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$distance</span>:Number</code> &mdash;    The minimum user movement you need to be updated with gps information
+	 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">$interval</span>:Number</code> &mdash;    The minimum time intervals you want to receive Gps information
+	 	 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="LocationManager.html#stop()" target="">stop()</a></div></div><a name="stop()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">stop</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function stop():void</code><p></p><p></p><p>
+	 Call this method to stop the Gps service. as soon as you call this method, the Gps icon will be removed from the device's status bar and your Gps
+	 listener won't receive any events anymore.
+	 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Best collection of ANEs</footer><br/>Sun Aug 11 2019, 10:04 AM +04:00  </center></div></body></html><!--myflashlabs.com - Best collection of ANEs<br/>Sun Aug 11 2019, 10:04 AM +04:00  -->

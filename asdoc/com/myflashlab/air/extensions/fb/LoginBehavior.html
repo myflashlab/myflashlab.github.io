@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="LoginBehavior,com.myflashlab.air.extensions.fb.LoginBehavior,ACTION_TYPE_ASKFOR,ACTION_TYPE_SEND,ACTION_TYPE_TURN,ANDROID,APP_EVENTS,AUTO,CACHE,DEVELOPER_ERRORS,DEVICE_AUTH,EVERYONE,EXPLICIT_ONLY,EXTENSION_ID,FILTERS_APP_NON_USERS,FILTERS_APP_USERS,FRIENDS,GRAPH_API_DEBUG_INFO,GRAPH_API_DEBUG_WARNING,INCLUDE_ACCESS_TOKENS,INCLUDE_RAW_RESPONSES,INIT,INVOKE,IOS,KATANA_ONLY,NATIVE_ONLY,NATIVE_WITH_FALLBACK,NONE,ONLY_ME,REQUESTS,VERSION,WEB_ONLY,WEB_VIEW_ONLY,actionType,appEvents,appId,auth,contentUrl,currentAccessToken,data,declinedPermissions,deeplink,defaultAudience,email,expiration,filters,firstName,flushBehavior,games,grantedPermissions,graph,hashKey,hashtag,id,isExpired,isFacebookMessengerAppInstalled,lastName,lastRefresh,limitEventAndDataUsage,link,listener,loginBehavior,manage_pages,message,middleName,name,objectID,os,pageId,picture,placeId,public_profile,publish_actions,publish_pages,pushNotificationRegistrationId,quote,read_custom_friendlists,read_insights,read_mailbox,read_page_mailboxes,recipientSuggestions,recipients,ref,share,title,token,userId,userId,user_about_me,user_actions_books,user_actions_fitness,user_actions_music,user_actions_news,user_actions_video,user_birthday,user_education_history,user_events,user_friends,user_games_activity,user_groups,user_hometown,user_likes,user_location,user_managed_groups,user_photos,user_posts,user_relationship_details,user_relationships,user_religion_politics,user_status,user_tagged_places,user_videos,user_website,user_work_history"><title>com.myflashlab.air.extensions.fb.LoginBehavior</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../../../override.css" type="text/css"><meta name="keywords" content="LoginBehavior,com.myflashlab.air.extensions.fb.LoginBehavior,ACTION_TYPE_ASKFOR,ACTION_TYPE_SEND,ACTION_TYPE_TURN,APP_EVENTS,AUTO,CACHE,DEVELOPER_ERRORS,DEVICE_AUTH,EVERYONE,EXPLICIT_ONLY,EXTENSION_ID,FILTERS_APP_NON_USERS,FILTERS_APP_USERS,FRIENDS,GRAPH_API_DEBUG_INFO,GRAPH_API_DEBUG_WARNING,INCLUDE_ACCESS_TOKENS,INCLUDE_RAW_RESPONSES,INIT,INVOKE,KATANA_ONLY,NATIVE_ONLY,NATIVE_WITH_FALLBACK,NONE,ONLY_ME,REQUESTS,VERSION,WEB_ONLY,WEB_VIEW_ONLY,actionType,appEvents,appId,auth,contentUrl,currentAccessToken,data,dataAccessExpirationDate,declinedPermissions,deeplink,defaultAudience,email,expiration,expiredPermissions,filters,firstName,flushBehavior,games,grantedPermissions,graph,hashKey,hashtag,id,isExpired,isFacebookMessengerAppInstalled,lastName,lastRefresh,limitEventAndDataUsage,link,listener,loginBehavior,manage_pages,message,middleName,name,objectID,pageId,picture,placeId,public_profile,publish_actions,publish_pages,pushNotificationRegistrationId,quote,read_custom_friendlists,read_insights,read_mailbox,read_page_mailboxes,recipientSuggestions,recipients,ref,share,title,token,userId,userId,user_about_me,user_actions_books,user_actions_fitness,user_actions_music,user_actions_news,user_actions_video,user_birthday,user_education_history,user_events,user_friends,user_games_activity,user_groups,user_hometown,user_likes,user_location,user_managed_groups,user_photos,user_posts,user_relationship_details,user_relationships,user_religion_politics,user_status,user_tagged_places,user_videos,user_website,user_work_history"><title>com.myflashlab.air.extensions.fb.LoginBehavior</title></head><body><script language="javascript" type="text/javascript" src="../../../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
 				asdocTitle = 'LoginBehavior - Myflashlabs';
 				var baseRef = '../../../../../';
 				window.onload = configPage;
@@ -32,17 +32,18 @@
 	 <b>on Android:</b> Specifies that device login authentication flow should be used.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> Attempts log in through the Facebook account currently signed in through the device Settings.
-	 If the account is not available to the app (either not configured by user or as determined by the SDK)
-	 this behavior falls back to <code>NATIVE_WITH_FALLBACK</code>.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
 	 </p></div><a name="constantDetail"></a><a name="KATANA_ONLY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">KATANA_ONLY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const KATANA_ONLY:int = 2</code><p></p><p></p><p>
 	 <p>
 	 <b>on Android:</b> Specifies that login should only attempt to use Katana Proxy Login.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> This is the default behavior, and indicates logging in through the native Facebook app may be
-	 used. The SDK may still use Safari instead.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
 	 </p></div><a name="constantDetail"></a><a name="NATIVE_ONLY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NATIVE_ONLY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NATIVE_ONLY:int = 1</code><p></p><p></p><p>
 	 <p>
@@ -50,8 +51,9 @@
 	 If the Facebook App cannot be used then the login fails.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> This is the default behavior, and indicates logging in through the native Facebook app may be
-	 used. The SDK may still use Safari instead.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
 	 </p></div><a name="constantDetail"></a><a name="NATIVE_WITH_FALLBACK"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">NATIVE_WITH_FALLBACK</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const NATIVE_WITH_FALLBACK:int = 0</code><p></p><p></p><p>
 	 <p>
@@ -59,22 +61,26 @@
 	 does not work fall back to web dialog auth. This is the default behavior.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> This is the default behavior, and indicates logging in through the native Facebook app may be
-	 used. The SDK may still use Safari instead.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
 	 </p></div><a name="constantDetail"></a><a name="WEB_ONLY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">WEB_ONLY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const WEB_ONLY:int = 3</code><p></p><p></p><p>
 	 <p>
 	 <b>on Android:</b> Specifies that only the web dialog auth should be used.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> Attempts log in through the Safari or SFSafariViewController, if available.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
 	 </p></div><a name="constantDetail"></a><a name="WEB_VIEW_ONLY"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">WEB_VIEW_ONLY</td><td class="detailHeaderType">Constant</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>public static const WEB_VIEW_ONLY:int = 4</code><p></p><p></p><p>
 	 <p>
 	 <b>on Android:</b> Specifies that only the web view dialog auth should be used.
 	 </p>
 	 	 <p>
-	 <b>on iOS:</b> Attempts log in through a modal UIWebView pop up. This behavior is only available to certain
-	 types of apps. Please check the Facebook Platform Policy to verify your app meets the restrictions.
+	 <b>on iOS, it will always work as follow:</b> logging in via ASWebAuthenticationSession (iOS 12+)
+	 or SFAuthenticationSession (iOS 11), which present specialized SafariViewControllers. Falls back to plain
+	 SFSafariViewController (iOS 9 and 10) or Safari (iOS 8).
 	 </p>
-	 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Best collection of ANEs</footer><br/>Mon Jul 8 2019, 11:45 AM +04:00  </center></div></body></html><!--myflashlabs.com - Best collection of ANEs<br/>Mon Jul 8 2019, 11:45 AM +04:00  -->
+	 </p></div><br/><br/><hr><br/><p></p><center class="copyright"><footer>myflashlabs.com - Best collection of ANEs</footer><br/>Sun Aug 11 2019, 10:04 AM +04:00  </center></div></body></html><!--myflashlabs.com - Best collection of ANEs<br/>Sun Aug 11 2019, 10:04 AM +04:00  -->
