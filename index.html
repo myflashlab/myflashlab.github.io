@@ -285,13 +285,13 @@
               <section data-id="forge-app-privacy-policy" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
-                    <h2>Privacy <span>Policy</span></h2>
+                    <h2>Privacy & <span>Security Policy</span></h2>
                   </div>
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                      <p><em>Last Updated: May 22, 2026</em></p>
-                      <p>This Privacy Policy describes how our Atlassian Forge Applications ("Apps") collect, use, and share information when installed and utilized within Atlassian Cloud products (such as Confluence or Jira). Our apps are published on the Atlassian Marketplace by developer <strong>Mohammadhadi Tavakoli Ghinani</strong>.</p>
+                      <p><em>Last Updated: June 9, 2026</em></p>
+                      <p>This Privacy & Security Policy describes how our Atlassian Forge Applications ("Apps") handle user privacy, data security, incident management, and vulnerability resolution when installed and utilized within Atlassian Cloud products (such as Confluence or Jira). Our apps are published on the Atlassian Marketplace by developer <strong>Mohammadhadi Tavakoli Ghinani</strong>.</p>
                       
                       <div class="white-space-30"></div>
 
@@ -318,23 +318,54 @@
                       <div class="white-space-20"></div>
 
                       <div class="block-title">
-                        <h3>4. Data <span>Security</span></h3>
+                        <h3>4. Incident Response & <span>Management</span></h3>
                       </div>
-                      <p>Because all storage and computation (apart from local browser rendering) are managed directly by Atlassian, your data is protected under Atlassian's enterprise-grade cloud security infrastructure. For more details on Atlassian's compliance and data protection policies, please visit the <a href="https://www.atlassian.com/trust" target="_blank" style="text-decoration: underline;">Atlassian Trust Center</a>.</p>
+                      <p>We follow a defined security incident response procedure to manage vulnerability reports and potential security flaws:</p>
+                      <ul>
+                        <li><strong>Incident Identification & Reporting:</strong> Security vulnerabilities or potential breaches can be reported directly via email at <a href="mailto:tahadaf@gmail.com" style="text-decoration: underline;">tahadaf@gmail.com</a>.</li>
+                        <li><strong>Response SLAs:</strong> We acknowledge security incident reports within 24 hours of receipt and perform an initial triage to assess severity.</li>
+                        <li><strong>Remediation:</strong> For high-priority security issues, we aim to deploy patches within 48 hours. Because our apps use the Atlassian Forge framework, updates are deployed automatically and instantaneously to all customer sites without requiring manual customer intervention.</li>
+                        <li><strong>Customer Notification:</strong> If an incident affects customer workspaces or data, we will notify affected administrators via their registered Atlassian contact details or email within 72 hours of verification.</li>
+                      </ul>
 
                       <div class="white-space-20"></div>
 
                       <div class="block-title">
-                        <h3>5. Your <span>Rights</span></h3>
+                        <h3>5. Vulnerability <span>Management</span></h3>
+                      </div>
+                      <p>We maintain a proactive approach to finding and fixing security flaws:</p>
+                      <ul>
+                        <li><strong>Dependency Scanning:</strong> We use automated tools (such as GitHub Dependabot and npm audit) to continuously scan our codebase and dependencies for known vulnerabilities (CVEs).</li>
+                        <li><strong>Atlassian Security Programs:</strong> We participate in Atlassian's security ecosystem programs, monitor reports from Atlassian's Security team, and adhere to the Atlassian Marketplace Security requirements, ensuring prompt resolution of any flagged vulnerabilities.</li>
+                        <li><strong>Regular Updates:</strong> We regularly update our front-end libraries and build tooling to ensure the latest security fixes are applied.</li>
+                      </ul>
+
+                      <div class="white-space-20"></div>
+
+                      <div class="block-title">
+                        <h3>6. General Security <span>Controls</span></h3>
+                      </div>
+                      <p>Because all storage and computation (apart from local browser rendering) are managed directly by Atlassian, your data is protected under Atlassian's enterprise-grade cloud security infrastructure. In addition, we apply the following security controls:</p>
+                      <ul>
+                        <li><strong>Access Control:</strong> Code repositories are hosted in secure, private environments with multi-factor authentication (MFA) required for developer access.</li>
+                        <li><strong>Least Privilege Permissions:</strong> Our Forge app manifest request scopes are strictly limited to the minimum set of permissions necessary to perform the macro rendering (e.g., read Confluence content properties only where required, with no administrative permissions).</li>
+                        <li><strong>Client-Side Rendering Safety:</strong> For apps like Mermaid Studio, all rendering and parsing of Mermaid diagrams occur client-side in the user's browser using sanitized and scoped libraries, preventing Cross-Site Scripting (XSS) or remote code execution risks.</li>
+                      </ul>
+                      <p>For more details on Atlassian's compliance and data protection policies, please visit the <a href="https://www.atlassian.com/trust" target="_blank" style="text-decoration: underline;">Atlassian Trust Center</a>.</p>
+
+                      <div class="white-space-20"></div>
+
+                      <div class="block-title">
+                        <h3>7. Your <span>Rights</span></h3>
                       </div>
                       <p>Since we do not collect, store, or process any of your personal data on external servers, we have no personal data to view, export, edit, or delete. If you wish to delete any data associated with our Apps, you can simply delete the specific macro contents or uninstall the App from your Atlassian instance.</p>
 
                       <div class="white-space-20"></div>
 
                       <div class="block-title">
-                        <h3>6. Contact <span>Us</span></h3>
+                        <h3>8. Contact & <span>Support</span></h3>
                       </div>
-                      <p>If you have any questions or inquiries regarding this Privacy Policy or the security of our Forge apps, please contact us at:</p>
+                      <p>If you have any questions or inquiries regarding this Policy or the security of our Forge apps, please contact us at:</p>
                       <p><strong>Email:</strong> <a href="mailto:tahadaf@gmail.com" style="text-decoration: underline;">tahadaf@gmail.com</a></p>
 
                       <div class="white-space-30"></div>
